@@ -1,0 +1,9 @@
+@font-face {
+	font-family: googleSans;
+	src: url("../resources/fonts/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: googleSansBold;
+	src: url("../resources/fonts/Rubik-Bold.ttf");
+}
