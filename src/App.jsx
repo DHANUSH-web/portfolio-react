@@ -8,6 +8,7 @@ import About from "./pages/About"
 import Home from "./pages/Home"
 import React from "react"
 import "./App.css"
+import Footer from "./components/Footer"
 
 const App = () => {
 	return (
@@ -22,6 +23,7 @@ const App = () => {
 				<Route path="/contact" element={ <Contact /> } />
 				<Route path="*" element={ <PageNotFound /> } />
 			</Routes>
+			<Footer />
 		</>
 	)
 }
