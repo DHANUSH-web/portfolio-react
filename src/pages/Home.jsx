@@ -31,8 +31,10 @@ const Home = () => {
 			<Box className="description" mt={{ base: 100, lg: 200 }}>
 				<VStack align="flex-start" className="desc-container">
 					<Text textAlign="left" className="desc-heading">Hi,</Text>
-					<Text align="justify">I appreciate your time and patience and it's my great pleasure to have you here. By the way, my name is <b>{profile.name}</b> and I'm a <b>{profile.jobRole}</b> at<Link className="hyper-link" href={profile.companyURL} target="_blank">{profile.company}</Link> I'm a fresher with almost 6 months of experience in TCS as <b>Automation Developer</b>.
-					<br/><br />Since, I'm a programmer who is more focused on coding stuff and love build apps and websites from scratch. After more than 3 years of personal expereince in app and website development, I taught myself with different programming languages on how to develop and solve the real time programming challenges. <b>Even, this website you'r seeing also developed by me with ReactJS</b></Text>
+					<Text align="justify">Thank you for your time and patience, and it's a pleasure to have you here with me. My name is <b>{profile.name}</b>, and I work as a <b>{profile.jobRole}</b> at <Link className="hyper-link"><b>{profile.company}</b></Link> Although I am a fresher, I have almost six months of experience as an Automation Developer. As a programmer, my passion lies in coding and building apps and websites from scratch. Over the past three years, I have gained personal experience in app and website development and have taught myself multiple programming languages. This has allowed me to develop the skills necessary to solve real-time programming challenges.<br /><br/>As a result of my dedication, even the website you're currently viewing was developed by me using ReactJS. I am always looking to improve my skills and learn new things, and I am excited to continue my journey in the world of web development.</Text>
+					<Hyper to="/about">
+						<Button colorScheme="telegram" rightIcon={<MdArrowForward />}>Know More</Button>
+					</Hyper>
 				</VStack>
 			</Box>
 		</Box>
