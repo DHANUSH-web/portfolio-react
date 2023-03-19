@@ -1,3 +1,22 @@
-.lname {
-	color: #0080ff5c;
+.description {
+	padding: 5px 5px 5px 12px;
+	font-family: googleSans;
+	border-left: solid 5px #0050ff;
+	cursor: default;
+	transition: 0.2s;
+}
+
+.description:hover {
+	border-left-width: 15px;
+}
+
+.desc-heading {
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.resumeBtn, .seeMoreBtn {
+	font-family: googleSans;
+	width: "fit-content";
+	padding: 2px;
 }
