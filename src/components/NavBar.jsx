@@ -20,7 +20,7 @@ const NavBar = () => {
 
 
 	return (
-		<HStack className="navbar" width="full" p={5} spacing={5} bg="blackAlpha.200" backdropFilter="blur(10px)">
+		<HStack className="navbar" width="full" p={5} spacing={5} bg="blackAlpha.200" backdropFilter="blur(7px)" zIndex={1}>
 			<Link to="/" className="brand">Portfolio</Link>
 			<HStack spacing={5} justify="flex-end" width="full">
 				<Link id="navLink" to="/" onClick={() => setActiveWindow(0)}><Text color={homeFg}>Home</Text></Link>

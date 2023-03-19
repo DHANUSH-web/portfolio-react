@@ -1,9 +1,22 @@
 @font-face {
 	font-family: googleSans;
-	src: url("../resources/fonts/GoogleSans-Regular.ttf");
+	src: url("./resources/fonts/GoogleSans-Regular.ttf");
 }
 
 @font-face {
 	font-family: googleSansBold;
-	src: url("../resources/fonts/Rubik-Bold.ttf");
+	src: url("./resources/fonts/Rubik-Bold.ttf");
+}
+
+.hyper-link {
+	text-decoration: none;
+	padding: 2px 5px;
+	border-radius: 7px;
+	background-color: transparent;
+	color: #0050ff;
+	transition: 0.2s;
+}
+
+.hyper-link:hover {
+	background-color: #0050ff22;
 }
