@@ -22,9 +22,19 @@
 			"githubProfile": "https://www.github.com/DHANUSH-web/",
 			"profilePhoto1": "https://bit.ly/kent-c-dodds",
 			"profilePhoto": "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg",
-			"profilePhoto2": "https://i.pinimg.com/originals/4a/3b/1a/4a3b1abae4f1f97688d1250222552bef.png",
-			"profilePhoto3": "https://imgs.search.brave.com/MHXqwSXvTbqHLO-FdfV_MJHqeJ1GFJVVdhw7mNeo5vE/rs:fit:300:300:1/g:ce/aHR0cHM6Ly93d3cu/ZmFtb3VzYmlydGhk/YXlzLmNvbS9oZWFk/c2hvdHMvbWlrZS1z/aGFrZS0yLmpwZw",
-			"profilePhotos": "https://yt3.ggpht.com/a/AATXAJwDtaiO4vRwSCokzpGgj3NWqYSP-tDH-q_LRsOL8w=s900-c-k-c0xffffffff-no-rj-mo"
+			"profiles": {
+				"linkedin": "https://www.linkedin.com/dhanushhv75",
+				"github": "https://www.github.com/DHANUSH-web/",
+				"hackerrank": "https://www.hackerrank.com/dhanushhv75",
+				"bitbucket": "https://www.bitbucket.org/dhanushhv"
+			},
+			"achievements": {
+				"python": { "title": "Python", "desc": "Hands-on experience in Data Science, ML, Automation Testing" },
+				"clan": { "title": "C/C++", "desc": "Hands-on experience C/C++ DSA Coding challenges" },
+				"webdev": { "title": "Web Development", "desc": "Hands-on experience in Web Development using HTML, CSS and NodeJS" },
+				"js": { "title": "JavaScript", "desc": "Better understanding of advanced programming in NodeJS" },
+				"reactjs": { "title": "ReactJS", "desc": "Hands-on experience in development of web apps using ReactJS" }
+			}
 		}
 	}
 }

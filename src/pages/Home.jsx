@@ -1,5 +1,6 @@
 import { Box, HStack,Stack, VStack, Button, Text, Image, StackDivider, Link } from "@chakra-ui/react"
 import { MdLink, MdArrowForward } from "react-icons/md"
+import Achievements from "../components/Achievements"
 import { Link as Hyper } from "react-router-dom"
 import { motion } from "framer-motion"
 import data from "../database.json"
@@ -25,7 +26,7 @@ const Home = () => {
 					</Stack>
 				</VStack>
 				<Box>
-					<Image cursor="pointer" onClick={()=>window.open(profile.githubProfile)} as={motion.img} initial={{scale: 0.7}} animate={{scale: 1}} src={profile.profilePhoto} borderRadius="50%" w={300} mt={{ base: 20, lg: 0}}/>
+					<Image className="profileImage" cursor="pointer" onClick={()=>window.open(profile.githubProfile)} as={motion.img} initial={{scale: 0.7}} animate={{scale: 1}} src={profile.profilePhoto} borderRadius="50%" w={300} mt={{ base: 20, lg: 0}}/>
 				</Box>
 			</HStack>
 			<Box className="description" mt={{ base: 100, lg: 200 }}>
@@ -37,6 +38,7 @@ const Home = () => {
 					</Hyper>
 				</VStack>
 			</Box>
+			<Achievements />
 		</Box>
 	)
 }
