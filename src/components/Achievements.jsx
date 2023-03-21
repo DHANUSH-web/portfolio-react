@@ -39,7 +39,7 @@ const Achievements = () => {
 								<Image src={profile.profilePhoto} h={20} borderRadius={7} />
 								<VStack justify="flex-start" w="full">
 									<Text fontFamily="googleSansBold">{cards[card].title}</Text>
-									<Button colorScheme="messenger" w="full" rightIcon={<MdArrowForward />}>View</Button>
+									<Button fontFamily="googleSans" colorScheme="messenger" w="full" rightIcon={<MdArrowForward />}>View</Button>
 								</VStack>
 							</HStack>
 						)
