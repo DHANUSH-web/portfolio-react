@@ -1,13 +1,16 @@
-import { HStack, Text, Menu, MenuButton, MenuList, MenuItem, IconButton } from "@chakra-ui/react"
-import { BiHomeAlt } from "react-icons/bi"
-import { CgMenuLeftAlt } from "react-icons/cg"
+import { HStack, Text, Menu, MenuButton, MenuList, MenuItem, IconButton, useColorMode } from "@chakra-ui/react"
 import { MdOutlineHandshake, MdPerson, MdTimeline } from "react-icons/md"
+import { CgMenuLeftAlt } from "react-icons/cg"
 import { BiGitCommit } from "react-icons/bi"
+import { BiHomeAlt } from "react-icons/bi"
 import { Link } from "react-router-dom"
 import React from "react"
 import "./NavBar.css"
 
 const NavBar = () => {
+	const { colorMode } = useColorMode()
+	const isDark = colorMode === "dark"
+
 	const [ activeWindow, setActiveWindow ] = React.useState(0)
 	const isHome = activeWindow === 0
 	const isAbout = activeWindow === 1
@@ -15,11 +18,11 @@ const NavBar = () => {
 	const isExperience = activeWindow === 3
 	const isContact = activeWindow === 4
 
-	const homeFg = isHome ? "#0050ff" : "black"
-	const aboutFg = isAbout ? "#0050ff" : "black"
-	const projectsFg = isProjects ? "#0050ff" : "black"
-	const expFg = isExperience ? "#0050ff" : "black"
-	const contactFg = isContact ? "#0050ff" : "black"
+	const homeFg = isHome ? "#0050ff" : (isDark) ? "white" : "black"
+	const aboutFg = isAbout ? "#0050ff" : (isDark) ? "white" : "black"
+	const projectsFg = isProjects ? "#0050ff" : (isDark) ? "white" : "black"
+	const expFg = isExperience ? "#0050ff" : (isDark) ? "white" : "black"
+	const contactFg = isContact ? "#0050ff" : (isDark) ? "white" : "black"
 
 
 	return (

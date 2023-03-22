@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import PageNotFound from "./pages/PageNotFound"
 import Experience from "./pages/Experience"
-import Projects from "./pages/Projects"
+import Footer from "./components/Footer"
 import NavBar from "./components/NavBar"
+import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import About from "./pages/About"
 import Home from "./pages/Home"
 import React from "react"
 import "./App.css"
-import Footer from "./components/Footer"
 
 const App = () => {
 	return (

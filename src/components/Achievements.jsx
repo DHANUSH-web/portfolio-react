@@ -1,4 +1,4 @@
-import { Box, Button, Wrap, HStack, VStack, Card, CardHeader, CardBody, CardFooter, Text, Image } from "@chakra-ui/react"
+import { Button, Wrap, HStack, VStack, Card, CardHeader, CardBody, CardFooter, Text, Image } from "@chakra-ui/react"
 import { MdArrowForward } from "react-icons/md"
 import data from "../database.json"
 import "./Achievements.css"
@@ -13,32 +13,34 @@ const Achievements = () => {
 	return (
 		<VStack mt={{ base: 100, lg: 70 }} spacing={15}>
 			<Text fontFamily="googleSansBold" fontSize={30}>Achievements</Text>
-			<Wrap pt={25} className="ach-cards" w="full" justify="center" display={{ base: "none", md: "flex", lg: "flex"}}>
+			<Wrap pt={25} w="full" justify="center" display={{ base: "none", md: "flex", lg: "flex"}}>
 				{
-					Object.keys(cards).map((card) => (
+					cards.map((card) => (
 						<Card className="cards" align="center" w={300} p={15} border="solid 2px" borderColor="blackAlpha.300" borderRadius={12}>
 							<CardHeader>
-								<Image src={profile.profilePhoto} h={20} borderRadius="50%" />
-								<Text fontFamily="googleSansBold">{cards[card].title}</Text>
+								<HStack w="full" spacing={5}>
+									<Image src={card.icon} h={20} borderRadius="50%" />
+									<Text textAlign="initial" fontFamily="googleSansBold">{card.title}</Text>
+								</HStack>
 							</CardHeader>
 							<CardBody>
-								<Text fontFamily="googleSans">{cards[card].desc}</Text>
+								<Text textAlign="initial" fontFamily="googleSans">{card.desc}</Text>
 							</CardBody>
 							<CardFooter>
-								<Button fontFamily="googleSans" colorScheme="messenger" w={200} rightIcon={<MdArrowForward />}>View</Button>
+								<Button fontFamily="googleSans" fontWeight={350} colorScheme="messenger" w={200} rightIcon={<MdArrowForward />}>View</Button>
 							</CardFooter>
 						</Card>
 						)
 					)
 				}
 			</Wrap>
-			<Wrap pt={25} className="ach-cards" w="full" align="center" justify="center" display={{ base: "flex", md: "none", lg: "none"}}>
+			<Wrap pt={25} w="full" align="center" justify="center" display={{ base: "flex", md: "none", lg: "none"}}>
 				{
-					Object.keys(cards).map((card) => (
+					cards.map((card) => (
 							<HStack className="shortCards" align="center">
-								<Image src={profile.profilePhoto} h={20} borderRadius={7} />
-								<VStack justify="flex-start" w="full">
-									<Text fontFamily="googleSansBold">{cards[card].title}</Text>
+								<Image src={card.icon} h={20} borderRadius={7} />
+								<VStack w="full">
+									<Text textAlign="initial" fontSize={15} fontFamily="googleSansBold">{card.title}</Text>
 									<Button fontFamily="googleSans" colorScheme="messenger" w="full" rightIcon={<MdArrowForward />}>View</Button>
 								</VStack>
 							</HStack>

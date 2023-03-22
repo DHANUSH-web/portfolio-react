@@ -1,40 +1,60 @@
 {
-	"profileHolder": "dhanushhv",
-	"profiles": {
-		"dhanushhv": {
-			"name": "DHANUSH H V",
-			"fname": "DHANUSH",
-			"lname": "H V",
-			"jobRole": "Full-Stack Web Developer",
-			"company": "TATA Consultancy Services Ltd.",
-			"companyURL": "https://www.tcs.com/",
-			"skills": {
-				"python": { "title": "Python", "logo": "" },
-				"c": { "title": "C Language", "logo": ""},
-				"cpp": { "title": "C++", "logo": "" },
-				"java": { "title": "Java", "logo": "" },
-				"js": { "title": "JavaScript", "logo": "" },
-				"reactjs": { "title": "", "logo": "" }
-			},
-			"project": "",
-			"client": "",
-			"resume": "https://docs.google.com/document/d/1EtLxrw3epo-s_R8Ced5dryq-yCKwAdh7UsfDygkVj2Y/edit?usp=sharing",
-			"githubProfile": "https://www.github.com/DHANUSH-web/",
-			"profilePhoto1": "https://bit.ly/kent-c-dodds",
-			"profilePhoto": "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg",
-			"profiles": {
-				"linkedin": "https://www.linkedin.com/dhanushhv75",
-				"github": "https://www.github.com/DHANUSH-web/",
-				"hackerrank": "https://www.hackerrank.com/dhanushhv75",
-				"bitbucket": "https://www.bitbucket.org/dhanushhv"
-			},
-			"achievements": {
-				"python": { "title": "Python", "desc": "Hands-on experience in Data Science, ML, Automation Testing" },
-				"clan": { "title": "C/C++", "desc": "Hands-on experience C/C++ DSA Coding challenges" },
-				"webdev": { "title": "Web Development", "desc": "Hands-on experience in Web Development using HTML, CSS and NodeJS" },
-				"js": { "title": "JavaScript", "desc": "Better understanding of advanced programming in NodeJS" },
-				"reactjs": { "title": "ReactJS", "desc": "Hands-on experience in development of web apps using ReactJS" }
-			}
-		}
-	}
+    "profileHolder": "dhanushhv",
+    "profiles": {
+        "dhanushhv": {
+            "name": "DHANUSH H V",
+            "fname": "DHANUSH",
+            "lname": "H V",
+            "jobRole": "Full-Stack Web Developer",
+            "company": "TATA Consultancy Services Ltd.",
+            "companyURL": "https://www.tcs.com/",
+            "skills": [
+                { "title": "Python", "logo": "" },
+                { "title": "C Language", "logo": "" },
+                { "title": "C++", "logo": "" },
+                { "title": "Java", "logo": "" },
+                { "title": "JavaScript", "logo": "" },
+                { "title": "", "logo": "" }
+			],
+            "project": "",
+            "client": "",
+            "resume": "https://docs.google.com/document/d/1EtLxrw3epo-s_R8Ced5dryq-yCKwAdh7UsfDygkVj2Y/edit?usp=sharing",
+            "githubProfile": "https://www.github.com/DHANUSH-web/",
+            "profilePhoto1": "https://bit.ly/kent-c-dodds",
+            "profilePhoto": "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg",
+            "profiles": {
+                "linkedin": "https://www.linkedin.com/dhanushhv75",
+                "github": "https://www.github.com/DHANUSH-web/",
+                "hackerrank": "https://www.hackerrank.com/dhanushhv75",
+                "bitbucket": "https://www.bitbucket.org/dhanushhv"
+            },
+            "achievements": [
+                {
+                    "title": "Virtusa Neural Hack 2021 - Season 5",
+                    "desc": "Participated in Virtusa Coding competetion and get certified by Virtusa Graduate Talent Program",
+                    "icon": "https://yt3.ggpht.com/a/AGF-l79hOfb6tMLLZw0tOSMb67KNzzy81AEpC4iZuw=s900-mo-c-c0xffffffff-rj-k-no"
+                },
+                {
+                    "title": "Hackerrank - Python",
+                    "desc": "Completed coding challenges in Hackerrank and got 4 star in Python",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png"
+                },
+                {
+                    "title": "Hackerrank - C++",
+                    "desc": "Completed coding challenges in Hackerrank and got 5 star in C++",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png"
+                },
+                {
+                    "title": "Sololearn",
+                    "desc": "Successfully completed the courses on top trending programming languages and built apps and web sites as projects",
+                    "icon": "https://avatars0.githubusercontent.com/u/47358700?s=400&u=c5e03d643c68e09f24712810a58669cfb4ec6c7f&v=4"
+                },
+                {
+                    "title": "ReactJS",
+                    "desc": "Completed the development of this portfolio using React as proof of React skills I have",
+                    "icon": "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"
+                }
+            ]
+        }
+    }
 }

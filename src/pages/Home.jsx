@@ -29,7 +29,7 @@ const Home = () => {
 					<Image className="profileImage" cursor="pointer" onClick={()=>window.open(profile.githubProfile)} as={motion.img} initial={{scale: 0.7}} animate={{scale: 1}} src={profile.profilePhoto} borderRadius="50%" w={300} mt={{ base: 20, lg: 0}}/>
 				</Box>
 			</HStack>
-			<Box className="description" mt={{ base: 100, lg: 200 }}>
+			<Box className="description" mt={100}>
 				<VStack align="flex-start" className="desc-container">
 					<Text textAlign="left" className="desc-heading">Hi,</Text>
 					<Text align="justify">Thank you for your time and patience, and it's a pleasure to have you here with me. My name is <b>{profile.name}</b>, and I work as a <b>{profile.jobRole}</b> at <Link className="hyper-link"><b>{profile.company}</b></Link> Although I am a fresher, I have almost six months of experience as an Automation Developer. As a programmer, my passion lies in coding and building apps and websites from scratch. Over the past three years, I have gained personal experience in app and website development and have taught myself multiple programming languages. This has allowed me to develop the skills necessary to solve real-time programming challenges.<br /><br/>As a result of my dedication, even the website you're currently viewing was developed by me using ReactJS. I am always looking to improve my skills and learn new things, and I am excited to continue my journey in the world of web development.</Text>
