@@ -27,7 +27,7 @@ const Achievements = () => {
 								<Text textAlign="initial" fontFamily="googleSans">{card.desc}</Text>
 							</CardBody>
 							<CardFooter>
-								<Button fontFamily="googleSans" fontWeight={350} colorScheme="messenger" w={200} rightIcon={<MdArrowForward />}>View</Button>
+								<Button onClick={() => window.open(card.url)} fontFamily="googleSans" fontWeight={350} colorScheme="messenger" w={200} rightIcon={<MdArrowForward />}>View</Button>
 							</CardFooter>
 						</Card>
 						)
@@ -41,7 +41,7 @@ const Achievements = () => {
 								<Image src={card.icon} h={20} borderRadius={7} />
 								<VStack w="full">
 									<Text textAlign="initial" fontSize={15} fontFamily="googleSansBold">{card.title}</Text>
-									<Button fontFamily="googleSans" colorScheme="messenger" w="full" rightIcon={<MdArrowForward />}>View</Button>
+									<Button onClick={() => window.open(card.url)} fontFamily="googleSans" colorScheme="messenger" w="full" rightIcon={<MdArrowForward />}>View</Button>
 								</VStack>
 							</HStack>
 						)
