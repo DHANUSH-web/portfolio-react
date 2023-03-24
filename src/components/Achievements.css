@@ -4,7 +4,8 @@
 }
 
 .shortCards {
-	border: solid 2px #eaebec;
+	background-color: #0080ff22;
+	border: solid 2px transparent;
 	width: 250px;
 	padding: 5px;
 	cursor: pointer;
@@ -14,8 +15,7 @@
 }
 
 .cards:hover, .shortCards:hover {
-	border-color: transparent;
+	border-color: lightblue;
 /*	margin-top: -15px;*/
 /*	box-shadow: -7px 15px 0 5px #0080ffdc;*/
-	background-color: #d8e9ff;
 }

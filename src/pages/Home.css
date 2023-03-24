@@ -16,7 +16,8 @@
 }
 
 .resumeBtn, .seeMoreBtn {
-	font-family: googleSans;
+	font-family: googleSansBold;
+	font-weight: normal;
 	width: "fit-content";
 	padding: 2px;
 }
