@@ -13,10 +13,10 @@ const Achievements = () => {
 	return (
 		<VStack mt={{ base: 100, lg: 70 }} spacing={15}>
 			<Text fontFamily="googleSansBold" fontSize={30}>Achievements</Text>
-			<Wrap pt={25} w="full" justify="center" display={{ base: "none", md: "flex", lg: "flex"}}>
+			<Wrap pt={25} w="full" justify="center" display={{ base: "none", md: "grid", lg: "grid"}}>
 				{
 					cards.map((card) => (
-						<Card className="cards" align="center" w={300} p={15} border="solid 2px" borderColor="blackAlpha.300" borderRadius={12}>
+						<Card className="cards" align="center" w={300} h={380} p={15} border="solid 2px" borderColor="blackAlpha.200" borderRadius={12}>
 							<CardHeader>
 								<HStack w="full" spacing={5}>
 									<Image src={card.icon} h={20} borderRadius="50%" />
