@@ -15,7 +15,7 @@
 }
 
 .cards:hover, .shortCards:hover {
-	border-color: lightblue;
+	border-color: #2a7ecc;
 /*	margin-top: -15px;*/
 /*	box-shadow: -7px 15px 0 5px #0080ffdc;*/
 }
