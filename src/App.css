@@ -20,3 +20,7 @@
 .hyper-link:hover {
 	background-color: #0050ff22;
 }
+
+.cover-navbar {
+	height: 80px;
+}

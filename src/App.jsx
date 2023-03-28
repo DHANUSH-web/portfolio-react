@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import PageNotFound from "./pages/PageNotFound"
 import Experience from "./pages/Experience"
-import Footer from "./components/Footer"
 import NavBar from "./components/NavBar"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
@@ -14,7 +13,7 @@ const App = () => {
 	return (
 		<>
 			<NavBar />
-			<br /><br /><br /><br />
+			<div className="cover-navbar"></div>
 			<Routes>
 				<Route path="/" element={ <Home /> } />
 				<Route path="/about" element={ <About /> } />
@@ -23,7 +22,6 @@ const App = () => {
 				<Route path="/contact" element={ <Contact /> } />
 				<Route path="*" element={ <PageNotFound /> } />
 			</Routes>
-			<Footer />
 		</>
 	)
 }
