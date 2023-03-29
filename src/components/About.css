@@ -1,0 +1,6 @@
+.solana {
+    font-size: 100px;
+    background: linear-gradient(-45deg, aqua, darkblue);
+    border-radius: 7px;
+    transition: 0.5s;
+}

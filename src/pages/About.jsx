@@ -1,4 +1,5 @@
 import { Box, Center, Tab, TabIndicator, TabList, TabPanel, TabPanels, Tabs, useColorMode } from "@chakra-ui/react"
+import AboutTab from "../components/About"
 import React from "react"
 import "./About.css"
 
@@ -19,7 +20,7 @@ const About = () => {
 					</TabList>
 					<TabIndicator h='2px' bg={ isDark ? 'aqua' : 'blue.500'} borderRadius={1}/>
 					<TabPanels>
-						<TabPanel>About Myself</TabPanel>
+						<TabPanel><AboutTab /></TabPanel>
 						<TabPanel>Education Details</TabPanel>
 						<TabPanel>My Skills</TabPanel>
 						<TabPanel>My Certificates</TabPanel>
