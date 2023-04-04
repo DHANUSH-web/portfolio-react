@@ -15,7 +15,7 @@ const Home = () => {
 	return (
 		<>
 			<Box className="profile" align="center" w="full" p={{ base: 10, md: 20, lg: 20 }}>
-				<ProfileCard />
+				<ProfileCard profileName={profile.name} profilePhoto={profile.profilePhoto} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} />
 				<Box className="description" mt={100}>
 					<VStack align="flex-start" className="desc-container">
 						<Text textAlign="left" className="desc-heading">Hi,</Text>

@@ -27,7 +27,7 @@ const NavBar = () => {
 	const logoFg = isDark ? "aqua" : "#0080ff"
 
 	return (
-		<HStack className="navbar" width="full" p={5} spacing={5} bg="blackAlpha.200" backdropFilter="blur(7px)" zIndex={1}>
+		<HStack className="navbar" width="full" p={5} spacing={5} bg={ isDark ? "#1a202c55": "#ffffff55"} backdropFilter="blur(15px)" zIndex={1}>
 			<Link to="/" className="brand"><Text color={logoFg}>Portfolio</Text></Link>
 			<HStack w="full" justify="flex-end">
 				<HStack spacing={5} justify="flex-end" w="full" display={{ base: "none", md: "flex", lg: "flex" }}>
@@ -41,11 +41,11 @@ const NavBar = () => {
 				<Menu>
 					<MenuButton as={IconButton} variant="ghost" icon={<CgMenuLeftAlt size="25px"/>} display={{ base: "flex", md: "none", lg: "none" }} />
 					<MenuList>
-						<Link to="/"><MenuItem icon={<BiHomeAlt size="25px" />}>Home</MenuItem></Link>
-						<Link to="/about"><MenuItem icon={ <MdPerson size="25px" />}>About</MenuItem></Link>
-						<Link to="/projects"><MenuItem icon={ <BiGitCommit size="25px" />}>Projects</MenuItem></Link>
-						<Link to="/experience"><MenuItem icon={ <MdTimeline size="25px" />}>Experience</MenuItem></Link>
-						<Link to="/contact"><MenuItem icon={ <MdOutlineHandshake size="25px" />}>Contact</MenuItem></Link>
+						<Link to="/"><MenuItem icon={<BiHomeAlt size="25px" />} onClick={() => setActiveWindow('/')} color={homeFg}>Home</MenuItem></Link>
+						<Link to="/about"><MenuItem icon={ <MdPerson size="25px" />} onClick={() => setActiveWindow('/about')} color={aboutFg}>About</MenuItem></Link>
+						<Link to="/projects"><MenuItem icon={ <BiGitCommit size="25px" />} onClick={() => setActiveWindow('/projects')} color={projectsFg}>Projects</MenuItem></Link>
+						<Link to="/experience"><MenuItem icon={ <MdTimeline size="25px" />} onClick={() => setActiveWindow('/experience')} color={expFg}>Experience</MenuItem></Link>
+						<Link to="/contact"><MenuItem icon={ <MdOutlineHandshake size="25px" />} onClick={() => setActiveWindow('/contact')} color={contactFg}>Contact</MenuItem></Link>
 						<MenuItem icon={isDark ? <BiSun size="25px" /> : <BiMoon size="25px" /> } onClick={toggleColorMode}>Switch to { isDark ? "Light" : "Dark" }</MenuItem>
 					</MenuList>
 				</Menu>
