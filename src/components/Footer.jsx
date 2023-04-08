@@ -44,10 +44,10 @@ const Footer = () => {
                 <VStack align="center" divider={<StackDivider />}>
                     <Text className="head">Profiles</Text>
                     <VStack align="left" mt={2}>
-                        <Link href={profiles.hackerrank} target="_blank" id="footerLinks">LinkedIn</Link>
-                        <Link href={profiles.hackerrank} target="_blank" id="footerLinks" title="(5 star in C++, 4 star in Python)">Hackerrank</Link>
-                        <Link href={profiles.github} target="_blank" id="footerLinks">GitHub</Link>
-                        <Link href={profiles.bitbucket} target="_blank" id="footerLinks">BitBucket</Link>
+                        <Link href={profiles.linkedin.url} target="_blank" id="footerLinks">LinkedIn</Link>
+                        <Link href={profiles.hackerrank.url} target="_blank" id="footerLinks" title="(5 star in C++, 4 star in Python)">Hackerrank</Link>
+                        <Link href={profiles.github.url} target="_blank" id="footerLinks">GitHub</Link>
+                        <Link href={profiles.bitbucket.url} target="_blank" id="footerLinks">BitBucket</Link>
                         {/* {
                             Object.keys(profiles).map((profile) => (
                                 <Tooltip fontFamily="googleSansBold" label={profiles[profile].title} placement="end">

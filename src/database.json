@@ -23,10 +23,10 @@
             "profilePhoto1": "https://bit.ly/kent-c-dodds",
             "profilePhoto": "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg",
             "profiles": {
-                "linkedin": "https://www.linkedin.com/dhanushhv75",
-                "github": "https://www.github.com/DHANUSH-web/",
-                "hackerrank": "https://www.hackerrank.com/dhanushhv75",
-                "bitbucket": "https://www.bitbucket.org/dhanushhv"
+                "linkedin": { "url": "https://www.linkedin.com/dhanushhv75", "icon": "" },
+                "github": { "url": "https://www.github.com/DHANUSH-web/", "icon": "" },
+                "hackerrank": { "url": "https://www.hackerrank.com/dhanushhv75", "icon": "" },
+                "bitbucket": { "url": "https://www.bitbucket.org/dhanushhv", "icon": "" }
             },
             "achievements": [
                 {
