@@ -1,9 +1,8 @@
 import { HStack, Text, Menu, MenuButton, MenuList, MenuItem, IconButton, useColorMode } from "@chakra-ui/react"
 import { MdOutlineHandshake, MdPerson, MdTimeline } from "react-icons/md"
-import { BiGitCommit, BiSun, BiMoon } from "react-icons/bi"
-import { CgMenuLeftAlt } from "react-icons/cg"
-import { BiHomeAlt } from "react-icons/bi"
+import { BiGitCommit, BiSun, BiMoon, BiHomeAlt } from "react-icons/bi"
 import { Link, useLocation } from "react-router-dom"
+import { CgMenuLeftAlt } from "react-icons/cg"
 import { motion } from "framer-motion"
 import React from "react"
 import "./NavBar.css"
@@ -49,6 +48,28 @@ const NavBar = () => {
 						<MenuItem icon={isDark ? <BiSun size="25px" /> : <BiMoon size="25px" /> } onClick={toggleColorMode}>Switch to { isDark ? "Light" : "Dark" }</MenuItem>
 					</MenuList>
 				</Menu>
+				{/* <IconButton icon={<CgMenuLeftAlt size="20px" />} onClick={onOpen} />
+				<Drawer isOpen={isOpen} placement="right" initialFocusRef={initialFocusRef} onClose={onClose}>
+					<DrawerOverlay bg="blackAlpha.500" backdropFilter="blur(10px)" />
+					<DrawerContent>
+						<DrawerCloseButton />
+						<DrawerHeader fontFamily="googleSansBold" color={ isDark ? "aqua" : "#0050ff"}>
+							Quick Links
+						</DrawerHeader>
+						<DrawerBody>
+							<Stack fontFamily='googleSans'>
+								<Link to="/" onClick={() => setActiveWindow('/')} color={homeFg}>Home</Link>
+								<Link to="/about" onClick={() => setActiveWindow('/about')} color={aboutFg}>About</Link>
+								<Link to="/projects" onClick={() => setActiveWindow('/projects')} color={projectsFg}>Projects</Link>
+								<Link to="/experience" onClick={() => setActiveWindow('/experience')} color={expFg}>Experience</Link>
+								<Link to="/contact" onClick={() => setActiveWindow('/contact')} color={contactFg}>Contact</Link>
+							</Stack>
+						</DrawerBody>
+						<DrawerFooter>
+							<IconButton icon={ isDark ? <BiSun /> : <BiMoon /> } onClick={toggleColorMode} />
+						</DrawerFooter>
+					</DrawerContent>
+				</Drawer> */}
 			</HStack>
 		</HStack>
 	)
