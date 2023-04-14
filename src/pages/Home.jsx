@@ -1,8 +1,8 @@
 import { Box, VStack, Button, Text, Link } from "@chakra-ui/react"
-import { MdArrowForward } from "react-icons/md"
 import Achievements from "../components/Achievements"
 import ProfileCard from "../components/ProfileCard"
 import { Link as Hyper } from "react-router-dom"
+import { MdArrowForward } from "react-icons/md"
 import Footer from "../components/Footer"
 import data from "../database.json"
 import React from "react"
@@ -15,7 +15,7 @@ const Home = () => {
 	return (
 		<>
 			<Box className="profile" align="center" w="full" p={{ base: 10, md: 20, lg: 20 }}>
-				<ProfileCard profileName={profile.name} profilePhoto={profile.profilePhoto} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} />
+				<ProfileCard profileName={profile.name} profilePhoto={profile.profilePhoto} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} width={200} height={300} />
 				<Box className="description" mt={100}>
 					<VStack align="flex-start" className="desc-container">
 						<Text textAlign="left" className="desc-heading">Hi,</Text>

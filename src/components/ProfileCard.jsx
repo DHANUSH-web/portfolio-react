@@ -21,7 +21,7 @@ const ProfileCard = ({ ...props }) => {
 						</Stack>
 					</VStack>
 					<Box>
-						<Image className="profileImage" cursor="pointer" onClick={() => window.open(props.profileURL)} as={motion.img} initial={{ scale: 0.7 }} animate={{ scale: 1 }} src={props.profilePhoto} borderRadius="50%" w={300} mt={{ base: 20, lg: 0 }} />
+						<Image className="profileImage" w={props.width} h={props.height} cursor="pointer" onClick={() => window.open(props.profileURL)} as={motion.img} initial={{ scale: 0.7 }} animate={{ scale: 1 }} src={props.profilePhoto} borderRadius="50%" w={300} mt={{ base: 20, lg: 0 }} />
 					</Box>
 				</HStack>
 			</Box>
