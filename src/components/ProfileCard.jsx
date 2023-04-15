@@ -20,8 +20,8 @@ const ProfileCard = ({ ...props }) => {
 							<Button className="seeMoreBtn" hidden={props.hideSeeMore} to="/about" as={Hyper} rightIcon={<MdArrowForward />}>See More</Button>
 						</Stack>
 					</VStack>
-					<Box>
-						<Image className="profileImage" w={props.width} h={props.height} cursor="pointer" onClick={() => window.open(props.profileURL)} as={motion.img} initial={{ scale: 0.7 }} animate={{ scale: 1 }} src={props.profilePhoto} borderRadius="50%" w={300} mt={{ base: 20, lg: 0 }} />
+					<Box style={props.layoutStyle}>
+						<Image className="profileImage" style={props.imageStyle} cursor="pointer" onClick={() => window.open(props.profileURL)} as={motion.img} initial={{ scale: 0.7 }} animate={{ scale: 1 }} src={props.profilePhoto} borderRadius="50%" w={300} mt={{ base: 20, lg: 0 }} />
 					</Box>
 				</HStack>
 			</Box>

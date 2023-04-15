@@ -13,10 +13,10 @@ const About = () => {
 			<Center>
 				<Tabs onChange={(index) => setActiveTab(index)} w='full' variant="unstyled" position="relative" align="center">
 					<TabList className="tabList" bg="blackAlpha.200">
-						<Tab color={ activeTab === 0 ? isDark ? 'aqua' : '#0050ff' : 'default' }>About</Tab>
-						<Tab color={ activeTab === 1 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Education</Tab>
-						<Tab color={ activeTab === 2 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Skills</Tab>
-						<Tab color={ activeTab === 3 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Certificates</Tab>
+						<Tab color={ activeTab === 0 ? isDark ? 'aqua' : '#0050ff' : 'default' }>🧑🏼 About</Tab>
+						<Tab color={ activeTab === 1 ? isDark ? 'aqua' : '#0050ff' : 'default' }>🏫 Education</Tab>
+						<Tab color={ activeTab === 2 ? isDark ? 'aqua' : '#0050ff' : 'default' }>🤹🏼 Skills</Tab>
+						<Tab color={ activeTab === 3 ? isDark ? 'aqua' : '#0050ff' : 'default' }>📃 Certificates</Tab>
 					</TabList>
 					<TabIndicator h='2px' bg={ isDark ? 'aqua' : 'blue.500'} borderRadius={1}/>
 					<TabPanels>
