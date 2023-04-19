@@ -1,4 +1,5 @@
 import { Box, Center, Tab, TabIndicator, TabList, TabPanel, TabPanels, Tabs, useColorMode } from "@chakra-ui/react"
+import Certificates from "../components/Certificates"
 import AboutTab from "../components/About"
 import React from "react"
 import "./About.css"
@@ -22,8 +23,8 @@ const About = () => {
 					<TabPanels>
 						<TabPanel><AboutTab /></TabPanel>
 						<TabPanel>Education Details</TabPanel>
-						<TabPanel>My Skills</TabPanel>
-						<TabPanel>My Certificates</TabPanel>
+						<TabPanel>Technical Skills</TabPanel>
+						<TabPanel><Certificates /></TabPanel>
 					</TabPanels>
 				</Tabs>
 			</Center>

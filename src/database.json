@@ -9,14 +9,62 @@
             "jobRole": "Automation Engineer",
             "company": "TATA Consultancy Services Ltd.",
             "companyURL": "https://www.tcs.com/",
-            "skills": [
-                { "title": "Python", "logo": "" },
-                { "title": "C Language", "logo": "" },
-                { "title": "C++", "logo": "" },
-                { "title": "Java", "logo": "" },
-                { "title": "JavaScript", "logo": "" },
-                { "title": "", "logo": "" }
-			],
+            "certificates": [
+                {
+                    "title": "Python",
+                    "logo": "",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/1jyvpzjoyVMtYjqZoZoQJJijpPNPc0X7z/preview"
+                },
+                {
+                    "title": "C Language",
+                    "logo": "",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/1Nm7r0ZzSCu0HGVbkpGHtD0qY47xjbLQ4/preview"
+                },
+                {
+                    "title": "C++",
+                    "logo": "",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/1TQByaofAeqMPgiwxPyAhGc1XbsE9dFI3/preview"
+                },
+                {
+                    "title": "C#",
+                    "logo": "",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/19u5SPjkLUtwSCLYgihtxbW3i8foeGTQv/preview"
+                },
+                {
+                    "title": "Java",
+                    "logo": "",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/17rbG-z2gGD4kTsySPYegu3fWkNFO3yiy/preview"
+                },
+                {
+                    "title": "JavaScript",
+                    "logo": "",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/1Wd3nX6rO84W_XlIWMEgPvoZ7TjjOmTKb/preview"
+                },
+                {
+                    "title": "HTML",
+                    "logo": "",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/1R6XhPBy8j7rTDAv5O6jGrCa6FsZmRunU/preview"
+                },
+                {
+                    "title": "Web Development",
+                    "logo": "",
+                    "provider": "Mimo",
+                    "url": "https://drive.google.com/file/d/1v4wgd1-lfVbpmk8zBV6MZ1stY79WHWya/preview"
+                },
+                {
+                    "title": "Virtusa Neural Hack",
+                    "logo": "",
+                    "provider": "Virtusa Pvt Ltd",
+                    "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/preview"
+                }
+            ],
             "project": "",
             "client": "",
             "resume": "https://docs.google.com/document/d/1EtLxrw3epo-s_R8Ced5dryq-yCKwAdh7UsfDygkVj2Y/edit?usp=sharing",
@@ -24,40 +72,52 @@
             "profilePhoto1": "https://bit.ly/kent-c-dodds",
             "profilePhoto": "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg",
             "profiles": {
-                "linkedin": { "url": "https://www.linkedin.com/dhanushhv75", "icon": "" },
-                "github": { "url": "https://www.github.com/DHANUSH-web/", "icon": "" },
-                "hackerrank": { "url": "https://www.hackerrank.com/dhanushhv75", "icon": "" },
-                "bitbucket": { "url": "https://www.bitbucket.org/dhanushhv", "icon": "" }
+                "linkedin": {
+                    "url": "https://www.linkedin.com/dhanushhv75",
+                    "icon": ""
+                },
+                "github": {
+                    "url": "https://www.github.com/DHANUSH-web/",
+                    "icon": ""
+                },
+                "hackerrank": {
+                    "url": "https://www.hackerrank.com/dhanushhv75",
+                    "icon": ""
+                },
+                "bitbucket": {
+                    "url": "https://www.bitbucket.org/dhanushhv",
+                    "icon": ""
+                }
             },
             "achievements": [
                 {
                     "title": "Virtusa Neural Hack 2021 - Season 5",
                     "desc": "Participated in Virtusa Coding competetion and get certified by Virtusa Graduate Talent Program",
                     "icon": "https://yt3.ggpht.com/a/AGF-l79hOfb6tMLLZw0tOSMb67KNzzy81AEpC4iZuw=s900-mo-c-c0xffffffff-rj-k-no",
-					"url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/view?usp=sharing"
+                    "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/view?usp=sharing"
                 },
                 {
                     "title": "Hackerrank - Python",
                     "desc": "Completed coding challenges in Hackerrank and got 4 star in Python",
-					"icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
                     "url": "https://www.hackerrank.com/dhanushhv75"
                 },
                 {
                     "title": "Hackerrank - C++",
                     "desc": "Completed coding challenges in Hackerrank and got 5 star in C++",
-					"icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
                     "url": "https://www.hackerrank.com/dhanushhv75"
                 },
                 {
                     "title": "Sololearn",
                     "desc": "Successfully completed the courses on top trending programming languages and built apps and web sites as projects",
-					"icon": "https://avatars0.githubusercontent.com/u/47358700?s=400&u=c5e03d643c68e09f24712810a58669cfb4ec6c7f&v=4",
+                    "icon": "https://avatars0.githubusercontent.com/u/47358700?s=400&u=c5e03d643c68e09f24712810a58669cfb4ec6c7f&v=4",
                     "url": "https://drive.google.com/drive/folders/1-2ODSYBNUobZYKqOuJbkZoNmF5be5VrC?usp=sharing"
                 },
                 {
                     "title": "ReactJS - My Portfolio Website",
                     "desc": "Completed the development of this portfolio using React as proof of React skills I have",
-					"icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
+                    "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
                     "url": "https://dhanushhv.vercel.app"
                 }
             ]
