@@ -1,4 +1,5 @@
 import { Box, VStack, Button, Text, Link } from "@chakra-ui/react"
+import profileImage from "../resources/images/profileImage.png"
 import Achievements from "../components/Achievements"
 import ProfileCard from "../components/ProfileCard"
 import { Link as Hyper } from "react-router-dom"
@@ -15,7 +16,7 @@ const Home = () => {
 	return (
 		<>
 			<Box className="profile" align="center" w="full" p={{ base: 10, md: 20, lg: 20 }}>
-				<ProfileCard profileName={profile.name} profilePhoto={profile.profilePhoto} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} width={200} height={300} />
+				<ProfileCard profileName={profile.name} profilePhoto={profileImage} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} width={200} height={300} />
 				<Box className="description" mt={100}>
 					<VStack align="flex-start" className="desc-container">
 						<Text textAlign="left" className="desc-heading">Hi,</Text>
