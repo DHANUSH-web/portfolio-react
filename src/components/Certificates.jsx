@@ -1,4 +1,4 @@
-import { Avatar, Badge, Button, Card, CardBody, CardFooter, CardHeader, Center, Stack, Wrap, useColorMode } from '@chakra-ui/react'
+import { Avatar, Badge, Text, Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Stack, Wrap, useColorMode, useDisclosure } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import data from "../database.json"
 import './Certificates.css'
@@ -7,24 +7,27 @@ import React from 'react'
 const profile = data.profiles[data.profileHolder]
 const certificates = profile.certificates
 
-export const SkillCard = ({ title, content, className, width, height, onClick }) => {
-    const { colorMode, toggleColorMode } = useColorMode()
+export const SkillCard = ({ title, content, className, width, height, onClick, targetClick }) => {
+    const { colorMode } = useColorMode()
     const isDark = colorMode === 'dark'
-    const hoverBackgroundColor = isDark ? "aqua" : "teal"
+    const hoverBackgroundColor = isDark ? "aqua" : "black"
 
     return (
-        <Card as={motion.div} className={className} w={width} h={height} border="solid 2px transparent" whileHover={{ borderColor: hoverBackgroundColor }}>
-            <CardHeader>
-                <Stack direction="row" align="center">
+        <Card as={motion.div} className={className} w={width} h={height} border={`solid 2px ${isDark ? "transparent" : "#00000022" }`} whileHover={{ borderColor: hoverBackgroundColor }} align="center" direction={{ base: "row", md: "column", lg: "column" }}>
+            <CardHeader w='full'>
+                <Stack direction={{ base: "column", md: "row", lg: "row" }} align="center">
                     <Avatar />
-                    <h1>{title}</h1>
+                    <Text display={{ base: "none", md: "block", lg: "block" }} textAlign="left">{title}</Text>
                 </Stack>
             </CardHeader>
-            <CardBody>
+            <CardBody display={{ base: "none", md: "block", lg: "block" }}>
                 <Badge colorScheme='teal'>{content}</Badge>
             </CardBody>
             <CardFooter justify="center">
-                <Button className='view-button' colorScheme='linkedin' size="sm" onClick={onClick}>
+                <Button className='view-button' fontFamily="googleSansBold" colorScheme='linkedin' size="sm" onClick={onClick} display={{ base: "none", md: "none", lg: "block" }}>
+                    View Certificate
+                </Button>
+                <Button className='view-button' fontFamily="googleSansBold" colorScheme="linkedin" size="sm" onClick={targetClick} display={{ base: "block", md: "block", lg: "none" }}>
                     View Certificate
                 </Button>
             </CardFooter>
@@ -32,10 +35,10 @@ export const SkillCard = ({ title, content, className, width, height, onClick })
     )
 }
 
-export const CertificatePreview = ({ src, width, height }) => {
-    return <div>
+export const CertificatePreview = ({ src, width, height, display }) => {
+    return <Box display={display}>
         <iframe className='cert-prev' src={src} width={width} height={height}></iframe>
-    </div>
+    </Box>
 }
 
 const Certificates = () => {
@@ -43,11 +46,11 @@ const Certificates = () => {
 
     return (
         <Center>
-            <Stack direction={{ base: "column", md: "column", lg: "row" }} align="center">
-                <Wrap p={15} justify="center">
-                    {certificates.map((item) => <SkillCard className='skill-card' title={item.title} content={item.provider} onClick={() => showCertificate(item.url)} width={200} />)}
+            <Stack direction="row" align="center">
+                <Wrap p={15} justify="center" style={{ overflow: "auto", width: 800, height: 600}}>
+                    {certificates.map((item) => <SkillCard className='skill-card' title={item.title} content={item.provider} onClick={() => showCertificate(item.url)} targetClick={() => window.open(item.url)} width={{ base: 300, md: 200, lg: 200 }} />)}
                 </Wrap>
-                <CertificatePreview src={certificate} width={500} height={600} />
+                <CertificatePreview src={certificate} width={500} height={600} display={{ base: "none", md: "none", lg: "block" }} />
             </Stack>
         </Center>
     )

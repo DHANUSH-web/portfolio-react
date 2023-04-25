@@ -2,7 +2,6 @@ import { Accordion, Stack, useColorMode, Link } from "@chakra-ui/react"
 import profilePhoto from "../resources/images/profileImage.png"
 import ProfileCard from "../components/ProfileCard"
 import AccordItem from "../components/AccordItem"
-import { FcSmartphoneTablet } from "react-icons/fc"
 import data from "../database.json"
 import React from "react"
 import './About.css'

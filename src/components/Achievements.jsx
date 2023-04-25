@@ -6,8 +6,7 @@ import React from "react"
 
 
 const Achievements = () => {
-	const profileHolder = data.profileHolder
-	const profile = data.profiles[profileHolder]
+	const profile = data.profiles[data.profileHolder]
 	const cards = profile.achievements
 
 	return (
