@@ -1,5 +1,12 @@
 {
     "profileHolder": "dhanushhv",
+    "images": {
+        "hello": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.gif",
+        "rocket": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif",
+        "load_failed": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f644/512.gif",
+        "not_found": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f62a/512.gif",
+        "lgtm": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif"
+    },
     "profiles": {
         "dhanushhv": {
             "name": "DHANUSH H V",
@@ -12,55 +19,73 @@
             "certificates": [
                 {
                     "title": "Python",
-                    "logo": "",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/1jyvpzjoyVMtYjqZoZoQJJijpPNPc0X7z/preview"
                 },
                 {
                     "title": "C Language",
-                    "logo": "",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/1Nm7r0ZzSCu0HGVbkpGHtD0qY47xjbLQ4/preview"
                 },
                 {
                     "title": "C++",
-                    "logo": "",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/1TQByaofAeqMPgiwxPyAhGc1XbsE9dFI3/preview"
                 },
                 {
                     "title": "C#",
-                    "logo": "",
+                    "logo": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/19u5SPjkLUtwSCLYgihtxbW3i8foeGTQv/preview"
                 },
                 {
                     "title": "Java",
-                    "logo": "",
+                    "logo": "https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/17rbG-z2gGD4kTsySPYegu3fWkNFO3yiy/preview"
                 },
                 {
                     "title": "JavaScript",
-                    "logo": "",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/1Wd3nX6rO84W_XlIWMEgPvoZ7TjjOmTKb/preview"
                 },
                 {
                     "title": "HTML",
-                    "logo": "",
+                    "logo": "https://img.icons8.com/color/512/html-5--v1.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/1R6XhPBy8j7rTDAv5O6jGrCa6FsZmRunU/preview"
                 },
                 {
+                    "title": "CSS",
+                    "logo": "https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png",
+                    "provider": "SoloLearn",
+                    "url": "https://drive.google.com/file/d/1k_EgFssf7Bxm815TRKbpuR2voEAmFhjX/preview"
+                },
+                {
                     "title": "Web Development",
-                    "logo": "",
+                    "logo": "https://www.edsys.in/wp-content/uploads/mimo-1.png",
                     "provider": "Mimo",
                     "url": "https://drive.google.com/file/d/1v4wgd1-lfVbpmk8zBV6MZ1stY79WHWya/preview"
                 },
                 {
+                    "title": "Python: A Concise Introduction",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+                    "provider": "Coursera",
+                    "url": "https://drive.google.com/file/d/1poX5DH2LLGuDh94HkHjdKjJ9hoWFZrgq/preview"
+                },
+                {
+                    "title": "Python for Data Science",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+                    "provider": "Coursera",
+                    "url": "https://drive.google.com/file/d/1hCaxjKn6S9hSwbGZjK3AfGogiOplq6m-/preview"
+                },
+                {
                     "title": "Virtusa Neural Hack",
-                    "logo": "",
+                    "logo": "https://yt3.ggpht.com/a/AGF-l79hOfb6tMLLZw0tOSMb67KNzzy81AEpC4iZuw=s900-mo-c-c0xffffffff-rj-k-no",
                     "provider": "Virtusa Pvt Ltd",
                     "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/preview"
                 }
