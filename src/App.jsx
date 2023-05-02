@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom"
 import PageNotFound from "./pages/PageNotFound"
+import QuickBar from "./components/QuickBar"
 import Experience from "./pages/Experience"
 import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import About from "./pages/About"
@@ -22,6 +24,8 @@ const App = () => {
 				<Route path="/contact" element={ <Contact /> } />
 				<Route path="*" element={ <PageNotFound /> } />
 			</Routes>
+			<QuickBar />
+			<Footer />
 		</>
 	)
 }

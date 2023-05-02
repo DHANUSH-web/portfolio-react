@@ -38,14 +38,14 @@ const NavBar = () => {
 					<IconButton as={motion.button} whileTap={{ scale: 1.5 }} icon={ isDark ? <BiSun size="20px" /> : <BiMoon size="20px" /> } onClick={toggleColorMode} colorScheme="blue"/>
 				</HStack>
 				<Menu>
-					<MenuButton as={IconButton} variant="ghost" icon={<CgMenuLeftAlt size="25px"/>} display={{ base: "flex", md: "none", lg: "none" }} />
-					<MenuList>
-						<Link to="/"><MenuItem icon={<BiHomeAlt size="25px" />} onClick={() => setActiveWindow('/')} color={homeFg}>Home</MenuItem></Link>
-						<Link to="/about"><MenuItem icon={ <MdPerson size="25px" />} onClick={() => setActiveWindow('/about')} color={aboutFg}>About</MenuItem></Link>
-						<Link to="/projects"><MenuItem icon={ <BiGitCommit size="25px" />} onClick={() => setActiveWindow('/projects')} color={projectsFg}>Projects</MenuItem></Link>
-						<Link to="/experience"><MenuItem icon={ <MdTimeline size="25px" />} onClick={() => setActiveWindow('/experience')} color={expFg}>Experience</MenuItem></Link>
-						<Link to="/contact"><MenuItem icon={ <MdOutlineHandshake size="25px" />} onClick={() => setActiveWindow('/contact')} color={contactFg}>Contact</MenuItem></Link>
-						<MenuItem icon={isDark ? <BiSun size="25px" /> : <BiMoon size="25px" /> } onClick={toggleColorMode}>Switch to { isDark ? "Light" : "Dark" }</MenuItem>
+					<MenuButton as={IconButton} variant="ghost" icon={<CgMenuLeftAlt size="25px"/>} display={{ base: "flex", md: "none", lg: "none" }} _expanded={{ color: isDark ? 'aqua' : 'blue.400' }} />
+					<MenuList overflow='hidden' p={2}>
+						<Link to="/"><MenuItem className="menu-item" icon={<BiHomeAlt size="25px" />} onClick={() => setActiveWindow('/')} color={homeFg}>Home</MenuItem></Link>
+						<Link to="/about"><MenuItem className="menu-item" icon={ <MdPerson size="25px" />} onClick={() => setActiveWindow('/about')} color={aboutFg}>About</MenuItem></Link>
+						<Link to="/projects"><MenuItem className="menu-item" icon={ <BiGitCommit size="25px" />} onClick={() => setActiveWindow('/projects')} color={projectsFg}>Projects</MenuItem></Link>
+						<Link to="/experience"><MenuItem className="menu-item" icon={ <MdTimeline size="25px" />} onClick={() => setActiveWindow('/experience')} color={expFg}>Experience</MenuItem></Link>
+						<Link to="/contact"><MenuItem className="menu-item" icon={ <MdOutlineHandshake size="25px" />} onClick={() => setActiveWindow('/contact')} color={contactFg}>Contact</MenuItem></Link>
+						<MenuItem className="menu-item" icon={isDark ? <BiSun size="25px" /> : <BiMoon size="25px" /> } onClick={toggleColorMode}>Switch to { isDark ? "Light" : "Dark" }</MenuItem>
 					</MenuList>
 				</Menu>
 				{/* <IconButton icon={<CgMenuLeftAlt size="20px" />} onClick={onOpen} />

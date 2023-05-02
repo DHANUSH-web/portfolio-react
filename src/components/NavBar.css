@@ -19,3 +19,7 @@
 #navLink:hover {
 	color: #0050ff;
 }
+
+.menu-item {
+	border-radius: 7px;
+}

@@ -24,7 +24,7 @@ const Footer = () => {
     const profiles = data.profiles[profileHolder].profiles
 
     return (
-        <Center className="footer" bg="#111c2f">
+        <Center className="footer" bg="#111c2f" pb={{ base: 100, md: 10, lg: 10 }}>
             <HStack justify="center" align="flex-start" spacing={{ base: 100, lg: 350 }} w="full">
                 <VStack divider={<StackDivider />}>
                     <Text className="head">Quick Links</Text>

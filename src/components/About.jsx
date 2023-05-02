@@ -22,7 +22,7 @@ const AboutTab = () => {
 
     return (
         <Stack direction="column">
-            <ProfileCard profileName={profile.name} profilePhoto={profilePhoto} imageStyle={{ border: `solid 10px ${isDark ? "aqua" : "#0080ff"}`, borderRadius: "50%", padding: 7 }} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} profileURL={profile.githubProfile} hideResume={true} hideSeeMore={true} />
+            <ProfileCard profileName={profile.name} profilePhoto={profilePhoto} imageStyle={{ border: `solid 5px ${isDark ? "aqua" : "#0080ff"}`, borderRadius: "50%", padding: 7 }} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} profileURL={profile.githubProfile} hideResume={true} hideSeeMore={true} />
             <Accordion allowToggle defaultIndex={[0]}>
                 <AccordItem title={<span style={{ display: "flex", alignItems: 'center' }}><img src={data.images.lgtm} width={30} style={{ marginRight: 15 }} /> Intro to myself</span>} titleAlign="left" content={aboutMe} contentAlign="justify" padding="5px 25px" />
                 <AccordItem title={<span style={{ display: "flex", alignItems: 'center' }}><img src={data.images.rocket} width={30} style={{ marginRight: 15 }} /> Contact Info</span>} titleAlign="left" content={contactMe} contentAlign="justify" padding="5px 25px" />

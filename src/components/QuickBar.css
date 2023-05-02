@@ -1,0 +1,21 @@
+.container {
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+}
+
+.quickbar {
+    backdrop-filter: blur(7px);
+    background-color: #ffffff11;
+    padding: 15px;
+    margin: 15px;
+    border: solid 2px transparent;
+    box-shadow: 0 0 15px 5px #00000022;
+    border-radius: 15px;
+}
+
+.quick-icons {
+    background-color: #0f0f0f;
+    border-radius: 7px;
+    color: aqua;
+}
