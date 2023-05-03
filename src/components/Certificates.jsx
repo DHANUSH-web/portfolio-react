@@ -13,7 +13,7 @@ export const SkillCard = ({ title, content, image, className, width, height, onC
     const hoverBackgroundColor = isDark ? "aqua" : "black"
 
     return (
-        <Card as={motion.div} className={className} w={width} h={height} border={`solid 2px ${isDark ? "transparent" : "#00000022" }`} whileHover={{ borderColor: hoverBackgroundColor }} align="center" direction={{ base: "row", md: "column", lg: "column" }}>
+        <Card as={motion.div} className={className} w={width} h={height} border={`solid 2px ${isDark ? "transparent" : "#00000022" }`} borderRadius={10} whileHover={{ borderColor: hoverBackgroundColor }} align="center" direction={{ base: "row", md: "column", lg: "column" }}>
             <CardHeader w='full'>
                 <Stack direction={{ base: "column", md: "row", lg: "row" }} align="center">
                     <Image src={(image === undefined || image === '') ? data.images.not_found : image } w="40px" borderRadius={7}/>

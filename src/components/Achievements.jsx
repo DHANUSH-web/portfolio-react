@@ -1,5 +1,4 @@
 import { Button, Wrap, HStack, VStack, Card, CardHeader, CardBody, CardFooter, Text, Image } from "@chakra-ui/react"
-import { MdArrowForward } from "react-icons/md"
 import data from "../database.json"
 import "./Achievements.css"
 import React from "react"
@@ -26,7 +25,7 @@ const Achievements = () => {
 								<Text textAlign="initial" fontFamily="googleSans">{card.desc}</Text>
 							</CardBody>
 							<CardFooter>
-								<Button onClick={() => window.open(card.url)} fontFamily="googleSans" fontWeight={350} colorScheme="messenger" w={200} rightIcon={<MdArrowForward />}>View</Button>
+								<Button className="view-btn" onClick={() => window.open(card.url)} w='200px' borderRadius={20} colorScheme="blue">View</Button>
 							</CardFooter>
 						</Card>
 						)
@@ -40,7 +39,7 @@ const Achievements = () => {
 								<Image src={card.icon} h={20} borderRadius={7} />
 								<VStack w="full">
 									<Text textAlign="initial" fontSize={15} fontFamily="googleSansBold">{card.title}</Text>
-									<Button onClick={() => window.open(card.url)} fontFamily="googleSans" colorScheme="messenger" w="full" rightIcon={<MdArrowForward />}>View</Button>
+									<Button onClick={() => window.open(card.url)} fontFamily="googleSans" fontWeight={350} colorScheme="blue" w="full">View</Button>
 								</VStack>
 							</HStack>
 						)

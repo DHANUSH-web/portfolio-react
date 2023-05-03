@@ -3,8 +3,7 @@ import profileImage from "../resources/images/profileImage.png"
 import Achievements from "../components/Achievements"
 import ProfileCard from "../components/ProfileCard"
 import { Link as Hyper } from "react-router-dom"
-import { MdArrowForward } from "react-icons/md"
-import Footer from "../components/Footer"
+import { MdArrowForwardIos } from "react-icons/md"
 import data from "../database.json"
 import React from "react"
 import "./Home.css"
@@ -24,7 +23,7 @@ const Home = () => {
 					</Stack>
 					<Text align="justify">Thank you for your time and patience, and it's a pleasure to have you here with me. My name is <b>{profile.name}</b>, and I work as a <b>{profile.jobRole}</b> at <Link className="hyper-link"><b>{profile.company}</b></Link> Although I am a fresher, I have almost six months of experience as an Automation Developer. As a programmer, my passion lies in coding and building apps and websites from scratch. Over the past three years, I have gained personal experience in app and website development and have taught myself multiple programming languages. This has allowed me to develop the skills necessary to solve real-time programming challenges.<br /><br />As a result of my dedication, even the website you're currently viewing was developed by me using ReactJS. I am always looking to improve my skills and learn new things, and I am excited to continue my journey in the world of web development.</Text>
 					<Hyper to="/about">
-						<Button colorScheme="telegram" rightIcon={<MdArrowForward />}>Know More</Button>
+						<Button colorScheme='green' borderRadius={20} fontFamily="googleSansBold" fontSize={13} rightIcon={<MdArrowForwardIos />}>Know More</Button>
 					</Hyper>
 				</Stack>
 			</Box>

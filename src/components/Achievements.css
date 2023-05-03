@@ -1,4 +1,5 @@
 .cards {
+	border-radius: 20px;
 	transition: 0.2s;
 	cursor: default;
 }
@@ -16,6 +17,16 @@
 
 .cards:hover, .shortCards:hover {
 	border-color: #2a7ecc;
-/*	margin-top: -15px;*/
-/*	box-shadow: -7px 15px 0 5px #0080ffdc;*/
+	/* margin-top: -15px; */
+	/* box-shadow: -7px 15px 0 5px #0080ffdc;
+	transform: scale(1.1);
+	z-index: 1; */
+}
+
+.view-btn:hover::before {
+	content-visibility: hidden;
+}
+
+.view-btn:hover {
+	transform: scale(1.1);
 }
