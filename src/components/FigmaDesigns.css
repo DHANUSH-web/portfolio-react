@@ -1,0 +1,9 @@
+.achieve-logo {
+	max-width: 400px;
+    min-width: 100px;
+}
+
+.profileName {
+    max-inline-size: 700px;
+    min-inline-size: 300px;
+}
