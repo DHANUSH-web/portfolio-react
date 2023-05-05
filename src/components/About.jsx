@@ -1,32 +1,55 @@
- import { Accordion, Stack, useColorMode, Link } from "@chakra-ui/react"
+import { FaGithub, FaHackerrank, FaLinkedin, FaBitbucket } from "react-icons/fa"
+import { IconButton, Image, Stack, Text, Tooltip, useColorMode } from "@chakra-ui/react"
 import profilePhoto from "../resources/images/profileImage.png"
+import MyselfMobile from '../resources/images/MyselfMobile.png'
 import ProfileCard from "../components/ProfileCard"
-import AccordItem from "../components/AccordItem"
+import Myself from "../resources/images/Myself.png"
 import data from "../database.json"
 import React from "react"
 import './About.css'
+import { motion } from "framer-motion"
 
 const AboutTab = () => {
     const profile = data.profiles[data.profileHolder]
     const { colorMode, toggleColorMode } = useColorMode()
     const isDark = colorMode === 'dark'
 
-    const aboutMe = <p>Hi everyone, my name is <b style={{ color: isDark ? "aqua" : "teal" }}>{profile.name}</b> and I'm from Bangalore. Presently, I'm working as an <b style={{ color: isDark ? "aqua" : "teal" }}>Automation Engineer</b> in a project of <Link className="hyper-link" href={profile.companyURL} style={{ color: isDark ? "aqua" : "teal" }}>{profile.company}</Link> I completed my degree in B.E in <b style={{ color: isDark ? "aqua" : "teal" }}>Electronics and Communication Engineering</b> from <Link className="hyper-link" href="https://www.atme.in" target="_blank" style={{ color: isDark ? "aqua" : "teal" }}>ATME College of Engineering, Mysuru</Link>. It's been 6 months working in TCS project as a TCS employee and I want to claim all the opportunities that suits to my skills I have. I'm passionate about programming in <b><u>Python and Web Development with ReactJS</u></b>, no offence but I'm also good in design thinking. I would love to claim all the opportunites that can help me to be a better programmer and to help me take a strong direction towards my destination. I always try to learn new technologies and develop some project with them ▶️ <Link className="hyper-link" href={profile.githubProfile} style={{ color: isDark ? "aqua" : "teal" }} target="_blank">GitHub</Link></p>
-
-    const contactMe = <hgroup>
-            <Stack direction="column">
-                <span>☎️ +91 9731131772</span>
-                <span>✉️ <Link href="mailto:dhanushhv75@gmail.com" className="hyper-link" style={{ color: isDark ? "aqua" : "teal" }}>dhanushhv75@gmail.com</Link></span>
-            </Stack>
-        </hgroup>
-
     return (
-        <Stack direction="column">
+        <Stack>
             <ProfileCard profileName={profile.name} textMode={true} profilePhoto={profilePhoto} imageStyle={{ border: `solid 5px ${isDark ? "aqua" : "#0080ff"}`, borderRadius: "50%", padding: 7 }} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} profileURL={profile.githubProfile} hideResume={true} hideSeeMore={true} />
-            <Accordion allowToggle defaultIndex={[0]}>
-                <AccordItem title={<span style={{ display: "flex", alignItems: 'center' }}><img src={data.images.lgtm} width={30} style={{ marginRight: 15 }} /> Intro to myself</span>} titleAlign="left" content={aboutMe} contentAlign="justify" padding="5px 25px" />
-                <AccordItem title={<span style={{ display: "flex", alignItems: 'center' }}><img src={data.images.rocket} width={30} style={{ marginRight: 15 }} /> Contact Info</span>} titleAlign="left" content={contactMe} contentAlign="justify" padding="5px 25px" />
-            </Accordion>
+            <Stack>
+                <Stack className='about-myself' spacing='auto' direction={{ md: 'row', base: 'column', lg: 'row' }} borderColor='blackAlpha.200'>
+                    <Image className="myself-img-right" src={Myself} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'none', md: 'block', lg: 'block' }} />
+                    <Image className="myself-img-right" src={MyselfMobile} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'block', md: 'none', lg: 'none' }}/>
+                    <Stack className="right-content" p={5} bg={isDark ? 'blackAlpha.500' : 'teal.50'} w='full'>
+                        <Text className="about-title" fontSize={30} textAlign="left" color={ isDark ? "teal.200" : "blue.500" }>About Me</Text>
+                        <br />
+                        <Text className="insider" textAlign='left'>
+                            Hello.. I'm <span className="name">Dhanush!!</span>
+                            <p>I'm 22 years old and graduated in 2022</p>
+                            <p className="jobrole">Profesionally <span className="highlight">{profile.jobRole}</span> and <span className="highlight">Tech Lead</span></p>
+                            <p>Presently working in <span className="highlight">{profile.company}</span> since <span className="highlight">7 months</span></p>
+                            <br />
+                            <p>Apart from Job, more passionated in <span className="highlight">Web Development</span></p>
+                        </Text>
+                        <br />
+                        <Stack direction='row' spacing={5} justify={{ base: 'center', md: 'left', lg: 'left' }}>
+                            <Tooltip label='GitHub' borderRadius={7}>
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaGithub />} />
+                            </Tooltip>
+                            <Tooltip label='Hackerrank' borderRadius={7}>
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaHackerrank />} />
+                            </Tooltip>
+                            <Tooltip label='LinkedIn' borderRadius={7}>
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaLinkedin />} />
+                            </Tooltip>
+                            <Tooltip label='BitBucket' borderRadius={7}>
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaBitbucket />} />
+                            </Tooltip>
+                        </Stack>
+                    </Stack>
+                </Stack>
+            </Stack>
         </Stack>
     )
 }
