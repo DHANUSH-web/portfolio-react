@@ -39,7 +39,7 @@ const NavBar = () => {
 				</HStack>
 				<Menu>
 					<MenuButton as={IconButton} variant="ghost" icon={<CgMenuLeftAlt size="25px"/>} display={{ base: "flex", md: "none", lg: "none" }} _expanded={{ color: isDark ? 'aqua' : 'blue.400' }} />
-					<MenuList overflow='hidden' p={2}>
+					<MenuList borderRadius={12} overflow='hidden' p={2}>
 						<Link to="/"><MenuItem className="menu-item" icon={<BiHomeAlt size="25px" />} onClick={() => setActiveWindow('/')} color={homeFg}>Home</MenuItem></Link>
 						<Link to="/about"><MenuItem className="menu-item" icon={ <MdPerson size="25px" />} onClick={() => setActiveWindow('/about')} color={aboutFg}>About</MenuItem></Link>
 						<Link to="/projects"><MenuItem className="menu-item" icon={ <BiGitCommit size="25px" />} onClick={() => setActiveWindow('/projects')} color={projectsFg}>Projects</MenuItem></Link>
