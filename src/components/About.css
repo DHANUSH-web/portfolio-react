@@ -40,3 +40,16 @@
     color: lightseagreen;
     font-weight: bold;
 }
+
+.skill_card {
+    height: 120px;
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.skill_card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 5px #2020202c;
+}

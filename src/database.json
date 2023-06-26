@@ -145,6 +145,27 @@
                     "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
                     "url": "https://dhanushhv.vercel.app"
                 }
+            ],
+            "skills": [
+                { "icon": "", "text": "Python3" },
+                { "icon": "", "text": "C Language" },
+                { "icon": "", "text": "C++ 19" },
+                { "icon": "", "text": "Java Core" },
+                { "icon": "", "text": "JavaScript" },
+                { "icon": "", "text": "TypeScript" },
+                { "icon": "", "text": "HTML 5" },
+                { "icon": "", "text": "CSS 3" },
+                { "icon": "", "text": "NodeJS" },
+                { "icon": "", "text": "ReactJS" },
+                { "icon": "", "text": "Git CLI" },
+                { "icon": "", "text": "GitHub" },
+                { "icon": "", "text": "BitBucket" },
+                { "icon": "", "text": "Google FireBase" },
+                { "icon": "", "text": "Atlassian Jira" },
+                { "icon": "", "text": "HTML" },
+                { "icon": "", "text": "HTML" },
+                { "icon": "", "text": "HTML" },
+                { "icon": "", "text": "React Native with Expo CLI" }
             ]
         }
     }
