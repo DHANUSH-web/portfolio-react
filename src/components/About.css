@@ -56,6 +56,9 @@
 
 .skill_logo {
     border-radius: 7px;
+    background-color: white;
+    max-width: 100px;
+    min-width: 20px;
 }
 
 .classifier {

@@ -1,4 +1,4 @@
-import { Badge, BreadcrumbLink, IconButton, Image, Stack, Text, Tooltip, Wrap, interactivity, useColorMode } from "@chakra-ui/react"
+import { Badge, IconButton, Image, Stack, Text, Tooltip, Wrap } from "@chakra-ui/react"
 import { FaGithub, FaHackerrank, FaLinkedin, FaBitbucket } from "react-icons/fa"
 import SkillDesktopView from "../resources/images/skill_desktop_view.svg"
 import SkillMobileView from "../resources/images/skills_mobile_view.png"
@@ -15,7 +15,7 @@ import './About.css'
 const profile = data.profiles[data.profileHolder]
 
 const AboutTab = () => {
-    const { colorMode, toggleColorMode } = useColorMode()
+    const { colorMode } = useColorMode()
     const isDark = colorMode === 'dark'
 
     return (
