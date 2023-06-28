@@ -147,25 +147,131 @@
                 }
             ],
             "skills": [
-                { "icon": "", "text": "Python3" },
-                { "icon": "", "text": "C Language" },
-                { "icon": "", "text": "C++ 19" },
-                { "icon": "", "text": "Java Core" },
-                { "icon": "", "text": "JavaScript" },
-                { "icon": "", "text": "TypeScript" },
-                { "icon": "", "text": "HTML 5" },
-                { "icon": "", "text": "CSS 3" },
-                { "icon": "", "text": "NodeJS" },
-                { "icon": "", "text": "ReactJS" },
-                { "icon": "", "text": "Git CLI" },
-                { "icon": "", "text": "GitHub" },
-                { "icon": "", "text": "BitBucket" },
-                { "icon": "", "text": "Google FireBase" },
-                { "icon": "", "text": "Atlassian Jira" },
-                { "icon": "", "text": "HTML" },
-                { "icon": "", "text": "HTML" },
-                { "icon": "", "text": "HTML" },
-                { "icon": "", "text": "React Native with Expo CLI" }
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+                    "text": "Python3",
+                    "level": 3
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png",
+                    "text": "C Language",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+                    "text": "C++ 19",
+                    "level": 2
+                },
+                {
+                    "icon": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png",
+                    "text": "C# (.NET)",
+                    "level": 2
+                },
+                {
+                    "icon": "https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg",
+                    "text": "Java Core",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+                    "text": "JavaScript",
+                    "level": 3
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+                    "text": "TypeScript",
+                    "level": 2
+                },
+                {
+                    "icon": "https://img.icons8.com/color/512/html-5--v1.png",
+                    "text": "HTML 5",
+                    "level": 3
+                },
+                {
+                    "icon": "https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png",
+                    "text": "CSS 3",
+                    "level": 3
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+                    "text": "NodeJS",
+                    "level": 2
+                },
+                {
+                    "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
+                    "text": "ReactJS",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
+                    "text": "Git CLI",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg",
+                    "text": "GitHub",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Bitbucket-blue-logomark-only.svg",
+                    "text": "BitBucket",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
+                    "text": "Google FireBase",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg",
+                    "text": "Atlassian Jira",
+                    "level": 2
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Design_thinking_methodiek.png",
+                    "text": "Design Thinking",
+                    "level": 3
+                },
+                {
+                    "icon": "https://vectorlogoseek.com/wp-content/uploads/2020/06/figma-vector-logo.png",
+                    "text": "UI/UX",
+                    "level": 1
+                },
+                {
+                    "icon": "https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png",
+                    "text": "MySQL",
+                    "level": 0
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
+                    "text": "Microsoft Azure",
+                    "level": 0
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
+                    "text": "AWS",
+                    "level": 0
+                },
+                {
+                    "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
+                    "text": "React Native",
+                    "level": 0
+                },
+                {
+                    "icon": "https://cdn-media-1.freecodecamp.org/images/kE3b4TOXtlEYpwhRvtSMi87mkWPaTfzbWOC9",
+                    "text": "Full Stack Web Development",
+                    "level": 1
+                },
+                {
+                    "icon": "https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1686047227/hevo-learn-1/datascience-1024x511-1.png?_i=AA",
+                    "text": "Data Science",
+                    "level": 1
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png",
+                    "text": "Front-End Web Development",
+                    "level": 3
+                }
             ]
         }
     }

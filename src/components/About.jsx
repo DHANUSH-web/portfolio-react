@@ -1,4 +1,4 @@
-import { IconButton, Image, Stack, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
+import { Badge, BreadcrumbLink, IconButton, Image, Stack, Text, Tooltip, Wrap, interactivity, useColorMode } from "@chakra-ui/react"
 import { FaGithub, FaHackerrank, FaLinkedin, FaBitbucket } from "react-icons/fa"
 import SkillDesktopView from "../resources/images/skill_desktop_view.svg"
 import SkillMobileView from "../resources/images/skills_mobile_view.png"
@@ -61,6 +61,26 @@ const AboutTab = () => {
 export const SkillsTab = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     const isDark = colorMode === 'dark';
+    const beginner = [];
+    const intermediate = [];
+    const advanced = [];
+    const expert = [];
+    
+    for (let i of profile.skills)
+        switch (i.level) {
+            case 0:
+                beginner.push(i);
+                break;
+            case 1:
+                intermediate.push(i);
+                break;
+            case 2:
+                advanced.push(i);
+                break;
+            case 3:
+                expert.push(i);
+                break;
+        }
 
     const openLink = () => {
         let open = confirm("Would you like to visit the GitHub page ?");
@@ -70,19 +90,67 @@ export const SkillsTab = () => {
     }
 
     return (
-        <Stack id="skills" className="skills_design" direction="column" align="center">
+        <Stack id="skills" className="skills_design" direction="column" align="center" maxW='container.lg'>
             <Image src={SkillMobileView} className="skill_mobile_view" borderRadius={20} alt="Mobile View Load Failed" display={{ base: 'block', md: 'none', lg: 'none' }} onDoubleClick={openLink} title="Double click to open" />
-            <Image src={SkillDesktopView} w='container.lg' className="skill_desktop_view" borderRadius={20} alt="Desktop View Load Failed" display={{ base: 'none', md: 'block', lg: 'block' }} onDoubleClick={openLink} title="Double click to open" />
-            <Wrap direction="row" w={{base: "", sm: "", lg: "container.lg"}} justify='center' pt='15px' overflow='visible'>
-                {
-                    profile.skills.map((skill) => (
-                        <Stack className='skill_card' width={{ base: '100px', md: '150px', lg: '150px' }} align='center' justify='center' bg={ isDark ? '#2f2f5f' : 'white' } border='solid 2px transparent' as={motion.button} whileHover={{ }}>
-                            <Image src={skill.icon} alt='😢' />
-                            <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
-                        </Stack>
-                    ))
-                }
-            </Wrap>
+            <Image src={SkillDesktopView} className="skill_desktop_view" borderRadius={20} alt="Desktop View Load Failed" display={{ base: 'none', md: 'block', lg: 'block' }} onDoubleClick={openLink} title="Double click to open" />
+            <Stack className="skills" w={{base: "", sm: "", lg: "container.lg"}} align='center' justify='center'>
+                <Stack className="classifier" mt={5} padding={5} borderRadius={20} w='full'>
+                    <Badge w='fit-content' display={{ base: 'none', md: 'none', lg: 'block' }} colorScheme='messenger' variant='solid'>Expert</Badge>
+                    <Text w='full' p={5} borderRadius={7} bg={ isDark ? 'aqua' : 'blue.700' } color='white' display={{ base: 'block', md: 'block', lg: 'none' }}>Expert</Text>
+                    <Wrap direction="row" w='full' justify='center' pt='15px' overflow='visible'>
+                        {
+                            expert.map((skill) => (
+                                <Stack className='skill_card' width={{ base: '100px', md: '150px', lg: '150px' }} align='center' justify='center' bg={ isDark ? '#2f2f5f' : 'white' } border='solid 2px transparent' as={motion.button} whileHover={{ }}>
+                                    <Image className="skill_logo" src={skill.icon} alt='😢' />
+                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                </Stack>
+                            ))
+                        }
+                    </Wrap>
+                </Stack>
+                <Stack className="classifier" mt={5} padding={5} borderRadius={20} w='full'>
+                    <Badge w='fit-content' display={{ base: 'none', md: 'none', lg: 'block' }} colorScheme='messenger' variant='solid'>Advanced</Badge>
+                    <Text w='full' p={5} borderRadius={7} bg={ isDark ? 'aqua' : 'blue.700' } color='white' display={{ base: 'block', md: 'block', lg: 'none' }}>Advanced</Text>
+                    <Wrap direction="row" w='full' justify='center' pt='15px' overflow='visible'>
+                        {
+                            advanced.map((skill) => (
+                                <Stack className='skill_card' width={{ base: '100px', md: '150px', lg: '150px' }} align='center' justify='center' bg={ isDark ? '#2f2f5f' : 'white' } border='solid 2px transparent' as={motion.button} whileHover={{ }}>
+                                    <Image className="skill_logo" src={skill.icon} alt='😢' />
+                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                </Stack>
+                            ))
+                        }
+                    </Wrap>
+                </Stack>
+                <Stack className="classifier" mt={5} padding={5} borderRadius={20} w='full'>
+                    <Badge w='fit-content' display={{ base: 'none', md: 'none', lg: 'block' }} colorScheme='messenger' variant='solid'>Intermediate</Badge>
+                    <Text w='full' p={5} borderRadius={7} bg={ isDark ? 'aqua' : 'blue.700' } color='white' display={{ base: 'block', md: 'block', lg: 'none' }}>Intermediate</Text>
+                    <Wrap direction="row" w='full' justify='center' pt='15px' overflow='visible'>
+                        {
+                            intermediate.map((skill) => (
+                                <Stack className='skill_card' width={{ base: '100px', md: '150px', lg: '150px' }} align='center' justify='center' bg={ isDark ? '#2f2f5f' : 'white' } border='solid 2px transparent' as={motion.button} whileHover={{ }}>
+                                    <Image className="skill_logo" src={skill.icon} alt='😢' />
+                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                </Stack>
+                            ))
+                        }
+                    </Wrap>
+                </Stack>
+                <Stack className="classifier" mt={5} padding={5} borderRadius={20} w='full'>
+                    <Badge w='fit-content' display={{ base: 'none', md: 'none', lg: 'block' }} colorScheme='messenger' variant='solid'>Beginner</Badge>
+                    <Text w='full' p={5} borderRadius={7} bg={ isDark ? 'aqua' : 'blue.700' } color='white' display={{ base: 'block', md: 'block', lg: 'none' }}>Beginner</Text>
+                    <Wrap direction="row" w='full' justify='center' pt='15px' overflow='visible'>
+                        {
+                            beginner.map((skill) => (
+                                <Stack className='skill_card' width={{ base: '100px', md: '150px', lg: '150px' }} align='center' justify='center' bg={ isDark ? '#2f2f5f' : 'white' } border='solid 2px transparent' as={motion.button} whileHover={{ }}>
+                                    <Image className="skill_logo" src={skill.icon} alt='😢' />
+                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                </Stack>
+                            ))
+                        }
+                    </Wrap>
+                </Stack>
+            </Stack>
         </Stack>
     )
 }

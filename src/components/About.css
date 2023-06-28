@@ -42,7 +42,7 @@
 }
 
 .skill_card {
-    height: 120px;
+    min-height: 120px;
     padding: 15px;
     border-radius: 7px;
     cursor: pointer;
@@ -52,4 +52,17 @@
 .skill_card:hover {
     transform: scale(1.2);
     box-shadow: 0 0 15px 5px #2020202c;
+}
+
+.skill_logo {
+    border-radius: 7px;
+}
+
+.classifier {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.classifier:hover {
+    background-color: #00000011;
 }
