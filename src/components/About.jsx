@@ -1,4 +1,4 @@
-import { Badge, IconButton, Image, Stack, Text, Tooltip, Wrap } from "@chakra-ui/react"
+import { Badge, IconButton, Image, Stack, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
 import { FaGithub, FaHackerrank, FaLinkedin, FaBitbucket } from "react-icons/fa"
 import SkillDesktopView from "../resources/images/skill_desktop_view.svg"
 import SkillMobileView from "../resources/images/skills_mobile_view.png"
