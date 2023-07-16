@@ -3,6 +3,7 @@ import AboutTab, { SkillsTab } from "../components/About"
 import Certificates from "../components/Certificates"
 import React from "react"
 import "./About.css"
+import EducationTab from "./Education"
 
 const About = () => {
 	const [activeTab, setActiveTab] = React.useState(0)
@@ -22,7 +23,7 @@ const About = () => {
 					<TabIndicator h='2px' bg={ isDark ? 'aqua' : 'blue.500'} borderRadius={1}/>
 					<TabPanels>
 						<TabPanel><AboutTab /></TabPanel>
-						<TabPanel>Education Details</TabPanel>
+						<TabPanel><EducationTab /></TabPanel>
 						<TabPanel><SkillsTab /></TabPanel>
 						<TabPanel><Certificates /></TabPanel>
 					</TabPanels>

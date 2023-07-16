@@ -13,7 +13,7 @@
             "fname": "DHANUSH",
             "lname": "H V",
             "phoneNumber": "+91 9731131772",
-            "jobRole": "Android Developer",
+            "jobRole": "ASE - Python Developer",
             "company": "TATA Consultancy Services Ltd.",
             "companyURL": "https://www.tcs.com/",
             "certificates": [
@@ -272,6 +272,11 @@
                     "text": "Front-End Web Development",
                     "level": 3
                 }
+            ],
+            "education": [
+                { "title": "ATME College of Engineering", "year": "2022", "progress": "Graduated", "description": "Completed Bachelor of Engineering in Electronics and Communication Engineering (ECE) - Undergraduate (UG)", "score": "7.9", "symbol": "CGPA", "docURL": "", "location": "Mysore" },
+                { "title": "Govt. PU College - K.R.Pet", "year": "2018", "progress": "Completed", "description": "Completed Pre-University Education in Science", "score": "79.86", "symbol": "%", "docURL": "", "location": "Mandya" },
+                { "title": "Govt. PU College - K.R.Pet", "year": "2016", "progress": "Completed", "description": "Completed Higher education", "score": "79.68", "symbol": "%", "docURL": "", "location": "Mandya" }
             ]
         }
     }
