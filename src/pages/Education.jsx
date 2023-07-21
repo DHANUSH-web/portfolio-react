@@ -22,7 +22,7 @@ const EducationCard = ({ title, year, progress, description, score, symbol, docU
                         <TagLabel>{progress}</TagLabel>
                     </Tag>
                 </Stack>
-                <Text textAlign='left' mt={5} fontFamily='inter'>{description}</Text>
+                <Text textAlign='left' mt={5} fontFamily='inter, googlesansbold'>{description}</Text>
             </CardBody>
             <CardFooter>
                 <Stack w='full'>
