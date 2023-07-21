@@ -1,5 +1,4 @@
 {
-  "homepage": "https://DHANUSH-web.github.io/Portfolio-dhv",
   "name": "Portfolio",
   "version": "0.0.1",
   "dependencies": {
@@ -17,8 +16,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "compile": "react-scripts compile",
     "test": "react-scripts test",
