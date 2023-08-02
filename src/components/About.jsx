@@ -59,7 +59,7 @@ const AboutTab = () => {
 }
 
 export const SkillsTab = () => {
-    const { colorMode, toggleColorMode } = useColorMode();
+    const { colorMode } = useColorMode();
     const isDark = colorMode === 'dark';
     const beginner = [];
     const intermediate = [];
@@ -83,7 +83,7 @@ export const SkillsTab = () => {
         }
 
     const openLink = () => {
-        let open = confirm("Would you like to visit the GitHub page ?");
+        const open = confirm("Would you like to visit the GitHub page ?");
         
         if (open)
             window.open(profile.githubProfile)
