@@ -32,7 +32,7 @@ const AboutTab = () => {
                             Hello.. I'm <span className="name">Dhanush!!</span>
                             <p>I'm 22 years old and graduated in 2022</p>
                             <p className="jobrole">Profesionally <span className="highlight">{profile.jobRole}</span> and <span className="highlight">Ex-Automation Engineer, Tech Lead</span></p>
-                            <p>Presently working in <span className="highlight">{profile.company}</span> since <span className="highlight">7 months</span></p>
+                            <p>Presently working in <span className="highlight">{profile.company}</span> since <span className="highlight">{profile.experience}</span></p>
                             <br />
                             <p>Apart from Job, more passionated in <span className="highlight">Web Development</span></p>
                         </Text>
