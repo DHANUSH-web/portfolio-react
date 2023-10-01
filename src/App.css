@@ -1,11 +1,31 @@
 @font-face {
 	font-family: googleSans;
-	src: url("./resources/fonts/GoogleSans-Regular.ttf");
+	src: url("./resources/fonts/GoogleSans/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: googleSansSemiBold;
+	src: url("./resources/fonts/GoogleSans/Rubik-Medium.ttf");
 }
 
 @font-face {
 	font-family: googleSansBold;
-	src: url("./resources/fonts/Rubik-Bold.ttf");
+	src: url("./resources/fonts/GoogleSans/Rubik-Bold.ttf");
+}
+
+@font-face {
+	font-family: interRegular;
+	src: url("./resources/fonts/Inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+	font-family: interSemiBold;
+	src: url("./resources/fonts/Inter/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: interBold;
+	src: url("./resources/fonts/Inter/static/Inter-Bold.ttf");
 }
 
 .hyper-link {

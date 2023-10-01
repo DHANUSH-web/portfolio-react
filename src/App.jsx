@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom"
 import PageNotFound from "./pages/PageNotFound"
 import QuickBar from "./components/QuickBar"
 import Experience from "./pages/Experience"
-import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
@@ -14,7 +13,6 @@ import "./App.css"
 const App = () => {
 	return (
 		<>
-			<NavBar />
 			<div className="cover-navbar"></div>
 			<Routes>
 				<Route path="/" element={ <Home /> } />

@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, CardFooter, CardHeader, Stack, Tag, TagLabel, TagLeftIcon, TagRightIcon, Text } from '@chakra-ui/react'
+import { Button, Card, CardBody, CardFooter, CardHeader, Flex, Stack, Tag, TagLabel, TagLeftIcon, Text } from '@chakra-ui/react'
 import { MdOutlineCalendarMonth, MdCheckCircle, MdLocationPin } from "react-icons/md";
 import database from '../database.json'
 import "./Education.css";
@@ -31,14 +31,11 @@ const EducationCard = ({ title, year, progress, description, score, symbol, docU
                             <Text className='score'>{score}</Text>
                             <Text className='symbol' pb={4}>{symbol}</Text>
                         </Stack>
-                        <Button className='docButton' colorScheme='telegram' variant='ghost' borderRadius={20} rightIcon={<MdCheckCircle />}>
-                            View Docs
-                        </Button>
+                        <Tag colorScheme='orange' size={20} p='5px 12px' borderRadius={20} w='fit-content'>
+                            <TagLeftIcon><MdLocationPin size='lg' /></TagLeftIcon>
+                            <TagLabel>{location}</TagLabel>
+                        </Tag>
                     </Stack>
-                    <Tag colorScheme='orange' size={20} p='5px 12px' borderRadius={20} w='fit-content'>
-                        <TagLeftIcon><MdLocationPin size='lg' /></TagLeftIcon>
-                        <TagLabel>{location}</TagLabel>
-                    </Tag>
                 </Stack>
             </CardFooter>
         </Card>
@@ -47,13 +44,13 @@ const EducationCard = ({ title, year, progress, description, score, symbol, docU
 
 const EducationTab = () => {
     return (
-        <Stack mt={20} spacing={4} direction={{ lg: 'row', md: 'column', base: 'column' }} justify='center'>
+        <Flex flexWrap="wrap" gap={20} placeContent='center' mt={20}>
             {
                 profile.education.map((edu) => (
                     <EducationCard title={edu.title} year={edu.year} progress={edu.progress} description={edu.description} score={edu.score} symbol={edu.symbol} docURL={edu.docURL} location={edu.location} />
                 ))
             }
-        </Stack>
+        </Flex>
     )
 }
 
