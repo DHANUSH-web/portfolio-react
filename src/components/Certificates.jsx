@@ -24,10 +24,10 @@ export const SkillCard = ({ title, content, image, className, width, height, onC
                 <Badge colorScheme='teal'>{content}</Badge>
             </CardBody>
             <CardFooter justify="center">
-                <Button as={motion.button} className='view-button' whileTap={{ scale: 0.9 }} fontFamily="googleSansBold" w={150} size="sm" onClick={onClick} display={{ base: "none", md: "none", lg: "block" }}>
+                <Button as={motion.button} className='view-button' whileTap={{ scale: 0.9 }} fontFamily="interSemiBold" w={150} size="sm" onClick={onClick} display={{ base: "none", md: "none", lg: "block" }}>
                     Preview
                 </Button>
-                <Button className='view-button' fontFamily="googleSansBold" size="sm" onClick={targetClick} display={{ base: "block", md: "block", lg: "none" }}>
+                <Button className='view-button' fontFamily="interSemiBold" size="sm" onClick={targetClick} display={{ base: "block", md: "block", lg: "none" }}>
                     View Certificate
                 </Button>
             </CardFooter>

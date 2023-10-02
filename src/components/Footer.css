@@ -1,5 +1,5 @@
 .footer {
-    font-family: googleSans;
+    font-family: interRegular;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -8,7 +8,7 @@
 }
 
 #footerLinks {
-    font-family: googleSans;
+    font-family: interRegular;
     border-radius: 5px;
     transition: 0.2s;
     padding: 0 5px;
@@ -19,7 +19,7 @@
 }
 
 .head {
-    font-family: googleSansBold;
+    font-family: interSemiBold;
     font-size: 20px;
     color: lightblue;
 }

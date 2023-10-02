@@ -50,7 +50,7 @@ const Footer = () => {
                         <Link href={profiles.bitbucket.url} target="_blank" id="footerLinks">BitBucket</Link>
                         {/* {
                             Object.keys(profiles).map((profile) => (
-                                <Tooltip fontFamily="googleSansBold" label={profiles[profile].title} placement="end">
+                                <Tooltip fontFamily="interSemiBold" label={profiles[profile].title} placement="end">
                                     <a href={profiles[profile].url}>{profiles[profile].icon}</a>
                                 </Tooltip>
                             ))

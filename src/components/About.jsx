@@ -90,7 +90,7 @@ export const SkillsTab = () => {
     }
 
     return (
-        <Stack id="skills" className="skills_design" direction="column" align="center" maxW='container.lg'>
+        <Stack id="skills" className="skills_design" direction="column" align="center">
             <Image src={SkillMobileView} className="skill_mobile_view" borderRadius={20} alt="Mobile View Load Failed" display={{ base: 'block', md: 'none', lg: 'none' }} onDoubleClick={openLink} title="Double click to open" />
             <Image src={SkillDesktopView} className="skill_desktop_view" borderRadius={20} alt="Desktop View Load Failed" display={{ base: 'none', md: 'block', lg: 'block' }} onDoubleClick={openLink} title="Double click to open" />
             <Stack className="skills" w={{base: "", sm: "", lg: "container.lg"}} align='center' justify='center'>

@@ -16,7 +16,7 @@ const About = () => {
 			<NavBar isAbout={true} />
 			<Box className="about-container">
 				<Center>
-					<Tabs onChange={(index) => setActiveTab(index)} w='full' variant="soft-rounded" position="relative" align="center" fontFamily='googlesansbold' colorScheme={ isDark ? 'teal' : 'blue' }>
+					<Tabs onChange={(index) => setActiveTab(index)} w='full' variant="soft-rounded" position="relative" align="center" fontFamily='interSemiBold' colorScheme={ isDark ? 'teal' : 'blue' }>
 						<TabList className="tabList" bg="transparent">
 							<Tab color={ activeTab === 0 ? isDark ? 'aqua' : '#0050ff' : 'default' }>About</Tab>
 							<Tab color={ activeTab === 1 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Education</Tab>

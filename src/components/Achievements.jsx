@@ -20,11 +20,11 @@ const Achievements = () => {
 							<CardHeader>
 								<HStack w="full" spacing={5}>
 									<Image src={card.icon} h={20} borderRadius="50%" />
-									<Text textAlign="initial" fontFamily="googleSansBold">{card.title}</Text>
+									<Text textAlign="initial" fontFamily="interSemiBold">{card.title}</Text>
 								</HStack>
 							</CardHeader>
 							<CardBody>
-								<Text textAlign="initial" fontFamily="googleSans">{card.desc}</Text>
+								<Text textAlign="initial" fontFamily="interRegular">{card.desc}</Text>
 							</CardBody>
 							<CardFooter>
 								<Button className="view-btn" onClick={() => window.open(card.url)} w='200px' borderRadius={20} colorScheme="blue">View</Button>
@@ -40,8 +40,8 @@ const Achievements = () => {
 						<HStack className="shortCards" align="center">
 							<Image src={card.icon} h={20} borderRadius={7} />
 							<VStack w="full">
-								<Text textAlign="initial" fontSize={15} fontFamily="googleSansBold">{card.title}</Text>
-								<Button onClick={() => window.open(card.url)} fontFamily="googleSans" fontWeight={350} colorScheme="blue" w="full">View</Button>
+								<Text textAlign="initial" fontSize={15} fontFamily="interSemiBold">{card.title}</Text>
+								<Button onClick={() => window.open(card.url)} fontFamily="interRegular" fontWeight={350} colorScheme="blue" w="full">View</Button>
 							</VStack>
 						</HStack>
 					)

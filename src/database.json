@@ -62,7 +62,7 @@
                 },
                 {
                     "title": "CSS",
-                    "logo": "https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png",
+                    "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/1k_EgFssf7Bxm815TRKbpuR2voEAmFhjX/preview"
                 },
@@ -189,7 +189,7 @@
                     "level": 3
                 },
                 {
-                    "icon": "https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png",
+                    "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
                     "text": "CSS 3",
                     "level": 3
                 },
@@ -201,6 +201,11 @@
                 {
                     "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
                     "text": "ReactJS",
+                    "level": 2
+                },
+                {
+                    "icon": "https://testrigor.com/wp-content/uploads/2023/04/nextjs-logo-square.png",
+                    "text": "NextJS",
                     "level": 2
                 },
                 {
@@ -278,6 +283,11 @@
                 { "title": "ATME College of Engineering", "year": "2022", "progress": "Graduated", "description": "Completed Bachelor of Engineering in Electronics and Communication Engineering (ECE) - Undergraduate (UG)", "score": "7.9", "symbol": "CGPA", "docURL": "", "location": "Mysore" },
                 { "title": "Govt. PU College - K.R.Pet", "year": "2018", "progress": "Completed", "description": "Completed Pre-University Education in Science", "score": "79.86", "symbol": "%", "docURL": "", "location": "Mandya" },
                 { "title": "Govt. PU College - K.R.Pet", "year": "2016", "progress": "Completed", "description": "Completed Higher education", "score": "79.68", "symbol": "%", "docURL": "", "location": "Mandya" }
+            ],
+            "projects": [
+                { "title": "Solo Python Developer - LG", "year": "2023", "progress": "On Project", "desc": "Python Software Developement with PyQt5 GUI framework", "score": "3", "symbol": "months", "location": "Bangalore" },
+                { "title": "Android Developer - LG", "year": "2023", "progress": "Completed", "desc": "Android Developer in Life Guard build bug fix and analyzing code", "score": "3", "symbol": "months", "location": "Bangalore" },
+                { "title": "Automation Developer", "year": "2022", "progress": "Completed", "desc": "Python Software Developement with PyQt5 GUI framework", "score": "6", "symbol": "months", "location": "Bangalore" }
             ]
         }
     }

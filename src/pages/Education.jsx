@@ -1,18 +1,18 @@
-import { Button, Card, CardBody, CardFooter, CardHeader, Flex, Stack, Tag, TagLabel, TagLeftIcon, Text } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, CardHeader, Flex, Stack, Tag, TagLabel, TagLeftIcon, Text } from '@chakra-ui/react'
 import { MdOutlineCalendarMonth, MdCheckCircle, MdLocationPin } from "react-icons/md";
 import database from '../database.json'
 import "./Education.css";
 
 const profile = database.profiles[database.profileHolder];
 
-const EducationCard = ({ title, year, progress, description, score, symbol, docURL, location }) => {
+export const EducationCard = ({ title, year, progress, description, score, symbol, docURL, location }) => {
     return (
-        <Card className='eduCard' border="solid 2.5px #0080ff" borderRadius={20} boxShadow="0 0 20px 2px #00000033">
+        <Card className='eduCard' borderRadius={20} boxShadow="0 0 20px 2px #00000033">
             <CardHeader className='title'>
-                <Text>{title}</Text>
+                <Text fontFamily="interBold" fontSize={{ base: 20, sm: 20, md: 30, lg: 35 }}>{title}</Text>
             </CardHeader>
             <CardBody className='eduCardBody'>
-                <Stack direction="row" mt={-5}>
+                <Stack direction={{lg: "row", md: "row", sm: "column", base: "column"}} mt={-5}>
                     <Tag className='tag' colorScheme='blue' size='lg' borderRadius={20}>
                         <TagLeftIcon><MdOutlineCalendarMonth size='md' /></TagLeftIcon>
                         <TagLabel>{year}</TagLabel>
@@ -22,11 +22,11 @@ const EducationCard = ({ title, year, progress, description, score, symbol, docU
                         <TagLabel>{progress}</TagLabel>
                     </Tag>
                 </Stack>
-                <Text textAlign='left' mt={5} fontFamily='inter, googlesansbold'>{description}</Text>
+                <Text textAlign='start' mt={5} fontFamily='interSemiBold' display={{base: "none", sm: "block", md: "block", lg: "block"}}>{description}</Text>
             </CardBody>
             <CardFooter>
                 <Stack w='full'>
-                    <Stack className='eduContainer' direction='row' spacing='auto' align='center'>
+                    <Stack className='eduContainer' direction={{base: 'column', sm: "row", md: "row", lg: 'row'}} spacing='auto' align='center'>
                         <Stack className='scoreDisp' direction='row' align='flex-end'>
                             <Text className='score'>{score}</Text>
                             <Text className='symbol' pb={4}>{symbol}</Text>
@@ -44,7 +44,7 @@ const EducationCard = ({ title, year, progress, description, score, symbol, docU
 
 const EducationTab = () => {
     return (
-        <Flex flexWrap="wrap" gap={20} placeContent='center' mt={20}>
+        <Flex flexWrap="wrap" gap={10} placeContent='center' w="full">
             {
                 profile.education.map((edu) => (
                     <EducationCard title={edu.title} year={edu.year} progress={edu.progress} description={edu.description} score={edu.score} symbol={edu.symbol} docURL={edu.docURL} location={edu.location} />

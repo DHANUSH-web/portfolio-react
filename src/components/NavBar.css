@@ -1,5 +1,5 @@
 .navbar {
-	font-family: googleSans;
+	font-family: interRegular;
 	position: fixed;
 }
 
@@ -13,7 +13,7 @@
 	color: black;
 	padding: 0 7px;
 	transition: 0.2s;
-	font-family: googleSansBold;
+	font-family: interMedium;
 }
 
 #navLink:hover {

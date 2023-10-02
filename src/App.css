@@ -19,6 +19,11 @@
 }
 
 @font-face {
+	font-family: interMedium;
+	src: url("./resources/fonts/Inter/static/Inter-Medium.ttf");
+}
+
+@font-face {
 	font-family: interSemiBold;
 	src: url("./resources/fonts/Inter/static/Inter-SemiBold.ttf");
 }

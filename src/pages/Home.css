@@ -1,6 +1,6 @@
 .description {
 	padding: 5px 5px 5px 12px;
-	font-family: googleSans;
+	font-family: interRegular;
 	border-left: solid 5px #0050ff;
 	cursor: default;
 	transition: 0.2s;
@@ -16,7 +16,7 @@
 }
 
 .resumeBtn, .seeMoreBtn {
-	font-family: googleSansBold;
+	font-family: interSemiBold;
 	font-weight: normal;
 	width: "fit-content";
 	padding: 2px;

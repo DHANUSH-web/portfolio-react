@@ -12,13 +12,13 @@
 }
 
 .score {
-    font-family: inter, googlesansbold;
+    font-family: inter, interSemiBold;
     font-weight: bold;
     font-size: 60px;
 }
 
 .symbol {
     color: #6d6d6d;
-    font-family: inter, googlesansbold;
+    font-family: inter, interSemiBold;
     font-weight: bold;
 }

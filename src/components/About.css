@@ -23,17 +23,17 @@
 }
 
 .about-title {
-    font-family: googleSansBold;
+    font-family: interSemiBold;
 }
 
 .name {
-    font-family: googlesansbold;
+    font-family: interSemiBold;
     font-size: 20px;
     color: lightseagreen;
 }
 
 .insider {
-    font-family: googleSans;
+    font-family: interRegular;
 }
 
 .highlight {
