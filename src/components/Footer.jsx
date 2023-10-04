@@ -1,63 +1,39 @@
-import { Center, HStack, StackDivider, Text, VStack, Link } from "@chakra-ui/react"
-import { Link as Hyper } from "react-router-dom"
+import { Center, Stack, StackDivider, Text, Tooltip } from "@chakra-ui/react"
+import { Link } from "react-router-dom"
 import data from "../database.json";
 import React from "react"
 import "./Footer.css"
 
 
 const Footer = () => {
-    /* const quickLinks = {
-        home: { title: "Home", url: "/"},
-        about: { title: "About", url: "/about"},
-        projects: { title: "Projects", url: "/projects"},
-        experience: { title: "Experience", url: "/experience"},
-        contact: { title: "Contact", url: "/contact"},
-    }
-
-    const profiles = {
-        linkedin: { title: "LinkedIn", url: "/", icon: <SiLinkedin size="20px" /> },
-        hackerrank: { title: "Hackerrank", url: "/", icon: <SiHackerrank size="20px" /> },
-        github: { title: "GitHub", url: "/", icon: <SiGithub size="20px" /> },
-        bitbucket: { title: "Bitbucket", url: "/", icon: <SiBitbucket size="20px" /> },
-    } */
     const profileHolder = data.profileHolder
     const profiles = data.profiles[profileHolder].profiles
 
     return (
         <Center className="footer" bg="#111c2f" pb={{ base: 100, md: 10, lg: 10 }}>
-            <HStack justify="center" align="flex-start" spacing={{ base: 100, lg: 350 }} w="full">
-                <VStack divider={<StackDivider />}>
+            <Stack direction='row' justify="center" align="flex-start" spacing={{ base: 100, lg: 350 }} w="full">
+                <Stack direction='column' divider={<StackDivider />}>
                     <Text className="head">Quick Links</Text>
-                    <VStack align="left">
-                        <Hyper to="/" id="footerLinks">Home</Hyper>
-                        <Hyper to="/about" id="footerLinks">About</Hyper>
-                        <Hyper to="/projects" id="footerLinks">Projects</Hyper>
-                        <Hyper to="/experience" id="footerLinks">Experience</Hyper>
-                        <Hyper to="/contact" id="footerLinks">Contact</Hyper>
-                        {/* {
-                            Object.keys(quickLinks).map((link) => (
-                                <Link to={quickLinks[link].url} id="footerLinks">{quickLinks[link].title}</Link>
-                            ))
-                        } */}
-                    </VStack>
-                </VStack>
-                <VStack align="center" divider={<StackDivider />}>
+                    <Stack direction='column' align="left">
+                        <Link to="/" id="footerLinks">Home</Link>
+                        <Link to="/about" id="footerLinks">About</Link>
+                        <Link to="/projects" id="footerLinks">Projects</Link>
+                        <Link to="/experience" id="footerLinks">Experience</Link>
+                        <Link to="/contact" id="footerLinks">Contact</Link>
+                    </Stack>
+                </Stack>
+                <Stack direction='column' align="center" divider={<StackDivider />}>
                     <Text className="head">Profiles</Text>
-                    <VStack align="left" mt={2}>
-                        <Link href={profiles.linkedin.url} target="_blank" id="footerLinks">LinkedIn</Link>
-                        <Link href={profiles.hackerrank.url} target="_blank" id="footerLinks" title="(5 star in C++, 4 star in Python)">Hackerrank</Link>
-                        <Link href={profiles.github.url} target="_blank" id="footerLinks">GitHub</Link>
-                        <Link href={profiles.bitbucket.url} target="_blank" id="footerLinks">BitBucket</Link>
-                        {/* {
-                            Object.keys(profiles).map((profile) => (
-                                <Tooltip fontFamily="interSemiBold" label={profiles[profile].title} placement="end">
-                                    <a href={profiles[profile].url}>{profiles[profile].icon}</a>
-                                </Tooltip>
-                            ))
-                        } */}
-                    </VStack>
-                </VStack>
-            </HStack>
+                    <Stack direction='column' align="left" mt={2}>
+                        <a href={profiles.linkedin.url} target="_blank" id="footerLinks">LinkedIn</a>
+                        <Tooltip label="5⭐ in C++, 4⭐ in Python" placement='left' borderRadius={7} fontFamily='interSemiBold'>
+                            <a href={profiles.hackerrank.url} target="_blank" id="footerLinks">Hackerrank</a>
+                        </Tooltip>
+                        <a href={profiles.github.url} target="_blank" id="footerLinks">GitHub</a>
+                        <a href={profiles.bitbucket.url} target="_blank" id="footerLinks">BitBucket</a>
+                    </Stack>
+                </Stack>
+            </Stack>
         </Center>
     )
 }

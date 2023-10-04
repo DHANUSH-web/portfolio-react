@@ -1,5 +1,5 @@
-import { BiHome, BiUser, BiFolder, BiSun, BiMoon } from "react-icons/bi"
-import { Center, Flex, useColorMode } from "@chakra-ui/react"
+import { BiHome, BiUser, BiFolder, BiSun, BiMoon, BiUserVoice } from "react-icons/bi"
+import { Text, Center, Flex, useColorMode } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 import React from "react"
 import './QuickBar.css'
@@ -10,12 +10,26 @@ const QuickBar = () => {
 
     return (
         <Center className="container" w="full" display={{ base: 'block', md: 'none', lg: 'none' }} align='center'>
-            <Flex className="quickbar" w="fit-content" direction="row" justifyContent='center' alignItems='center' gap={8}>
-                <Link to="/"><BiHome size={30} /></Link>
-                <Link to="/about"><BiUser size={30} /></Link>
-                <Link to="/projects"><BiFolder size={30} /></Link>
+            <Flex className="quickbar" direction="row" justifyContent='space-evenly' alignItems='center' gap={8}>
+                <Link to="/">
+                    <BiHome color="white" size={30} />
+                    <Text fontFamily='interSemiBold' fontSize={12} color='gray.300'>Home</Text>
+                </Link>
+                <Link to="/about">
+                    <BiUser color="white" size={30} />
+                    <Text fontFamily='interSemiBold' fontSize={12} color='gray.300'>About</Text>
+                </Link>
+                <Link to="/projects">
+                    <BiFolder color="white" size={30} />
+                    <Text fontFamily='interSemiBold' fontSize={12} color='gray.300'>Projects</Text>
+                </Link>
+                <Link to="/experience">
+                    <BiUserVoice color="white" size={30} />
+                    <Text fontFamily='interSemiBold' fontSize={12} color='gray.300'>Experience</Text>
+                </Link>
                 <span onClick={toggleColorMode}>
-                    {isDark ? <BiSun size={30} /> : <BiMoon size={30} />}
+                    {isDark ? <BiSun color="white" size={30} /> : <BiMoon color="white" size={30} />}
+                    <Text fontFamily='interSemiBold' fontSize={12} color='gray.300'>{ isDark ? "Light" : "Dark" }</Text>
                 </span>
             </Flex>
         </Center>

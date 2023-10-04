@@ -6,10 +6,6 @@
 	transition: 0.2s;
 }
 
-.description:hover {
-	border-left-width: 15px;
-}
-
 .desc-heading {
 	font-size: 40px;
 	font-weight: bolder;

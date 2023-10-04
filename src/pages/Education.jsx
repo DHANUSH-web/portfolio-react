@@ -7,7 +7,7 @@ const profile = database.profiles[database.profileHolder];
 
 export const EducationCard = ({ title, year, progress, description, score, symbol, docURL, location }) => {
     return (
-        <Card className='eduCard' borderRadius={20} boxShadow="0 0 20px 2px #00000033">
+        <Card className='eduCard' borderRadius={20} borderColor='gray.100' borderWidth={1} boxShadow='0 0 15px 7px #17192311'>
             <CardHeader className='title'>
                 <Text fontFamily="interBold" fontSize={{ base: 20, sm: 20, md: 30, lg: 35 }}>{title}</Text>
             </CardHeader>
@@ -15,11 +15,11 @@ export const EducationCard = ({ title, year, progress, description, score, symbo
                 <Stack direction={{lg: "row", md: "row", sm: "column", base: "column"}} mt={-5}>
                     <Tag className='tag' colorScheme='blue' size='lg' borderRadius={20}>
                         <TagLeftIcon><MdOutlineCalendarMonth size='md' /></TagLeftIcon>
-                        <TagLabel>{year}</TagLabel>
+                        <TagLabel fontFamily="interSemiBold">{year}</TagLabel>
                     </Tag>
                     <Tag className='tag' colorScheme='green' size='lg' borderRadius={20}>
                         <TagLeftIcon><MdCheckCircle size='md' /></TagLeftIcon>
-                        <TagLabel>{progress}</TagLabel>
+                        <TagLabel fontFamily="interSemiBold">{progress}</TagLabel>
                     </Tag>
                 </Stack>
                 <Text textAlign='start' mt={5} fontFamily='interSemiBold' display={{base: "none", sm: "block", md: "block", lg: "block"}}>{description}</Text>
@@ -33,7 +33,7 @@ export const EducationCard = ({ title, year, progress, description, score, symbo
                         </Stack>
                         <Tag colorScheme='orange' size={20} p='5px 12px' borderRadius={20} w='fit-content'>
                             <TagLeftIcon><MdLocationPin size='lg' /></TagLeftIcon>
-                            <TagLabel>{location}</TagLabel>
+                            <TagLabel fontFamily='interSemiBold'>{location}</TagLabel>
                         </Tag>
                     </Stack>
                 </Stack>
