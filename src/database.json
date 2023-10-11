@@ -285,9 +285,11 @@
                 { "title": "Govt. PU College - K.R.Pet", "year": "2016", "progress": "Completed", "description": "Completed Higher education", "score": "79.68", "symbol": "%", "docURL": "", "location": "Mandya" }
             ],
             "projects": [
-                { "title": "Solo Python Developer - LG", "year": "2023", "progress": "On Project", "desc": "Python Software Developement with PyQt5 GUI framework", "score": "3", "symbol": "months", "location": "Bangalore" },
-                { "title": "Android Developer - LG", "year": "2023", "progress": "Completed", "desc": "Android Developer in Life Guard build bug fix and analyzing code", "score": "3", "symbol": "months", "location": "Bangalore" },
-                { "title": "Automation Developer", "year": "2022", "progress": "Completed", "desc": "Python Software Developement with PyQt5 GUI framework", "score": "6", "symbol": "months", "location": "Bangalore" }
+                { "title": "Solo Python Developer - LG", "year": "2023", "progress": "On Project", "desc": "Python Software Developement with PyQt5 GUI framework", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "Android Developer - LG", "year": "2023", "progress": "Completed", "desc": "Android Developer in Life Guard build bug fix and analyzing code", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "Automation Developer", "year": "2022", "progress": "Completed", "desc": "Android Automation Script Development of Android OS Upgrade", "score": "6", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "Portfolio - Web Developement (ReactJS)", "year": "2022", "progress": "Completed", "desc": "My personal portfolio website to showcase projects and experience for better opportunities in future", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "PyCOL - Color Agent", "year": "2021", "progress": "Completed", "desc": "A React web app developed to help web developers for choosing colors for their website feasibly", "score": "1", "symbol": "week", "location": "Mysore", "docURL": "https://www.github.com/DHANUSH-web/" }
             ]
         }
     }

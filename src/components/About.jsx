@@ -38,16 +38,16 @@ const AboutTab = () => {
                         </Text>
                         <br />
                         <Stack direction='row' spacing={5} justify={{ base: 'center', md: 'left', lg: 'left' }}>
-                            <Tooltip label='GitHub' borderRadius={7}>
+                            <Tooltip label='GitHub' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
                                 <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaGithub />} onClick={() => window.open(profile.profiles.github.url)} />
                             </Tooltip>
-                            <Tooltip label='Hackerrank' borderRadius={7}>
+                            <Tooltip label='Hackerrank' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
                                 <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaHackerrank />} onClick={() => window.open(profile.profiles.hackerrank.url)} />
                             </Tooltip>
-                            <Tooltip label='LinkedIn' borderRadius={7}>
+                            <Tooltip label='LinkedIn' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
                                 <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaLinkedin />} onClick={() => window.open(profile.profiles.linkedin.url)} />
                             </Tooltip>
-                            <Tooltip label='BitBucket' borderRadius={7}>
+                            <Tooltip label='BitBucket' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
                                 <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaBitbucket />} onClick={() => window.open(profile.profiles.bitbucket.url)} />
                             </Tooltip>
                         </Stack>

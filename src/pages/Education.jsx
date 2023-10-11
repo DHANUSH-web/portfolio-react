@@ -1,5 +1,5 @@
-import { Card, CardBody, CardFooter, CardHeader, Flex, Stack, Tag, TagLabel, TagLeftIcon, Text } from '@chakra-ui/react'
-import { MdOutlineCalendarMonth, MdCheckCircle, MdLocationPin } from "react-icons/md";
+import { Button, Card, CardBody, CardFooter, CardHeader, Flex, Stack, Tag, TagLabel, TagLeftIcon, Text, Tooltip } from '@chakra-ui/react'
+import { MdOutlineCalendarMonth, MdCheckCircle, MdLocationPin, MdLink } from "react-icons/md";
 import database from '../database.json'
 import "./Education.css";
 
@@ -13,16 +13,29 @@ export const EducationCard = ({ title, year, progress, description, score, symbo
             </CardHeader>
             <CardBody className='eduCardBody'>
                 <Stack direction={{lg: "row", md: "row", sm: "column", base: "column"}} mt={-5}>
-                    <Tag className='tag' colorScheme='blue' size='lg' borderRadius={20}>
+                    <Tag className='tag' colorScheme='blue' size='md' borderRadius={20}>
                         <TagLeftIcon><MdOutlineCalendarMonth size='md' /></TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{year}</TagLabel>
                     </Tag>
-                    <Tag className='tag' colorScheme='green' size='lg' borderRadius={20}>
+                    <Tag className='tag' colorScheme='green' size='md' borderRadius={20}>
                         <TagLeftIcon><MdCheckCircle size='md' /></TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{progress}</TagLabel>
                     </Tag>
                 </Stack>
                 <Text textAlign='start' mt={5} fontFamily='interSemiBold' display={{base: "none", sm: "block", md: "block", lg: "block"}}>{description}</Text>
+                { docURL ?
+                    <Tooltip label="🔗 Visit or Fork Repo" fontFamily='interSemiBold' fontSize={12} borderRadius={7}>
+                        <Button
+                            onClick={() => window.open(docURL)}
+                            fontFamily="interSemiBold"
+                            borderRadius="full"
+                            leftIcon={<MdLink />}
+                            size="sm"
+                        >
+                            Git Repo
+                        </Button>
+                    </Tooltip> : ""
+                }
             </CardBody>
             <CardFooter>
                 <Stack w='full'>
@@ -31,7 +44,7 @@ export const EducationCard = ({ title, year, progress, description, score, symbo
                             <Text className='score'>{score}</Text>
                             <Text className='symbol' pb={4}>{symbol}</Text>
                         </Stack>
-                        <Tag colorScheme='orange' size={20} p='5px 12px' borderRadius={20} w='fit-content'>
+                        <Tag colorScheme='orange' size="md" p='5px 12px' borderRadius={20} w='fit-content'>
                             <TagLeftIcon><MdLocationPin size='lg' /></TagLeftIcon>
                             <TagLabel fontFamily='interSemiBold'>{location}</TagLabel>
                         </Tag>
