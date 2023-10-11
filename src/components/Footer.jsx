@@ -10,11 +10,11 @@ const Footer = () => {
     const profiles = data.profiles[profileHolder].profiles
 
     return (
-        <Center className="footer" bg="#111c2f" pb={{ base: 100, md: 10, lg: 10 }}>
-            <Stack direction='row' justify="center" align="flex-start" spacing={{ base: 100, lg: 350 }} w="full">
-                <Stack direction='column' divider={<StackDivider />}>
+        <Center className="footer" bg="#111c2f" pb={{ base: 100, sm: 100, md: 5, lg: 5 }}>
+            <Stack direction='row' justifyContent='center' spacing={{ base: 100, lg: 350 }} w="full">
+                <Stack divider={<StackDivider />}>
                     <Text className="head">Quick Links</Text>
-                    <Stack direction='column' align="left">
+                    <Stack align="left">
                         <Link to="/" id="footerLinks">Home</Link>
                         <Link to="/about" id="footerLinks">About</Link>
                         <Link to="/projects" id="footerLinks">Projects</Link>

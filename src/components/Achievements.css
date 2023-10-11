@@ -5,10 +5,9 @@
 }
 
 .shortCards {
-	background-color: #0080ff22;
-	border: solid 2px transparent;
-	width: 250px;
+	background-color: #efefef22;
 	padding: 5px;
+	width: 250px;
 	cursor: pointer;
 	border-radius: 10px;
 	cursor: default;
@@ -17,16 +16,4 @@
 
 .cards:hover, .shortCards:hover {
 	border-color: #2a7ecc;
-	/* margin-top: -15px; */
-	/* box-shadow: -7px 15px 0 5px #0080ffdc;
-	transform: scale(1.1);
-	z-index: 1; */
-}
-
-.view-btn:hover::before {
-	content-visibility: hidden;
-}
-
-.view-btn:hover {
-	transform: scale(1.1);
 }

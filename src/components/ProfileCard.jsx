@@ -21,8 +21,8 @@ const ProfileCard = ({ ...props }) => {
 							<Text as='a' className="hyper-link" fontFamily="interSemiBold" color="blue.500" fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} href={props.companyURL} target="_blank">{props.companyName}</Text>
 						</Stack>
 						<Stack mt={5} w="full" justify="center" direction={{ base: "column", sm: "row", md: "row", lg: "row" }}>
-							<Button className="resumeBtn" hidden={props.hideResume} as='a' href={props.resume} target="_blank" colorScheme={ isDark ? 'teal' : 'messenger' } borderRadius={20} leftIcon={<MdLink />}>Resume</Button>
-							<Button className="seeMoreBtn" hidden={props.hideSeeMore} to="/about" as={Link} rightIcon={<MdArrowForward />} borderRadius={20}>See More</Button>
+							<Button className="resumeBtn" hidden={props.hideResume} fontFamily='interSemiBold' as='a' href={props.resume} target="_blank" colorScheme='messenger' borderRadius={20} leftIcon={<MdLink />}>Resume</Button>
+							<Button className="seeMoreBtn" hidden={props.hideSeeMore} fontFamily='interSemiBold' to="/about" as={Link} rightIcon={<MdArrowForward />} borderRadius={20}>See More</Button>
 						</Stack>
 					</Stack>
 					<div>

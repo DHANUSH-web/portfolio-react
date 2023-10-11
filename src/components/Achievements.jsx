@@ -1,4 +1,4 @@
-import { Button, Wrap, HStack, VStack, Card, CardHeader, CardBody, CardFooter, Text, Image, useColorMode } from "@chakra-ui/react"
+import { Button, Stack, Card, CardHeader, CardBody, CardFooter, Text, Image, useColorMode, Flex } from "@chakra-ui/react"
 import { AchievementsDark, AchievementsLight } from "./FigmaDesigns"
 import data from "../database.json"
 import "./Achievements.css"
@@ -11,44 +11,55 @@ const Achievements = () => {
 	const isDark = colorMode === 'dark'
 
 	return (
-		<VStack mt={{ base: 100, lg: 70 }} spacing={15}>
+		<Stack direction='column' mt={{ base: 100, lg: 70 }} spacing={15} align='center'>
 			{ isDark ? <AchievementsDark /> : <AchievementsLight /> }
-			<Wrap pt={25} w="full" justify="center" display={{ base: "none", md: "grid", lg: "grid" }}>
+			<Flex flexWrap='wrap' justifyContent='center' gap={5} w="full" display={{ base: 'none', sm: 'none', md: 'flex', lg: 'flex' }}>
 				{
 					cards.map((card) => (
-						<Card className="cards" align="center" w={300} p={15} border="solid 2px" borderColor="blackAlpha.200" borderRadius={12}>
-							<CardHeader>
-								<HStack w="full" spacing={5}>
-									<Image src={card.icon} h={20} borderRadius="50%" />
+						<Card className="cards" w={400} p={15} borderRadius={20} boxShadow='none'>
+							<CardHeader w='full'>
+								<Stack direction='row' spacing={5} align='center'>
+									<Image src={card.icon} h={20} borderRadius="full" />
 									<Text textAlign="initial" fontFamily="interSemiBold">{card.title}</Text>
-								</HStack>
+								</Stack>
 							</CardHeader>
-							<CardBody>
-								<Text textAlign="initial" fontFamily="interRegular">{card.desc}</Text>
+							<CardBody align='end'>
+								<Text textAlign="initial" fontFamily="interRegular" fontSize={15}>{card.desc}</Text>
+								<Button
+									className="view-btn"
+									colorScheme="messenger"
+									variant='ghost'
+									fontSize={15}
+									w='100px'
+									mt={2}
+									borderRadius='full'
+									fontFamily='interSemiBold'
+									backgroundColor='#0080ff11'
+									onClick={() => window.open(card.url)}
+								>
+									View
+								</Button>
 							</CardBody>
-							<CardFooter>
-								<Button className="view-btn" onClick={() => window.open(card.url)} w='200px' borderRadius={20} colorScheme="blue">View</Button>
-							</CardFooter>
 						</Card>
 					)
 					)
 				}
-			</Wrap>
-			<Wrap pt={25} w="full" align="center" justify="center" display={{ base: "flex", md: "none", lg: "none" }}>
+			</Flex>
+			<Flex flexWrap='wrap' gap={5} justifyContent='center' w="full" display={{ base: 'flex', sm: 'flex', md: 'none', lg: 'none'}}>
 				{
 					cards.map((card) => (
-						<HStack className="shortCards" align="center">
+						<Stack direction='row' className="shortCards" align="center">
 							<Image src={card.icon} h={20} borderRadius={7} />
-							<VStack w="full">
+							<Stack direction='column' w="full">
 								<Text textAlign="initial" fontSize={15} fontFamily="interSemiBold">{card.title}</Text>
 								<Button onClick={() => window.open(card.url)} fontFamily="interRegular" fontWeight={350} colorScheme="blue" w="full">View</Button>
-							</VStack>
-						</HStack>
+							</Stack>
+						</Stack>
 					)
 					)
 				}
-			</Wrap>
-		</VStack>
+			</Flex>
+		</Stack>
 	)
 }
 
