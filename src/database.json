@@ -19,10 +19,22 @@
             "companyURL": "https://www.tcs.com/",
             "certificates": [
                 {
+                    "title": "Python Quick Start",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+                    "provider": "NASBA: LinkedIn Learning",
+                    "url": "https://drive.google.com/file/d/1PDC3-ZF27sN9IEtROScY7YiVJkpu17gn/preview"
+                },
+                {
                     "title": "Python",
                     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
                     "provider": "SoloLearn",
                     "url": "https://drive.google.com/file/d/1jyvpzjoyVMtYjqZoZoQJJijpPNPc0X7z/preview"
+                },
+                {
+                    "title": "Python Quick Start",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+                    "provider": "LinkedIn Learning",
+                    "url": "https://drive.google.com/file/d/10l3d1V8ACCug_Hqw9H5Vbhi1kkXozeZw/preview"
                 },
                 {
                     "title": "C Language",
@@ -285,11 +297,11 @@
                 { "title": "Govt. PU College - K.R.Pet", "year": "2016", "progress": "Completed", "description": "Completed Higher education", "score": "79.68", "symbol": "%", "docURL": "", "location": "Mandya" }
             ],
             "projects": [
-                { "title": "Solo Python Developer - LG", "year": "2023", "progress": "On Project", "desc": "Python Software Developement with PyQt5 GUI framework", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "Android Developer - LG", "year": "2023", "progress": "Completed", "desc": "Android Developer in Life Guard build bug fix and analyzing code", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "Automation Developer", "year": "2022", "progress": "Completed", "desc": "Android Automation Script Development of Android OS Upgrade", "score": "6", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "Portfolio - Web Developement (ReactJS)", "year": "2022", "progress": "Completed", "desc": "My personal portfolio website to showcase projects and experience for better opportunities in future", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "PyCOL - Color Agent", "year": "2021", "progress": "Completed", "desc": "A React web app developed to help web developers for choosing colors for their website feasibly", "score": "1", "symbol": "week", "location": "Mysore", "docURL": "https://www.github.com/DHANUSH-web/" }
+                { "title": "ZDiagnose App Development", "year": "2023", "progress": "In Progress", "desc": "Developed a resilient Python and PyQt5-based desktop app for Windows and Linux capable of efficiently managing 250+ GB of Android source code, swiftly identifying issues within minutes.", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "Android Development - LG", "year": "2023", "progress": "Completed", "desc": "Android Developer in Life Guard build team to identify the bugs and fixing efficiently based on AOSP", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "ETG Automation Framework Development", "year": "2022", "progress": "Completed", "desc": "Developed a robust ETG Android Automation framework as a Solo Python Automation Developer for Android OS upgrade scenarios", "score": "6", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "Portfolio Website Development", "year": "2022", "progress": "In Progress", "desc": "Developing my personal portfolio website with ReactJS to showcase projects and experience for better career opportunities in future to satisfy both dreams and passion", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
+                { "title": "PyCOL React App Development", "year": "2021", "progress": "Completed", "desc": "A React web app developed to help web developers for choosing colors for their website easily with a simple and modern UI", "score": "1", "symbol": "week", "location": "Mysore", "docURL": "https://www.github.com/DHANUSH-web/PyCOL-Web-App" }
             ]
         }
     }

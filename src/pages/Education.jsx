@@ -24,7 +24,7 @@ export const EducationCard = ({ title, year, progress, description, score, symbo
                 </Stack>
                 <Text textAlign='start' mt={5} fontFamily='interSemiBold' display={{base: "none", sm: "block", md: "block", lg: "block"}}>{description}</Text>
                 { docURL ?
-                    <Tooltip label="🔗 Visit or Fork Repo" fontFamily='interSemiBold' fontSize={12} borderRadius={7}>
+                    <Tooltip label="🔗 Fork Git Repo" fontFamily='interSemiBold' fontSize={12} borderRadius={7}>
                         <Button
                             onClick={() => window.open(docURL)}
                             fontFamily="interSemiBold"
