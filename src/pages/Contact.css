@@ -1,0 +1,9 @@
+.contact_line {
+    font-family: Inter, 'Segoe UI', arial, monospace;
+    margin-bottom: 15px;
+}
+
+.mailto {
+    color: #0080ff;
+    text-decoration: underline;
+}

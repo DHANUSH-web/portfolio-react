@@ -13,11 +13,17 @@
             "fname": "DHANUSH",
             "lname": "H V",
             "phoneNumber": "+91 9731131772",
-            "jobRole": "ASE - Python Developer",
-            "experience": "1 year",
+            "jobRole": "Software Developer",
+            "experience": "1.3 year",
             "company": "TATA Consultancy Services Ltd.",
             "companyURL": "https://www.tcs.com/",
             "certificates": [
+                {
+                    "title": "Python Core",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+                    "provider": "Udemy: Green Chamelion",
+                    "url": "https://drive.google.com/file/d/1Fu1_zAreb1ffOi81EBed5WiZNQZNKTsj/preview"
+                },
                 {
                     "title": "Python Quick Start",
                     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",

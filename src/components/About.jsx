@@ -34,7 +34,7 @@ const AboutTab = () => {
                             <p className="jobrole">Profesionally <span className="highlight">{profile.jobRole}</span> and <span className="highlight">Ex-Automation Engineer, Tech Lead</span></p>
                             <p>Presently working in <span className="highlight">{profile.company}</span> since <span className="highlight">{profile.experience}</span></p>
                             <br />
-                            <p>Apart from Job, more passionated in <span className="highlight">Web Development</span></p>
+                            <p>Apart from Job, more passionate in <span className="highlight">Full Stack Web Development</span></p>
                         </Text>
                         <br />
                         <Stack direction='row' spacing={5} justify={{ base: 'center', md: 'left', lg: 'left' }}>

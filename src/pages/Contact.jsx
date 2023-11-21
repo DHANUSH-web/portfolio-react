@@ -8,6 +8,9 @@ const Contact = () => {
 		<div>
 			<NavBar isContact={true} />
 			<MaintainancePage />
+			<center className="contact_line">
+				Email ID: <a className="mailto" href="mailto:dhanushhv75@gmail.com">dhanushhv75@gmail.com</a>
+			</center>
 		</div>
 	)
 }
