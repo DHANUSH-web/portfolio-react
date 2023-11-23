@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "version": "0.0.1",
   "dependencies": {
-    "@chakra-ui/react": "^2.5.2",
+    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "framer-motion": "^10.6.0",

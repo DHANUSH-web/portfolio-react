@@ -1,28 +1,30 @@
 import { Button, Card, CardBody, CardFooter, CardHeader, Flex, Stack, Tag, TagLabel, TagLeftIcon, Text, Tooltip } from '@chakra-ui/react'
-import { MdOutlineCalendarMonth, MdCheckCircle, MdLocationPin, MdLink } from "react-icons/md";
+import { MdOutlineCalendarMonth, MdCheckCircle, MdLocationPin, MdLink, MdInfo } from "react-icons/md";
 import database from '../database.json'
 import "./Education.css";
 
 const profile = database.profiles[database.profileHolder];
 
-export const EducationCard = ({ title, year, progress, description, score, symbol, docURL, location }) => {
+export const EducationCard = ({ title, year, progress, isCompleted, description, score, symbol, docURL, location }) => {
     return (
         <Card className='eduCard' borderRadius={20} borderColor='gray.100' borderWidth={1} boxShadow='0 0 15px 7px #17192311'>
             <CardHeader className='title'>
                 <Text fontFamily="interBold" fontSize={{ base: 20, sm: 20, md: 30, lg: 35 }}>{title}</Text>
             </CardHeader>
             <CardBody className='eduCardBody'>
-                <Stack direction={{lg: "row", md: "row", sm: "column", base: "column"}} mt={-5}>
+                <Stack direction='row' mt={-5}>
                     <Tag className='tag' colorScheme='blue' size='md' borderRadius={20}>
                         <TagLeftIcon><MdOutlineCalendarMonth size='md' /></TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{year}</TagLabel>
                     </Tag>
-                    <Tag className='tag' colorScheme='green' size='md' borderRadius={20}>
-                        <TagLeftIcon><MdCheckCircle size='md' /></TagLeftIcon>
+                    <Tag className='tag' colorScheme={ isCompleted ? 'green' : 'orange' } size='md' borderRadius={20}>
+                        <TagLeftIcon>
+                            { isCompleted ? <MdCheckCircle size='sm' /> : <MdInfo size='sm' />}
+                        </TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{progress}</TagLabel>
                     </Tag>
                 </Stack>
-                <Text textAlign='start' mt={5} fontFamily='interSemiBold' display={{base: "none", sm: "block", md: "block", lg: "block"}}>{description}</Text>
+                <Text textAlign='start' mt={5} fontFamily='interMedium' fontSize={{base: "sm", sm: "sm"}}>{description}</Text>
                 { docURL ?
                     <Tooltip label="🔗 Fork Git Repo" fontFamily='interSemiBold' fontSize={12} borderRadius={7}>
                         <Button
@@ -39,7 +41,7 @@ export const EducationCard = ({ title, year, progress, description, score, symbo
             </CardBody>
             <CardFooter>
                 <Stack w='full'>
-                    <Stack className='eduContainer' direction={{base: 'column', sm: "row", md: "row", lg: 'row'}} spacing='auto' align='center'>
+                    <Stack className='eduContainer' direction={{base: 'column', sm: "row", md: "row", lg: 'row'}} spacing='auto' alignItems='center' justify='space-between'>
                         <Stack className='scoreDisp' direction='row' align='flex-end'>
                             <Text className='score'>{score}</Text>
                             <Text className='symbol' pb={4}>{symbol}</Text>
@@ -60,7 +62,7 @@ const EducationTab = () => {
         <Flex flexWrap="wrap" gap={10} placeContent='center' w="full">
             {
                 profile.education.map((edu) => (
-                    <EducationCard title={edu.title} year={edu.year} progress={edu.progress} description={edu.description} score={edu.score} symbol={edu.symbol} docURL={edu.docURL} location={edu.location} />
+                    <EducationCard title={edu.title} year={edu.year} progress={edu.progress} isCompleted={edu.isCompleted} description={edu.description} score={edu.score} symbol={edu.symbol} docURL={edu.docURL} location={edu.location} />
                 ))
             }
         </Flex>

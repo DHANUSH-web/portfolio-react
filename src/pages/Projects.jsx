@@ -14,7 +14,7 @@ const Projects = () => {
 			<Flex flexWrap='wrap' gap={12} justifyContent='center' mt={10} mb={10} ml={5} mr={5} fontFamily="inter">
 				{
 					profile.projects.map(project => (
-						<EducationCard title={project.title} year={project.year} progress={project.progress} description={project.desc} score={project.score} symbol={project.symbol} location={project.location} docURL={project.docURL} />
+						<EducationCard title={project.title} year={project.year} progress={project.progress} isCompleted={project.isCompleted} description={project.desc} score={project.score} symbol={project.symbol} location={project.location} docURL={project.docURL} />
 					))
 				}
 			</Flex>
