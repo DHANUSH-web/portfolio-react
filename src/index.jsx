@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react"
 import { BrowserRouter } from "react-router-dom"
 import { createRoot } from "react-dom/client"
+import theme from "./theme"
 import React from "react"
 import App from "./App"
 
@@ -9,10 +10,10 @@ const root = createRoot(rootElement)
 
 root.render(
 	<React.StrictMode>
-		<ChakraProvider>
-			<BrowserRouter>
+		<BrowserRouter>
+			<ChakraProvider theme={theme}>
 				<App />
-			</BrowserRouter>
-		</ChakraProvider>
+			</ChakraProvider>
+		</BrowserRouter>
 	</React.StrictMode>
 )
