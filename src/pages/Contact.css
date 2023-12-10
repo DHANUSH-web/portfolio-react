@@ -1,9 +1,26 @@
-.contact_line {
-    font-family: Inter, 'Segoe UI', arial, monospace;
-    margin-bottom: 15px;
+.contact_gif {
+    margin: 100px;
 }
 
-.mailto {
-    color: #0080ff;
-    text-decoration: underline;
+.contact_title {
+    background: linear-gradient(to right, teal 0%, rgb(79, 79, 220) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: interbold;
+    font-size: 80px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .contact_title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact_title {
+        font-size: 80px;
+    }
 }

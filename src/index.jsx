@@ -1,7 +1,8 @@
 import { ChakraProvider } from "@chakra-ui/react"
-import { BrowserRouter } from "react-router-dom"
 import { createRoot } from "react-dom/client"
-import theme from "./theme"
+import { BrowserRouter } from "react-router-dom"
+import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 import React from "react"
 import App from "./App"
 
@@ -11,9 +12,11 @@ const root = createRoot(rootElement)
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<ChakraProvider theme={theme}>
+			<ChakraProvider>
 				<App />
 			</ChakraProvider>
 		</BrowserRouter>
+		<Analytics />	{ /* Web Analytics*/ }
+		<SpeedInsights /> { /* Performance analysis*/ }
 	</React.StrictMode>
 )

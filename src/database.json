@@ -312,6 +312,14 @@
             "proexp": [
                 { "title": "Software Developer", "year": "2022", "isCompleted": false, "progress": "Present", "desc": "Presently Working as Software Developer at TATA Consultancy Services (TCS) and working on a production software development project as a Solo Python Software Developer", "score": "1.3", "symbol": "years", "location": "Bangalore" },
                 { "title": "Assistant System Engineer - Trainee", "year": "2022", "isCompleted": true, "progress": "Completed", "desc": "Joined as Assistant System Engieer - Trainee to TATA Consultancy Services (TCS) on Aug 2022", "score": "1", "symbol": "month", "location": "Trivandrum, Kerala" }
+            ],
+            "contact_info": [
+                { "image": "https://cdn-icons-png.flaticon.com/512/5968/5968534.png", "service": "EMail", "tooltip": "Google Mail", "href": "mailto:dhanushhv75@gmail.com" },
+                { "image": "https://cdn-icons-png.flaticon.com/512/3536/3536505.png", "service": "LinkedIn", "tooltip": "LinkedIn", "href": "https://www.linkedin.com/in/dhanush-h-v-1b85b41b2/"},
+                { "image": "https://cdn-icons-png.flaticon.com/512/5968/5968830.png", "service": "Twitter", "tooltip": "Twitter", "href": "https://twitter.com/dhanushh48"},
+                { "image": "https://cdn-icons-png.flaticon.com/512/2111/2111463.png", "service": "Instagram", "tooltip": "Instagram", "href": "https://instagram.com/dhanushh48"},
+                { "image": "https://cdn-icons-png.flaticon.com/512/9073/9073336.png", "service": "Call", "tooltip": "Direct Call", "href": "tel:+919731131772"},
+                { "image": "https://cdn-icons-png.flaticon.com/512/13051/13051741.png", "service": "WhatsApp", "tooltip": "WhatsApp Chat", "href": "https://wa.me/+919731131772"}
             ]
         }
     }

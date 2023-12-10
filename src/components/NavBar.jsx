@@ -19,7 +19,7 @@ const NavBar = ({ isHome, isAbout, isProjects, isExp, isContact }) => {
 	const logoFg = isDark ? "aqua" : "#0080ff"
 
 	return (
-		<HStack className="navbar" width="full" p={5} spacing={5} bg={ isDark ? "#1a202cdc": "#ffffffdc"} backdropFilter="blur(5px)" zIndex={1} top={0} right={0} sticky>
+		<HStack className="navbar" width="full" p={5} spacing={5} bg={ isDark ? "#1a202cdc": "#ffffffdc"} backdropFilter="blur(5px)" zIndex={1} top={0} right={0} sticky="sticky">
 			<Link to="/" className="brand"><Text color={logoFg} fontFamily="interSemiBold">Portfolio</Text></Link>
 			<HStack w="full" justify="flex-end">
 				<HStack spacing={5} justify="flex-end" w="full" display={{ base: "none", md: "flex", lg: "flex" }}>
