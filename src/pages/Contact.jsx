@@ -1,6 +1,5 @@
-import NavBar from "../components/NavBar"
-import ContactImage from "../resources/images/contact.png"
 import { Stack, Button, Flex, Tooltip, useColorMode } from "@chakra-ui/react"
+import NavBar from "../components/NavBar"
 import { motion } from "framer-motion"
 import database from "../database.json"
 import React from "react"

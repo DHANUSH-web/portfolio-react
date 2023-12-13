@@ -1,12 +1,5 @@
 {
     "profileHolder": "dhanushhv",
-    "images": {
-        "hello": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.gif",
-        "rocket": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif",
-        "load_failed": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f644/512.gif",
-        "not_found": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f62a/512.gif",
-        "lgtm": "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif"
-    },
     "profiles": {
         "dhanushhv": {
             "name": "DHANUSH H V",
@@ -109,8 +102,6 @@
                     "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/preview"
                 }
             ],
-            "project": "",
-            "client": "",
             "resume": "https://docs.google.com/document/d/1EtLxrw3epo-s_R8Ced5dryq-yCKwAdh7UsfDygkVj2Y/edit?usp=sharing",
             "githubProfile": "https://www.github.com/DHANUSH-web/",
             "profilePhoto1": "https://bit.ly/kent-c-dodds",

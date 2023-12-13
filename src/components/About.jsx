@@ -1,12 +1,11 @@
 import { Badge, IconButton, Image, Stack, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
 import { FaGithub, FaHackerrank, FaLinkedin, FaBitbucket } from "react-icons/fa"
-import SkillDesktopView from "../resources/images/skill_desktop_view.svg"
+import SkillDesktopView from "../resources/images/skills_desktop_view.svg"
 import SkillMobileView from "../resources/images/skills_mobile_view.png"
-import profilePhoto from "../resources/images/profileImage.png"
-import MyselfMobile from '../resources/images/MyselfMobile.png'
+import ProfileAvatar from "../resources/images/profile_avatar.png"
+import AboutMeDesktop from "../resources/images/about_me_desktop.png"
+import AboutMeMobile from '../resources/images/about_me_mobile.png'
 import ProfileCard from "../components/ProfileCard"
-import Myself from "../resources/images/Myself.png"
-import { motion } from 'framer-motion'
 import data from "../database.json"
 import React from "react"
 import './About.css'
@@ -20,18 +19,18 @@ const AboutTab = () => {
 
     return (
         <Stack>
-            <ProfileCard profileName={profile.name} textMode={true} profilePhoto={profilePhoto} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} profileURL={profile.githubProfile} hideResume={true} hideSeeMore={true} />
+            <ProfileCard profileName={profile.name} textMode={true} profilePhoto={ProfileAvatar} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} profileURL={profile.githubProfile} hideResume={true} hideSeeMore={true} />
             <Stack align='center'>
                 <Stack className='about-myself' align="center" spacing='auto' direction={{ md: 'row', base: 'column', lg: 'row' }} borderColor='blackAlpha.200' bg={isDark ? "blue.200" : "white" } w='fit-content'>
-                    <Image className="myself-img-right" src={Myself} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'none', md: 'block', lg: 'block' }} />
-                    <Image className="myself-img-right" src={MyselfMobile} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'block', md: 'none', lg: 'none' }}/>
+                    <Image className="myself-img-right" src={AboutMeDesktop} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'none', md: 'block', lg: 'block' }} />
+                    <Image className="myself-img-right" src={AboutMeMobile} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'block', md: 'none', lg: 'none' }}/>
                     <Stack id="aboutme" className="right-content" p={5} bg={ isDark ? "gray.900" : "teal.50" } w='full'>
                         <Text className="about-title" fontSize={30} textAlign="left" color={ isDark ? "teal.200" : "blue.500" }>About Me</Text>
                         <br />
                         <Text className="insider" textAlign='start' fontFamily='interMedium' fontSize={{ base: 13, sm: 13, md: 15, lg: 15 }}>
                             Hello.. I'm <span className="name">Dhanush!!</span>
                             <p>I'm 22 years old and graduated in 2022</p>
-                            <p className="jobrole">Profesionally <span className="highlight">{profile.jobRole}</span> and <span className="highlight">Ex-Automation Engineer, Tech Lead</span></p>
+                            <p className="jobrole">Professionally <span className="highlight">{profile.jobRole}</span> and <span className="highlight">Ex-Automation Engineer, Tech Lead</span></p>
                             <p>Presently working in <span className="highlight">{profile.company}</span> since <span className="highlight">{profile.experience}</span></p>
                             <br />
                             <p>Apart from Job, more passionate in <span className="highlight">Full Stack Web Development</span></p>
@@ -99,9 +98,9 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             expert.map((skill) => (
-                                <Stack className='skill_card' maxW={140} align='center' justify='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" } as={motion.button}>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
-                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                    <p className="skill-text">{skill.text}</p>
                                 </Stack>
                             ))
                         }
@@ -112,9 +111,9 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             advanced.map((skill) => (
-                                <Stack className='skill_card' maxW={140} align='center' justify='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" } as={motion.button}>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
-                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                    <p className="skill-text">{skill.text}</p>
                                 </Stack>
                             ))
                         }
@@ -125,9 +124,9 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             intermediate.map((skill) => (
-                                <Stack className='skill_card' maxW={140} align='center' justify='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" } as={motion.button}>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
-                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                    <p className="skill-text">{skill.text}</p>
                                 </Stack>
                             ))
                         }
@@ -138,9 +137,9 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             beginner.map((skill) => (
-                                <Stack className='skill_card' maxW={140} align='center' justify='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" } as={motion.button}>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
-                                    <p display={{ base: 'none', md: 'block', lg: 'block' }}>{skill.text}</p>
+                                    <p className="skill-text">{skill.text}</p>
                                 </Stack>
                             ))
                         }

@@ -12,7 +12,7 @@ export const SkillCard = ({ title, content, image, className, width, height, onC
         <Card as={motion.div} className={className} w={width} h={height} borderRadius={20} boxShadow='none' borderWidth={1} borderColor='gray.200' align="center" direction={{ base: "row", md: "column", lg: "column" }}>
             <CardHeader w='full'>
                 <Stack direction={{ base: "column", md: "row", lg: "row" }} align="center">
-                    <Image src={(image === undefined || image === '') ? data.images.not_found : image} w="40px" borderRadius={7} />
+                    <Image src={(image === undefined || image === '') ? "🥲" : image} w="40px" borderRadius={7} />
                     <Text display={{ base: "none", md: "block", lg: "block" }} fontSize='sm'>{title}</Text>
                 </Stack>
             </CardHeader>

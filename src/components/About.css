@@ -61,6 +61,10 @@
     min-width: 20px;
 }
 
+.skill-text {
+    text-align: center;
+}
+
 .classifier {
     background-color: transparent;
     transition: 0.5s;

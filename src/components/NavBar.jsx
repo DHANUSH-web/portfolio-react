@@ -1,8 +1,8 @@
 import { HStack, Text, Menu, MenuButton, MenuList, MenuItem, IconButton, useColorMode } from "@chakra-ui/react"
 import { MdOutlineHandshake, MdPerson, MdTimeline } from "react-icons/md"
 import { BiGitCommit, BiSun, BiMoon, BiHomeAlt } from "react-icons/bi"
-import { Link, useLocation } from "react-router-dom"
 import { CgMenuLeftAlt } from "react-icons/cg"
+import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import React from "react"
 import "./NavBar.css"
@@ -20,7 +20,9 @@ const NavBar = ({ isHome, isAbout, isProjects, isExp, isContact }) => {
 
 	return (
 		<HStack className="navbar" width="full" p={5} spacing={5} bg={ isDark ? "#1a202cdc": "#ffffffdc"} backdropFilter="blur(5px)" zIndex={1} top={0} right={0} sticky="sticky">
-			<Link to="/" className="brand"><Text color={logoFg} fontFamily="interSemiBold">Portfolio</Text></Link>
+			<Link to="/" className="brand">
+				<Text color={logoFg} fontFamily="intersemibold, inter, arial, --system-ui">Portfolio</Text>
+			</Link>
 			<HStack w="full" justify="flex-end">
 				<HStack spacing={5} justify="flex-end" w="full" display={{ base: "none", md: "flex", lg: "flex" }}>
 					<Link id="navLink" to="/"><Text color={homeFg}>Home</Text></Link>

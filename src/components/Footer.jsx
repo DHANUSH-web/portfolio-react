@@ -1,18 +1,23 @@
-import { Center, Stack, StackDivider, Text, Tooltip } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
-import data from "../database.json";
+import {Stack, StackDivider, Text, Tooltip} from "@chakra-ui/react"
+import {Link} from "react-router-dom"
+import data from "../database.json"
 import React from "react"
 import "./Footer.css"
 
 
 const Footer = () => {
-    const profileHolder = data.profileHolder
-    const profiles = data.profiles[profileHolder].profiles
+    const profiles = data.profiles[data.profileHolder].profiles
 
     return (
-        <Center className="footer" bg="#111c2f" pb={{ base: 100, sm: 100, md: 5, lg: 5 }}>
-            <Stack direction='row' justifyContent='center' spacing={{ base: 100, lg: 350 }} w="full">
-                <Stack divider={<StackDivider />}>
+        <div className="footer">
+            <Stack
+                direction='row'
+                justifyContent='center'
+                spacing={{base: 100, lg: 350}}
+                pb={{ base: 50, sm: 50, md: 0, lg: 0 }}
+                w="full"
+            >
+                <Stack divider={<StackDivider/>}>
                     <Text className="head">Quick Links</Text>
                     <Stack align="left">
                         <Link to="/" id="footerLinks">Home</Link>
@@ -22,11 +27,12 @@ const Footer = () => {
                         <Link to="/contact" id="footerLinks">Contact</Link>
                     </Stack>
                 </Stack>
-                <Stack direction='column' align="center" divider={<StackDivider />}>
+                <Stack direction='column' align="center" divider={<StackDivider/>}>
                     <Text className="head">Profiles</Text>
                     <Stack direction='column' align="left" mt={2}>
                         <a href={profiles.linkedin.url} target="_blank" id="footerLinks">LinkedIn</a>
-                        <Tooltip label="5⭐ in C++, 4⭐ in Python" placement='left' borderRadius={7} fontFamily='interSemiBold'>
+                        <Tooltip label="5⭐ in C++, 4⭐ in Python" placement='left' borderRadius={7}
+                                 fontFamily='interSemiBold'>
                             <a href={profiles.hackerrank.url} target="_blank" id="footerLinks">Hackerrank</a>
                         </Tooltip>
                         <a href={profiles.github.url} target="_blank" id="footerLinks">GitHub</a>
@@ -34,7 +40,7 @@ const Footer = () => {
                     </Stack>
                 </Stack>
             </Stack>
-        </Center>
+        </div>
     )
 }
 

@@ -5,6 +5,7 @@
     background-size: cover;
     padding: 50px 0;
     color: white;
+    background-color: #0d1b2a;
 }
 
 #footerLinks {
@@ -22,8 +23,4 @@
     font-family: interSemiBold;
     font-size: 20px;
     color: lightblue;
-}
-
-.expand-block {
-    margin: 100px;
 }

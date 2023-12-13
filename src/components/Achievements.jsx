@@ -1,4 +1,4 @@
-import { Button, Stack, Card, CardHeader, CardBody, CardFooter, Text, Image, useColorMode, Flex } from "@chakra-ui/react"
+import { Button, Stack, Card, CardHeader, CardBody, Text, Image, useColorMode, Flex } from "@chakra-ui/react"
 import { AchievementsDark, AchievementsLight } from "./FigmaDesigns"
 import data from "../database.json"
 import "./Achievements.css"

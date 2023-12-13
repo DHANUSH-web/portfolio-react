@@ -1,5 +1,5 @@
 import { Box, Stack, Button, Text, Image, StackDivider, useColorMode } from "@chakra-ui/react"
-import { ProfileNameLight, ProfileNameDark } from '../components/FigmaDesigns'
+import { ProfileNameLight, ProfileNameDark } from './FigmaDesigns'
 import { MdLink, MdArrowForward } from "react-icons/md"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"

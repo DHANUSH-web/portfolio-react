@@ -1,4 +1,4 @@
-import { EducationCard } from "../pages/Education"
+import { EducationCard } from "./Education"
 import NavBar from "../components/NavBar"
 import database from "../database.json"
 import { Flex } from "@chakra-ui/react"
