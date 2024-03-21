@@ -203,6 +203,11 @@
                     "level": 3
                 },
                 {
+                    "icon": "https://media.licdn.com/dms/image/D560BAQFjFIUcTilH4w/company-logo_200_200/0/1708112694181/notionhq_logo?e=1718841600&v=beta&t=TXxBsUpF1Botor5LemaMw6Ts7iktK6wbU-CKWpuZwNA",
+                    "text": "Notion",
+                    "level": 2
+                },
+                {
                     "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
                     "text": "NodeJS",
                     "level": 2

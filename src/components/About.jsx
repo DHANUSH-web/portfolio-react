@@ -65,21 +65,22 @@ export const SkillsTab = () => {
     const advanced = [];
     const expert = [];
     
-    for (let i of profile.skills)
-        switch (i.level) {
+    profile.skills.map(skill => {
+        switch (skill.level) {
             case 0:
-                beginner.push(i);
+                beginner.push(skill);
                 break;
             case 1:
-                intermediate.push(i);
+                intermediate.push(skill);
                 break;
             case 2:
-                advanced.push(i);
+                advanced.push(skill);
                 break;
             case 3:
-                expert.push(i);
+                expert.push(skill);
                 break;
         }
+    })
 
     const openLink = () => {
         const open = confirm("Would you like to visit the GitHub page ?");
@@ -98,7 +99,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             expert.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>
@@ -111,7 +112,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             advanced.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>
@@ -124,7 +125,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             intermediate.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>
@@ -137,7 +138,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             beginner.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='center' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>
