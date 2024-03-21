@@ -1,4 +1,4 @@
-import {Stack, StackDivider, Text, Tooltip} from "@chakra-ui/react"
+import {Box, Stack, StackDivider, Text, Tooltip} from "@chakra-ui/react"
 import {Link} from "react-router-dom"
 import data from "../database.json"
 import React from "react"
@@ -9,7 +9,7 @@ const Footer = () => {
     const profiles = data.profiles[data.profileHolder].profiles
 
     return (
-        <div className="footer">
+        <Box className="footer" bg="gray.900">
             <Stack
                 direction='row'
                 justifyContent='center'
@@ -40,7 +40,7 @@ const Footer = () => {
                     </Stack>
                 </Stack>
             </Stack>
-        </div>
+        </Box>
     )
 }
 
