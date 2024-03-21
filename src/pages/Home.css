@@ -1,16 +1,3 @@
-.description {
-	padding: 5px 5px 5px 12px;
-	font-family: interRegular;
-	border-left: solid 5px #0050ff;
-	cursor: default;
-	transition: 0.2s;
-}
-
-.desc-heading {
-	font-size: 40px;
-	font-weight: bolder;
-}
-
 .resumeBtn, .seeMoreBtn {
 	font-family: interSemiBold;
 	font-weight: normal;

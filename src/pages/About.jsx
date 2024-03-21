@@ -22,7 +22,7 @@ const About = () => {
 							<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} color={ activeTab === 2 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Skills</Tab>
 							<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} color={ activeTab === 3 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Certificates</Tab>
 						</TabList>
-						<TabIndicator h='2px' bg={ isDark ? 'aqua' : 'blue.500'} borderRadius={1}/>
+						{/* <TabIndicator h='2px' bg={ isDark ? 'aqua' : 'blue.500'} borderRadius={1}/> */}
 						<TabPanels>
 							<TabPanel><AboutTab /></TabPanel>
 							<TabPanel><EducationTab /></TabPanel>
