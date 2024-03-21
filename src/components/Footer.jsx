@@ -40,6 +40,8 @@ const Footer = () => {
                     </Stack>
                 </Stack>
             </Stack>
+            <br />
+            <Text align="center" color="whiteAlpha.600">&copy; 2024, Website developed and owned by <a href="https://instagram.com/dhanushh48" target="_blank">@Dhanush</a></Text>
         </Box>
     )
 }

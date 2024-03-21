@@ -1,4 +1,4 @@
-import { Button, Stack, Card, CardHeader, CardBody, Text, Image, useColorMode, Flex } from "@chakra-ui/react"
+import { Button, Stack, Card, CardHeader, CardBody, CardFooter, Text, Image, useColorMode, Flex } from "@chakra-ui/react"
 import { AchievementsDark, AchievementsLight } from "./FigmaDesigns"
 import data from "../database.json"
 import "./Achievements.css"
@@ -15,34 +15,28 @@ const Achievements = () => {
 			{ isDark ? <AchievementsDark /> : <AchievementsLight /> }
 			<Flex flexWrap='wrap' justifyContent='center' gap={5} w="full" display={{ base: 'none', sm: 'none', md: 'flex', lg: 'flex' }}>
 				{
-					cards.map((card) => (
-						<Card className="cards" w={400} p={15} borderRadius={20} boxShadow='none'>
-							<CardHeader w='full'>
+					cards.map((card, idx) => (
+						<Card key={"card__" + idx} w={400} borderRadius={20} variant="outline">
+							<CardHeader>
 								<Stack direction='row' spacing={5} align='center'>
 									<Image src={card.icon} h={20} borderRadius="full" />
 									<Text textAlign="initial" fontFamily="interSemiBold">{card.title}</Text>
 								</Stack>
 							</CardHeader>
-							<CardBody align='end'>
-								<Text textAlign="initial" fontFamily="interRegular" fontSize={15}>{card.desc}</Text>
+							<CardBody>
+								<Text textAlign="initial" fontFamily="interRegular" fontSize="md">{card.desc}</Text>
+							</CardBody>
+							<CardFooter justify="end">
 								<Button
-									className="view-btn"
-									colorScheme="messenger"
-									variant='ghost'
-									fontSize={15}
-									w='100px'
-									mt={2}
-									borderRadius='full'
-									fontFamily='interSemiBold'
-									backgroundColor='#0080ff11'
+									fontFamily="interSemiBold"
+									width={28}
 									onClick={() => window.open(card.url)}
 								>
 									View
 								</Button>
-							</CardBody>
+							</CardFooter>
 						</Card>
-					)
-					)
+					))
 				}
 			</Flex>
 			<Flex flexWrap='wrap' gap={5} justifyContent='center' w="full" display={{ base: 'flex', sm: 'flex', md: 'none', lg: 'none'}}>

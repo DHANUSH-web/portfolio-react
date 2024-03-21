@@ -21,7 +21,7 @@ const NavBar = ({ isHome, isAbout, isProjects, isExp, isContact }) => {
 	return (
 		<HStack className="navbar" width="full" p={5} spacing={5} bg={ isDark ? "#1a202cdc": "#ffffffdc"} backdropFilter="blur(5px)" zIndex={1} top={0} right={0} sticky="sticky">
 			<Link to="/" className="brand">
-				<Text color={logoFg} fontFamily="intersemibold, inter, arial, --system-ui">Portfolio</Text>
+				<Text color={logoFg} fontFamily="--apple-system, interSemiBold, arial, --system-ui">Portfolio</Text>
 			</Link>
 			<HStack w="full" justify="flex-end">
 				<HStack spacing={5} justify="flex-end" w="full" display={{ base: "none", md: "flex", lg: "flex" }}>
@@ -30,7 +30,7 @@ const NavBar = ({ isHome, isAbout, isProjects, isExp, isContact }) => {
 					<Link id="navLink" to="/projects"><Text color={projectsFg}>Projects</Text></Link>
 					<Link id="navLink" to="/experience"><Text color={expFg}>Experience</Text></Link>
 					<Link id="navLink" to="/contact"><Text color={contactFg}>Contact</Text></Link>
-					<IconButton as={motion.button} borderRadius="full" whileTap={{ scale: 0.8, rotate: 180 }} icon={ isDark ? <BiSun size="20px" /> : <BiMoon size="20px" /> } onClick={toggleColorMode} colorScheme="blue"/>
+					<IconButton as={motion.button} whileTap={{ scale: 0.9 }} icon={ isDark ? <BiSun size="20px" /> : <BiMoon size="20px" /> } onClick={toggleColorMode} />
 				</HStack>
 				<Menu>
 					<MenuButton as={IconButton} variant="ghost" icon={<CgMenuLeftAlt size="25px"/>} display={{ base: "flex", md: "none", lg: "none" }} _expanded={{ color: isDark ? 'aqua' : 'blue.400' }} />

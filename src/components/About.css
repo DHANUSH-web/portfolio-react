@@ -42,10 +42,11 @@
 }
 
 .skill_card {
-    min-height: 120px;
-    padding: 15px;
-    border-width: 2px;
-    border-radius: 12px;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border: solid 1px transparent;
+    border-radius: 7px;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -56,8 +57,7 @@
 
 .skill_logo {
     border-radius: 7px;
-    background-color: white;
-    max-width: 100px;
+    max-width: 80px;
     min-width: 20px;
 }
 

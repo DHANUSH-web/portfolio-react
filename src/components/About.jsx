@@ -98,8 +98,8 @@ export const SkillsTab = () => {
                     <Badge w='fit-content' alignSelf='center' textTransform='capitalize' fontSize={16} pl={5} pr={5} pt={1} pb={1} borderRadius='full' colorScheme='green' variant='subtle'>Advanced++</Badge>
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
-                            expert.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                            expert.map((skill, idx) => (
+                                <Stack key={"skillcard__"+idx} className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>

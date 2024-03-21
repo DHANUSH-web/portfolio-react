@@ -20,9 +20,9 @@ const ProfileCard = ({ ...props }) => {
 							<Text to="/experience" as={Link} color={ isDark ? "gray.200" : "gray.700"} fontFamily="interSemiBold">{props.jobRole}</Text>
 							<Text as='a' className="hyper-link" fontFamily="interSemiBold" color="blue.500" fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} href={props.companyURL} target="_blank">{props.companyName}</Text>
 						</Stack>
-						<Stack mt={5} w="full" justify="center" direction={{ base: "column", sm: "row", md: "row", lg: "row" }}>
-							<Button className="resumeBtn" hidden={props.hideResume} fontFamily='interSemiBold' as='a' href={props.resume} target="_blank" colorScheme='messenger' borderRadius={20} leftIcon={<MdLink />}>Resume</Button>
-							<Button className="seeMoreBtn" hidden={props.hideSeeMore} fontFamily='interSemiBold' to="/about" as={Link} rightIcon={<MdArrowForward />} borderRadius={20}>See More</Button>
+						<Stack gap={5} mt={5} direction={{ base: "column", sm: "row", md: "row", lg: "row" }}>
+							<Button className="resumeBtn" hidden={props.hideResume} fontFamily='interSemiBold' as='a' href={props.resume} target="_blank" leftIcon={<MdLink />}>Resume</Button>
+							<Button className="seeMoreBtn" hidden={props.hideSeeMore} fontFamily='interSemiBold' to="/about" as={Link} variant="outline" rightIcon={<MdArrowForward />}>See More</Button>
 						</Stack>
 					</Stack>
 					<div>

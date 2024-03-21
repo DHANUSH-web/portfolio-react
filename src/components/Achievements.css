@@ -1,17 +1,7 @@
-.cards {
-	border-radius: 20px;
-	transition: 0.2s;
-	cursor: default;
-}
-
 .shortCards {
 	background-color: #efefef22;
 	padding: 5px;
 	width: 250px;
 	border-radius: 10px;
 	transition: 0.2s;
-}
-
-.cards:hover, .shortCards:hover {
-	border-color: #2a7ecc;
 }
