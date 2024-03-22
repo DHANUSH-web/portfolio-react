@@ -1,4 +1,4 @@
-import { Stack, Button, Flex } from "@chakra-ui/react";
+import { Text, Stack, Button, Flex, useColorMode, Image } from "@chakra-ui/react";
 import {
   IconMail,
   IconBrandLinkedin,
@@ -13,6 +13,7 @@ import React from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const { colorMode } = useColorMode();
   const profile = database.profiles[database.profileHolder];
   const contacts = profile.contacts;
 
@@ -20,14 +21,16 @@ const Contact = () => {
     <div className="contact_container">
       <NavBar isContact={true} />
       <div>
-        <Stack align="center">
-          <span className="contact_title">get in touch</span>
-          <img
+        <Stack align="center" gap={15}>
+          <Text fontFamily="interBold" fontSize={50}>Get in touch</Text>
+          <Image
             className="contact_gif"
             src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/https://images.ctfassets.net/spoqsaf9291f/4qPZTqxXRCDQiimE4c9xXc/eb57558f50ee6fac68dc04e3b5099c8a/home-hero.png"
             alt="🎊"
-            width="500px"
-            height="500px"
+            width={700}
+            bg="white"
+            p={12}
+            borderRadius={7}
           />
           <Flex fontFamily="interSemiBold" gap={5} mb={20} wrap="wrap" justify="center">
             {/* Mail */}
