@@ -14,9 +14,8 @@ const Footer = () => {
                 direction='row'
                 justifyContent='center'
                 spacing={{base: 100, lg: 350}}
-                pb={{ base: 50, sm: 50, md: 0, lg: 0 }}
                 w="full"
-            >
+                >
                 <Stack divider={<StackDivider/>}>
                     <Text className="head">Quick Links</Text>
                     <Stack align="left">
@@ -41,7 +40,7 @@ const Footer = () => {
                 </Stack>
             </Stack>
             <br />
-            <Text align="center" color="whiteAlpha.600">&copy; 2024, Website developed and owned by <a href="https://instagram.com/dhanushh48" target="_blank">@Dhanush</a></Text>
+            <Text pb={{ base: 50, sm: 50, md: 0, lg: 0 }} align="center" color="whiteAlpha.600">&copy; 2024, Website developed and owned by <a href="https://instagram.com/dhanushh48" target="_blank">@Dhanush</a></Text>
         </Box>
     )
 }
