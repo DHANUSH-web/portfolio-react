@@ -1,5 +1,6 @@
-import { HStack, Text, Menu, MenuButton, MenuList, MenuItem, IconButton, useColorMode } from "@chakra-ui/react"
+import { HStack, Text, Image, Menu, MenuButton, MenuList, MenuItem, IconButton, useColorMode } from "@chakra-ui/react"
 import { IconHeartHandshake, IconMenu, IconUser, IconTimeline, IconSunFilled, IconMoonFilled, IconHome, IconGitCommit } from "@tabler/icons-react";
+import Avatar from "../resources/images/avatar.png"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import React from "react"
@@ -19,7 +20,7 @@ const NavBar = ({ isHome, isAbout, isProjects, isExp, isContact }) => {
 	return (
 		<HStack className="navbar" width="full" p={5} spacing={5} bg={ isDark ? "#1a202cdc": "#ffffffdc"} backdropFilter="blur(5px)" zIndex={1} top={0} right={0} sticky="sticky">
 			<Link to="/" className="brand">
-				<Text color={logoFg} fontFamily="--apple-system, interSemiBold, arial, --system-ui">Portfolio</Text>
+				<Image src={Avatar} alt="Portfolio" width={12} borderRadius="full" />
 			</Link>
 			<HStack w="full" justify="flex-end">
 				<HStack spacing={5} justify="flex-end" w="full" display={{ base: "none", md: "flex", lg: "flex" }}>
