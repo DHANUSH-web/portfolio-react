@@ -17,7 +17,7 @@ const Home = () => {
 		<div>
 			<NavBar isHome={true} />
 			<Box className="profile" align="center" w="full" p={{ base: 10, md: 20, lg: 20 }}>
-				<ProfileCard profileName={profile.name} profilePhoto={ProfileAvatar} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} width={200} height={300} />
+				<ProfileCard profileName={profile.name} profilePhoto={ProfileAvatar} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} width={200} height={300} textMode />
 				<Box mt={100}>
 					<Flex flexDir="column" align="baseline" gap={2} maxW="6xl" bg="blackAlpha.50" p={5} borderRadius={7}>
 						<Heading fontFamily="interBold">Hi,</Heading>

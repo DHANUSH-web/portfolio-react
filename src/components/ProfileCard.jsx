@@ -13,7 +13,7 @@ const ProfileCard = ({ ...props }) => {
 		<Box className="profile" align="center" w="full" p={{ base: 10, md: 20, lg: 20 }}>
 			<Stack direction='row' align="center" justify="center" spacing={{ base: 0, lg: "10rem" }} display={{ base: "block", lg: "flex" }} w='full'>
 				<Stack dir="column" w={{ md: "500px", lg: '700px' }} align="center">
-					{ props.textMode ? <Text className="profileName" fontSize={{ base: 50, lg: 70 }} fontFamily="interSemiBold">{props.profileName}</Text>
+					{ props.textMode ? <Text className="profileName" fontSize={{ base: 50, lg: 70 }} fontFamily="interBold">{props.profileName}</Text>
 					: isDark ? <ProfileNameDark /> : <ProfileNameLight /> }
 					<Stack divider={<StackDivider />} direction={{ base: "column", sm: "column", md: "row", lg: 'row' }} justifyContent='center'>
 						<Text to="/experience" as={Link} color={ isDark ? "gray.200" : "gray.700"} fontFamily="interSemiBold">{props.jobRole}</Text>
