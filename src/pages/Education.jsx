@@ -1,5 +1,5 @@
 import { Button, Card, CardBody, CardFooter, CardHeader, Flex, Stack, Tag, TagLabel, TagLeftIcon, Text, Tooltip } from '@chakra-ui/react'
-import { MdOutlineCalendarMonth, MdCheckCircle, MdLocationPin, MdLink, MdInfo } from "react-icons/md";
+import { IconCalendarMonth, IconCircleCheck, IconMapPin, IconLink, IconInfoCircle } from "@tabler/icons-react"
 import database from '../database.json'
 import "./Education.css";
 
@@ -14,12 +14,12 @@ export const EducationCard = ({ title, year, progress, isCompleted, description,
             <CardBody className='eduCardBody'>
                 <Stack direction='row' mt={-5}>
                     <Tag className='tag' colorScheme='blue' size='md' borderRadius={20}>
-                        <TagLeftIcon><MdOutlineCalendarMonth size='md' /></TagLeftIcon>
+                        <TagLeftIcon><IconCalendarMonth size='md' /></TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{year}</TagLabel>
                     </Tag>
                     <Tag className='tag' colorScheme={ isCompleted ? 'green' : 'orange' } size='md' borderRadius={20}>
                         <TagLeftIcon>
-                            { isCompleted ? <MdCheckCircle size='sm' /> : <MdInfo size='sm' />}
+                            { isCompleted ? <IconCircleCheck size='sm' /> : <IconInfoCircle size='sm' />}
                         </TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{progress}</TagLabel>
                     </Tag>
@@ -31,7 +31,7 @@ export const EducationCard = ({ title, year, progress, isCompleted, description,
                             onClick={() => window.open(docURL)}
                             fontFamily="interSemiBold"
                             borderRadius="full"
-                            leftIcon={<MdLink />}
+                            leftIcon={<IconLink />}
                             size="sm"
                         >
                             Git Repo
@@ -47,7 +47,7 @@ export const EducationCard = ({ title, year, progress, isCompleted, description,
                             <Text className='symbol' pb={4}>{symbol}</Text>
                         </Stack>
                         <Tag colorScheme='orange' size="md" p='5px 12px' borderRadius={20} w='fit-content'>
-                            <TagLeftIcon><MdLocationPin size='lg' /></TagLeftIcon>
+                            <TagLeftIcon><IconMapPin size='lg' /></TagLeftIcon>
                             <TagLabel fontFamily='interSemiBold'>{location}</TagLabel>
                         </Tag>
                     </Stack>

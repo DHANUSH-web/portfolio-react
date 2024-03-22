@@ -1,6 +1,6 @@
 import { Box, Stack, Button, Text, Image, StackDivider, useColorMode } from "@chakra-ui/react"
 import { ProfileNameLight, ProfileNameDark } from './FigmaDesigns'
-import { MdLink, MdArrowForward } from "react-icons/md"
+import { IconLink, IconArrowRight } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import React from "react"
@@ -21,8 +21,8 @@ const ProfileCard = ({ ...props }) => {
 							<Text as='a' className="hyper-link" fontFamily="interSemiBold" color="blue.500" fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} href={props.companyURL} target="_blank">{props.companyName}</Text>
 						</Stack>
 						<Stack gap={5} mt={5} direction={{ base: "column", sm: "row", md: "row", lg: "row" }}>
-							<Button className="resumeBtn" hidden={props.hideResume} fontFamily='interSemiBold' as='a' href={props.resume} target="_blank" leftIcon={<MdLink />}>Resume</Button>
-							<Button className="seeMoreBtn" hidden={props.hideSeeMore} fontFamily='interSemiBold' to="/about" as={Link} variant="outline" rightIcon={<MdArrowForward />}>See More</Button>
+							<Button className="resumeBtn" hidden={props.hideResume} fontFamily='interSemiBold' as='a' href={props.resume} target="_blank" leftIcon={<IconLink size={15} />}>Resume</Button>
+							<Button className="seeMoreBtn" hidden={props.hideSeeMore} fontFamily='interSemiBold' to="/about" as={Link} variant="outline" rightIcon={<IconArrowRight size={15} />}>See More</Button>
 						</Stack>
 					</Stack>
 					<div>

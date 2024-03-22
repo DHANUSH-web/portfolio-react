@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar"
 import { Button, Center } from "@chakra-ui/react"
+import { IconHome } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 import "./PageNotFound.css"
 import React from "react"
-import { BiHomeAlt2 } from "react-icons/bi"
 
 const PageNotFound = () => {
 	return (
@@ -18,7 +18,7 @@ const PageNotFound = () => {
 			<br/>
 			<center className="navigate">
 				<h4 className="helper">Your candidate is waiting for your call, go to<Link className="home_link" to="/">Home Page</Link></h4>
-				<Button as={Link} to="/" className="home_button" colorScheme="linkedin" borderRadius={12} leftIcon={<BiHomeAlt2 />}>Go To Home</Button>
+				<Button as={Link} to="/" className="home_button" colorScheme="linkedin" borderRadius={12} leftIcon={<IconHome />}>Go To Home</Button>
 			</center>
 		</Center>
 	)

@@ -1,5 +1,6 @@
 import { Button, Stack, Card, CardHeader, CardBody, CardFooter, Text, Image, useColorMode, Flex } from "@chakra-ui/react"
 import { AchievementsDark, AchievementsLight } from "./FigmaDesigns"
+import { IconExternalLink } from "@tabler/icons-react"
 import data from "../database.json"
 import "./Achievements.css"
 import React from "react"
@@ -30,6 +31,7 @@ const Achievements = () => {
 								<Button
 									fontFamily="interSemiBold"
 									width={28}
+									rightIcon={<IconExternalLink size={15} />}
 									onClick={() => window.open(card.url)}
 								>
 									View
@@ -46,7 +48,7 @@ const Achievements = () => {
 							<Image src={card.icon} h={20} borderRadius={7} />
 							<Stack direction='column' w="full">
 								<Text textAlign="initial" fontSize={15} fontFamily="interSemiBold">{card.title}</Text>
-								<Button onClick={() => window.open(card.url)} fontFamily="interRegular" fontWeight={350} colorScheme="blue" w="full">View</Button>
+								<Button onClick={() => window.open(card.url)} fontFamily="interRegular" fontWeight={350} colorScheme="blue" w="full" rightIcon={<IconExternalLink size={15} />}>View</Button>
 							</Stack>
 						</Stack>
 					)

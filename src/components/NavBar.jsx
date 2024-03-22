@@ -1,7 +1,5 @@
 import { HStack, Text, Menu, MenuButton, MenuList, MenuItem, IconButton, useColorMode } from "@chakra-ui/react"
-import { MdOutlineHandshake, MdPerson, MdTimeline } from "react-icons/md"
-import { BiGitCommit, BiSun, BiMoon, BiHomeAlt } from "react-icons/bi"
-import { CgMenuLeftAlt } from "react-icons/cg"
+import { IconHeartHandshake, IconMenu, IconUser, IconTimeline, IconSunFilled, IconMoonFilled, IconHome, IconGitCommit } from "@tabler/icons-react";
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import React from "react"
@@ -30,17 +28,17 @@ const NavBar = ({ isHome, isAbout, isProjects, isExp, isContact }) => {
 					<Link id="navLink" to="/projects"><Text color={projectsFg}>Projects</Text></Link>
 					<Link id="navLink" to="/experience"><Text color={expFg}>Experience</Text></Link>
 					<Link id="navLink" to="/contact"><Text color={contactFg}>Contact</Text></Link>
-					<IconButton as={motion.button} whileTap={{ scale: 0.9 }} icon={ isDark ? <BiSun size="20px" /> : <BiMoon size="20px" /> } onClick={toggleColorMode} />
+					<IconButton as={motion.button} whileTap={{ scale: 0.9 }} icon={ isDark ? <IconSunFilled size={15} /> : <IconMoonFilled size={15} /> } onClick={toggleColorMode} />
 				</HStack>
 				<Menu>
-					<MenuButton as={IconButton} variant="ghost" icon={<CgMenuLeftAlt size="25px"/>} display={{ base: "flex", md: "none", lg: "none" }} _expanded={{ color: isDark ? 'aqua' : 'blue.400' }} />
+					<MenuButton as={IconButton} variant="ghost" icon={<IconMenu size={15}/>} display={{ base: "flex", md: "none", lg: "none" }} _expanded={{ color: isDark ? 'aqua' : 'blue.400' }} />
 					<MenuList borderRadius={12} overflow='hidden' p={2}>
-						<Link to="/"><MenuItem className="menu-item" icon={<BiHomeAlt size="25px" />} color={homeFg}>Home</MenuItem></Link>
-						<Link to="/about"><MenuItem className="menu-item" icon={ <MdPerson size="25px" />} color={aboutFg}>About</MenuItem></Link>
-						<Link to="/projects"><MenuItem className="menu-item" icon={ <BiGitCommit size="25px" />} color={projectsFg}>Projects</MenuItem></Link>
-						<Link to="/experience"><MenuItem className="menu-item" icon={ <MdTimeline size="25px" />} color={expFg}>Experience</MenuItem></Link>
-						<Link to="/contact"><MenuItem className="menu-item" icon={ <MdOutlineHandshake size="25px" />} color={contactFg}>Contact</MenuItem></Link>
-						<MenuItem className="menu-item" icon={isDark ? <BiSun size="25px" /> : <BiMoon size="25px" /> } onClick={toggleColorMode}>Switch to { isDark ? "Light" : "Dark" }</MenuItem>
+						<Link to="/"><MenuItem className="menu-item" icon={<IconHome size={15} />} color={homeFg}>Home</MenuItem></Link>
+						<Link to="/about"><MenuItem className="menu-item" icon={ <IconUser size={15} />} color={aboutFg}>About</MenuItem></Link>
+						<Link to="/projects"><MenuItem className="menu-item" icon={ <IconGitCommit size={15} />} color={projectsFg}>Projects</MenuItem></Link>
+						<Link to="/experience"><MenuItem className="menu-item" icon={ <IconTimeline size={15} />} color={expFg}>Experience</MenuItem></Link>
+						<Link to="/contact"><MenuItem className="menu-item" icon={ <IconHeartHandshake size={15} />} color={contactFg}>Contact</MenuItem></Link>
+						<MenuItem className="menu-item" icon={isDark ? <IconSunFilled size={15} /> : <IconMoonFilled size={15} /> } onClick={toggleColorMode}>Switch to { isDark ? "Light" : "Dark" }</MenuItem>
 					</MenuList>
 				</Menu>
 			</HStack>

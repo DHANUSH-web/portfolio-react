@@ -1,5 +1,5 @@
 import { Badge, IconButton, Image, Stack, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
-import { FaGithub, FaHackerrank, FaLinkedin, FaBitbucket } from "react-icons/fa"
+import { IconBrandGithub, IconHospital as IconBrandHackerrank, IconBrandLinkedin, IconBrandBitbucket } from "@tabler/icons-react";
 import SkillDesktopView from "../resources/images/skills_desktop_view.svg"
 import SkillMobileView from "../resources/images/skills_mobile_view.png"
 import ProfileAvatar from "../resources/images/profile_avatar.png"
@@ -38,16 +38,16 @@ const AboutTab = () => {
                         <br />
                         <Stack direction='row' spacing={5} justify={{ base: 'center', md: 'left', lg: 'left' }}>
                             <Tooltip label='GitHub' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaGithub />} onClick={() => window.open(profile.profiles.github.url)} />
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandGithub />} onClick={() => window.open(profile.profiles.github.url)} />
                             </Tooltip>
                             <Tooltip label='Hackerrank' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaHackerrank />} onClick={() => window.open(profile.profiles.hackerrank.url)} />
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandHackerrank />} onClick={() => window.open(profile.profiles.hackerrank.url)} />
                             </Tooltip>
                             <Tooltip label='LinkedIn' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaLinkedin />} onClick={() => window.open(profile.profiles.linkedin.url)} />
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandLinkedin />} onClick={() => window.open(profile.profiles.linkedin.url)} />
                             </Tooltip>
                             <Tooltip label='BitBucket' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<FaBitbucket />} onClick={() => window.open(profile.profiles.bitbucket.url)} />
+                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandBitbucket />} onClick={() => window.open(profile.profiles.bitbucket.url)} />
                             </Tooltip>
                         </Stack>
                     </Stack>

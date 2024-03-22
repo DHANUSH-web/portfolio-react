@@ -1,5 +1,5 @@
 import { Button, Center } from "@chakra-ui/react"
-import { BiHomeAlt2 } from "react-icons/bi"
+import { IconHome } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 import "./MaintainancePage.css"
 import React from "react"
@@ -16,7 +16,7 @@ const MaintainancePage = () => {
 			<br/>
 			<center className="navigate">
 				<h4 className="helper">This page is currently under maintainance.. sorry for the inconvinience, please go to<Link className="home_link" to="/">Home Page</Link></h4>
-				<Button as={Link} to="/" className="home_button" colorScheme="linkedin" borderRadius={12} leftIcon={<BiHomeAlt2 />}>Go To Home</Button>
+				<Button as={Link} to="/" className="home_button" colorScheme="linkedin" borderRadius={12} leftIcon={<IconHome />}>Go To Home</Button>
 			</center>
 		</Center>
 	)
