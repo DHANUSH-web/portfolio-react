@@ -1,4 +1,4 @@
-import { Box, Button, Badge, Center, Flex, TableContainer, Table, Thead, Tr, Th, Td, Tbody } from '@chakra-ui/react'
+import { Box, Button, Badge, Flex, TableContainer, Table, Thead, Tr, Th, Td, Tbody } from '@chakra-ui/react'
 import { IconExternalLink } from "@tabler/icons-react"
 import data from "../database.json"
 import './Certificates.css'
