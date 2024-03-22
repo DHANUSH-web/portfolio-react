@@ -44,15 +44,14 @@ const Achievements = () => {
 			<Flex flexWrap='wrap' gap={5} justifyContent='center' w="full" display={{ base: 'flex', sm: 'flex', md: 'none', lg: 'none'}}>
 				{
 					cards.map((card) => (
-						<Stack direction='row' className="shortCards" align="center">
+						<Flex direction='row' width={250} gap={2} border="solid" borderColor="blackAlpha.200" borderRadius={12} shadow="lg" p={1}>
 							<Image src={card.icon} h={20} borderRadius={7} />
-							<Stack direction='column' w="full">
+							<Flex direction='column' justify="space-between" wrap="wrap" width="inherit">
 								<Text textAlign="initial" fontSize={15} fontFamily="interSemiBold">{card.title}</Text>
-								<Button onClick={() => window.open(card.url)} fontFamily="interRegular" fontWeight={350} colorScheme="blue" w="full" rightIcon={<IconExternalLink size={15} />}>View</Button>
-							</Stack>
-						</Stack>
-					)
-					)
+								<Button size="sm" onClick={() => window.open(card.url)} rightIcon={<IconExternalLink size={15} />}>View</Button>
+							</Flex>
+						</Flex>
+					))
 				}
 			</Flex>
 		</Stack>
