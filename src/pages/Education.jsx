@@ -7,23 +7,23 @@ const profile = database.profiles[database.profileHolder];
 
 export const EducationCard = ({ title, year, progress, isCompleted, description, score, symbol, docURL, location }) => {
     return (
-        <Card className='eduCard' borderRadius={20} borderColor='gray.100' borderWidth={1} boxShadow='0 0 15px 7px #17192311'>
+        <Card className='eduCard' borderRadius={20} shadow="xl" border="solid" borderColor="blackAlpha.200">
             <CardHeader className='title'>
                 <Text fontFamily="interBold" fontSize={{ base: 20, sm: 20, md: 30, lg: 35 }}>{title}</Text>
             </CardHeader>
             <CardBody className='eduCardBody'>
-                <Stack direction='row' mt={-5}>
-                    <Tag className='tag' colorScheme='blue' size='md' borderRadius={20}>
+                <Flex gap={2}>
+                    <Tag className='tag' colorScheme='blue' size='md' borderRadius="full">
                         <TagLeftIcon><IconCalendarMonth size='md' /></TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{year}</TagLabel>
                     </Tag>
-                    <Tag className='tag' colorScheme={ isCompleted ? 'green' : 'orange' } size='md' borderRadius={20}>
+                    <Tag className='tag' colorScheme={ isCompleted ? 'green' : 'orange' } size='md' borderRadius="full">
                         <TagLeftIcon>
                             { isCompleted ? <IconCircleCheck size='sm' /> : <IconInfoCircle size='sm' />}
                         </TagLeftIcon>
                         <TagLabel fontFamily="interSemiBold">{progress}</TagLabel>
                     </Tag>
-                </Stack>
+                </Flex>
                 <Text textAlign='start' mt={5} fontFamily='interMedium' fontSize={{base: "sm", sm: "sm"}}>{description}</Text>
                 { docURL ?
                     <Tooltip label="🔗 Fork Git Repo" fontFamily='interSemiBold' fontSize={12} borderRadius={7}>
