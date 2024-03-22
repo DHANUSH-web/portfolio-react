@@ -1,44 +1,88 @@
-import { Stack, Button, Flex, Tooltip, useColorMode } from "@chakra-ui/react"
-import NavBar from "../components/NavBar"
-import { motion } from "framer-motion"
-import database from "../database.json"
-import React from "react"
-import "./Contact.css"
+import { Stack, Button, Flex } from "@chakra-ui/react";
+import {
+  IconMail,
+  IconBrandLinkedin,
+  IconBrandTwitter,
+  IconBrandInstagram,
+  IconPhone,
+  IconBrandWhatsapp,
+} from "@tabler/icons-react";
+import NavBar from "../components/NavBar";
+import database from "../database.json";
+import React from "react";
+import "./Contact.css";
 
 const Contact = () => {
-	const { colorMode } = useColorMode()
-	const isDark = colorMode === "dark"
-	const profile = database.profiles[database.profileHolder]
-	const info = profile.contact_info
+  const profile = database.profiles[database.profileHolder];
+  const contacts = profile.contacts;
 
-	return (
-		<div className="contact_container">
-			<NavBar isContact={true} />
-			<div>
-				<Stack align='center'>
-					<span className="contact_title">get in touch</span>
-					<img className="contact_gif" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f607/512.gif" alt="🎊" width="150px" height="150px" />
-					<Flex wrap='wrap' gap={5} m={5} justify='center'>
-						{
-							info.map(contact => (
-								<Tooltip label={contact.tooltip} borderRadius={7}>
-									<Button
-										as={motion.button}
-										onClick={() => window.open(contact.href)}
-										fontFamily='intersemibold'
-										borderRadius='full'
-										colorScheme="linkedin"
-									>
-										{contact.service}
-									</Button>
-								</Tooltip>
-							))
-						}
-					</Flex>
-				</Stack>
-			</div>
-		</div>
-	)
-}
+  return (
+    <div className="contact_container">
+      <NavBar isContact={true} />
+      <div>
+        <Stack align="center">
+          <span className="contact_title">get in touch</span>
+          <img
+            className="contact_gif"
+            src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/https://images.ctfassets.net/spoqsaf9291f/4qPZTqxXRCDQiimE4c9xXc/eb57558f50ee6fac68dc04e3b5099c8a/home-hero.png"
+            alt="🎊"
+            width="500px"
+            height="500px"
+          />
+          <Flex fontFamily="interSemiBold" gap={5} mb={20} wrap="wrap" justify="center">
+            {/* Mail */}
+            <Button
+              variant="outline"
+              leftIcon={<IconMail size={15} />}
+              onClick={() => window.open(contacts.mail)}
+            >
+              Mail
+            </Button>
+            {/* LinkedIn */}
+            <Button
+              variant="outline"
+              leftIcon={<IconBrandLinkedin size={15} />}
+              onClick={() => window.open(contacts.linkedin)}
+            >
+              LinkedIn
+            </Button>
+            {/* Twitter */}
+            <Button
+              variant="outline"
+              leftIcon={<IconBrandTwitter size={15} />}
+              onClick={() => window.open(contacts.twitter)}
+            >
+              Twitter
+            </Button>
+            {/* Instagram */}
+            <Button
+              variant="outline"
+              leftIcon={<IconBrandInstagram size={15} />}
+              onClick={() => window.open(contacts.instagram)}
+            >
+              Instagram
+            </Button>
+            {/* Mobile */}
+            <Button
+              variant="outline"
+              leftIcon={<IconPhone size={15} />}
+              onClick={() => window.open(contacts.mobile)}
+            >
+              Mobile
+            </Button>
+            {/* WhatsApp */}
+            <Button
+              variant="outline"
+              leftIcon={<IconBrandWhatsapp size={15} />}
+              onClick={() => window.open(contacts.whatsapp)}
+            >
+              WhatsApp
+            </Button>
+          </Flex>
+        </Stack>
+      </div>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
