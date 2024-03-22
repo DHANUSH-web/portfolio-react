@@ -31,8 +31,9 @@ export const EducationCard = ({ title, year, progress, isCompleted, description,
                             onClick={() => window.open(docURL)}
                             fontFamily="interSemiBold"
                             borderRadius="full"
-                            leftIcon={<IconLink />}
+                            leftIcon={<IconLink size={15} />}
                             size="sm"
+                            my={2}
                         >
                             Git Repo
                         </Button>
