@@ -1,323 +1,430 @@
 {
-    "profileHolder": "dhanushhv",
-    "profiles": {
-        "dhanushhv": {
-            "name": "DHANUSH H V",
-            "fname": "DHANUSH",
-            "lname": "H V",
-            "phoneNumber": "+91 9731131772",
-            "jobRole": "Software Developer",
-            "experience": "1.3 year",
-            "company": "TATA Consultancy Services Ltd.",
-            "companyURL": "https://www.tcs.com/",
-            "certificates": [
-                {
-                    "title": "Python Core",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
-                    "provider": "Udemy: Green Chamelion",
-                    "url": "https://drive.google.com/file/d/1Fu1_zAreb1ffOi81EBed5WiZNQZNKTsj/preview"
-                },
-                {
-                    "title": "Python Quick Start",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
-                    "provider": "NASBA: LinkedIn Learning",
-                    "url": "https://drive.google.com/file/d/1PDC3-ZF27sN9IEtROScY7YiVJkpu17gn/preview"
-                },
-                {
-                    "title": "Python",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/1jyvpzjoyVMtYjqZoZoQJJijpPNPc0X7z/preview"
-                },
-                {
-                    "title": "Python Quick Start",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
-                    "provider": "LinkedIn Learning",
-                    "url": "https://drive.google.com/file/d/10l3d1V8ACCug_Hqw9H5Vbhi1kkXozeZw/preview"
-                },
-                {
-                    "title": "C Language",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/1Nm7r0ZzSCu0HGVbkpGHtD0qY47xjbLQ4/preview"
-                },
-                {
-                    "title": "C++",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/1TQByaofAeqMPgiwxPyAhGc1XbsE9dFI3/preview"
-                },
-                {
-                    "title": "C#",
-                    "logo": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/19u5SPjkLUtwSCLYgihtxbW3i8foeGTQv/preview"
-                },
-                {
-                    "title": "Java",
-                    "logo": "https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/17rbG-z2gGD4kTsySPYegu3fWkNFO3yiy/preview"
-                },
-                {
-                    "title": "JavaScript",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/1Wd3nX6rO84W_XlIWMEgPvoZ7TjjOmTKb/preview"
-                },
-                {
-                    "title": "HTML",
-                    "logo": "https://img.icons8.com/color/512/html-5--v1.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/1R6XhPBy8j7rTDAv5O6jGrCa6FsZmRunU/preview"
-                },
-                {
-                    "title": "CSS",
-                    "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/1k_EgFssf7Bxm815TRKbpuR2voEAmFhjX/preview"
-                },
-                {
-                    "title": "Web Development",
-                    "logo": "https://www.edsys.in/wp-content/uploads/mimo-1.png",
-                    "provider": "Mimo",
-                    "url": "https://drive.google.com/file/d/1v4wgd1-lfVbpmk8zBV6MZ1stY79WHWya/preview"
-                },
-                {
-                    "title": "Python: A Concise Introduction",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
-                    "provider": "Coursera",
-                    "url": "https://drive.google.com/file/d/1poX5DH2LLGuDh94HkHjdKjJ9hoWFZrgq/preview"
-                },
-                {
-                    "title": "Python for Data Science",
-                    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
-                    "provider": "SoloLearn",
-                    "url": "https://drive.google.com/file/d/1hCaxjKn6S9hSwbGZjK3AfGogiOplq6m-/preview"
-                },
-                {
-                    "title": "Virtusa Neural Hack",
-                    "logo": "https://yt3.ggpht.com/a/AGF-l79hOfb6tMLLZw0tOSMb67KNzzy81AEpC4iZuw=s900-mo-c-c0xffffffff-rj-k-no",
-                    "provider": "Virtusa Pvt Ltd",
-                    "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/preview"
-                }
-            ],
-            "resume": "https://drive.google.com/file/d/1UJu1sxcHMRaPOFur5kjb_Tvj8ZvLsrVj/view?usp=sharing",
-            "githubProfile": "https://www.github.com/DHANUSH-web/",
-            "profilePhoto1": "https://bit.ly/kent-c-dodds",
-            "profilePhoto": "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg",
-            "profiles": {
-                "linkedin": {
-                    "url": "https://www.linkedin.com/in/dhanush-h-v-1b85b41b2/",
-                    "icon": ""
-                },
-                "github": {
-                    "url": "https://www.github.com/DHANUSH-web/",
-                    "icon": ""
-                },
-                "hackerrank": {
-                    "url": "https://www.hackerrank.com/dhanushhv75",
-                    "icon": ""
-                },
-                "bitbucket": {
-                    "url": "https://www.bitbucket.org/dhanushhv",
-                    "icon": ""
-                }
-            },
-            "achievements": [
-                {
-                    "title": "Virtusa Neural Hack 2021 - Season 5",
-                    "desc": "Participated in Virtusa Coding competetion and get certified by Virtusa Graduate Talent Program",
-                    "icon": "https://yt3.ggpht.com/a/AGF-l79hOfb6tMLLZw0tOSMb67KNzzy81AEpC4iZuw=s900-mo-c-c0xffffffff-rj-k-no",
-                    "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/view?usp=sharing"
-                },
-                {
-                    "title": "Hackerrank - Python",
-                    "desc": "Completed coding challenges in Hackerrank and got 4 star in Python",
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
-                    "url": "https://www.hackerrank.com/dhanushhv75"
-                },
-                {
-                    "title": "Hackerrank - C++",
-                    "desc": "Completed coding challenges in Hackerrank and got 5 star in C++",
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
-                    "url": "https://www.hackerrank.com/dhanushhv75"
-                },
-                {
-                    "title": "Sololearn",
-                    "desc": "Successfully completed the courses on top trending programming languages and built apps and web sites as projects",
-                    "icon": "https://avatars0.githubusercontent.com/u/47358700?s=400&u=c5e03d643c68e09f24712810a58669cfb4ec6c7f&v=4",
-                    "url": "https://drive.google.com/drive/folders/1-2ODSYBNUobZYKqOuJbkZoNmF5be5VrC?usp=sharing"
-                },
-                {
-                    "title": "ReactJS - My Portfolio Website",
-                    "desc": "Completed the development of this portfolio using React as proof of React skills I have",
-                    "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
-                    "url": "https://dhanushhv.vercel.app"
-                }
-            ],
-            "skills": [
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
-                    "text": "Python3",
-                    "level": 3
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png",
-                    "text": "C Language",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
-                    "text": "C++ 19",
-                    "level": 2
-                },
-                {
-                    "icon": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png",
-                    "text": "C# (.NET)",
-                    "level": 2
-                },
-                {
-                    "icon": "https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg",
-                    "text": "Java Core",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
-                    "text": "JavaScript",
-                    "level": 3
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-                    "text": "TypeScript",
-                    "level": 2
-                },
-                {
-                    "icon": "https://img.icons8.com/color/512/html-5--v1.png",
-                    "text": "HTML 5",
-                    "level": 3
-                },
-                {
-                    "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
-                    "text": "CSS 3",
-                    "level": 3
-                },
-                {
-                    "icon": "https://media.licdn.com/dms/image/D560BAQFjFIUcTilH4w/company-logo_200_200/0/1708112694181/notionhq_logo?e=1718841600&v=beta&t=TXxBsUpF1Botor5LemaMw6Ts7iktK6wbU-CKWpuZwNA",
-                    "text": "Notion",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-                    "text": "NodeJS",
-                    "level": 2
-                },
-                {
-                    "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
-                    "text": "ReactJS",
-                    "level": 2
-                },
-                {
-                    "icon": "https://testrigor.com/wp-content/uploads/2023/04/nextjs-logo-square.png",
-                    "text": "NextJS",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
-                    "text": "Git CLI",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg",
-                    "text": "GitHub",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Bitbucket-blue-logomark-only.svg",
-                    "text": "BitBucket",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
-                    "text": "Google FireBase",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg",
-                    "text": "Atlassian Jira",
-                    "level": 2
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Design_thinking_methodiek.png",
-                    "text": "Design Thinking",
-                    "level": 3
-                },
-                {
-                    "icon": "https://vectorlogoseek.com/wp-content/uploads/2020/06/figma-vector-logo.png",
-                    "text": "UI/UX",
-                    "level": 1
-                },
-                {
-                    "icon": "https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png",
-                    "text": "MySQL",
-                    "level": 0
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
-                    "text": "Microsoft Azure",
-                    "level": 0
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-                    "text": "AWS",
-                    "level": 0
-                },
-                {
-                    "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
-                    "text": "React Native",
-                    "level": 0
-                },
-                {
-                    "icon": "https://cdn-media-1.freecodecamp.org/images/kE3b4TOXtlEYpwhRvtSMi87mkWPaTfzbWOC9",
-                    "text": "Full Stack Web Development",
-                    "level": 1
-                },
-                {
-                    "icon": "https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1686047227/hevo-learn-1/datascience-1024x511-1.png?_i=AA",
-                    "text": "Data Science",
-                    "level": 1
-                },
-                {
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png",
-                    "text": "Front-End Web Development",
-                    "level": 3
-                }
-            ],
-            "education": [
-                { "title": "ATME College of Engineering", "year": "2022", "isCompleted": true, "progress": "Graduated", "description": "Completed Bachelor of Engineering in Electronics and Communication Engineering (ECE) - Undergraduate (UG)", "score": "7.9", "symbol": "CGPA", "docURL": "", "location": "Mysore" },
-                { "title": "Govt. PU College - K.R.Pet", "year": "2018", "isCompleted": true, "progress": "Completed", "description": "Completed Pre-University Education in Science", "score": "79.86", "symbol": "%", "docURL": "", "location": "Mandya" },
-                { "title": "Govt. PU College - K.R.Pet", "year": "2016", "isCompleted": true, "progress": "Completed", "description": "Completed Higher education", "score": "79.68", "symbol": "%", "docURL": "", "location": "Mandya" }
-            ],
-            "projects": [
-                { "title": "ZDiagnose App Development", "year": "2023", "isCompleted": false, "progress": "In Progress", "desc": "Developed a resilient Python and PyQt5-based desktop app for Windows and Linux capable of efficiently managing 250+ GB of Android source code, swiftly identifying issues within minutes.", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "Android Development - LG", "year": "2023", "isCompleted": true, "progress": "Completed", "desc": "Android Developer in Life Guard build team to identify the bugs and fixing efficiently based on AOSP", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "ETG Automation Framework Development", "year": "2022", "isCompleted": true, "progress": "Completed", "desc": "Developed a robust ETG Android Automation framework as a Solo Python Automation Developer for Android OS upgrade scenarios", "score": "6", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "Portfolio Website Development", "year": "2022", "isCompleted": false, "progress": "In Progress", "desc": "Developing my personal portfolio website with ReactJS to showcase projects and experience for better career opportunities in future to satisfy both dreams and passion", "score": "3", "symbol": "months", "location": "Bangalore", "docURL": "" },
-                { "title": "PyCOL React App Development", "year": "2021", "isCompleted": true, "progress": "Completed", "desc": "A React web app developed to help web developers for choosing colors for their website easily with a simple and modern UI", "score": "1", "symbol": "week", "location": "Mysore", "docURL": "https://www.github.com/DHANUSH-web/PyCOL-Web-App" }
-            ],
-            "proexp": [
-                { "title": "Software Developer", "year": "2023", "isCompleted": false, "progress": "Present", "desc": "Presently Working as Software Developer at TATA Consultancy Services (TCS) and working on a production software development project as a Solo Python Software Developer", "score": "6", "symbol": "months", "location": "Bangalore" },
-                { "title": "Automation Developer", "year": "2023", "isCompleted": true, "progress": "Completed", "desc": "Developed robust and powerful Android UI automation framework for Android OS Upgrades with Python and Unittest in Android BSP Team", "score": "6", "symbol": "months", "location": "Bangalore" },
-                { "title": "Assistant System Engineer - Trainee", "year": "2022", "isCompleted": true, "progress": "Completed", "desc": "Joined as Assistant System Engieer - Trainee to TATA Consultancy Services (TCS) on Aug 2022", "score": "1", "symbol": "month", "location": "Trivandrum, Kerala" }
-            ],
-            "contact_info": [
-                { "image": "https://cdn-icons-png.flaticon.com/512/5968/5968534.png", "service": "EMail", "tooltip": "Google Mail", "href": "mailto:dhanushhv75@gmail.com" },
-                { "image": "https://cdn-icons-png.flaticon.com/512/3536/3536505.png", "service": "LinkedIn", "tooltip": "LinkedIn", "href": "https://www.linkedin.com/in/dhanush-h-v-1b85b41b2/"},
-                { "image": "https://cdn-icons-png.flaticon.com/512/5968/5968830.png", "service": "Twitter", "tooltip": "Twitter", "href": "https://twitter.com/dhanushh48"},
-                { "image": "https://cdn-icons-png.flaticon.com/512/2111/2111463.png", "service": "Instagram", "tooltip": "Instagram", "href": "https://instagram.com/dhanushh48"},
-                { "image": "https://cdn-icons-png.flaticon.com/512/9073/9073336.png", "service": "Call", "tooltip": "Direct Call", "href": "tel:+919731131772"},
-                { "image": "https://cdn-icons-png.flaticon.com/512/13051/13051741.png", "service": "WhatsApp", "tooltip": "WhatsApp Chat", "href": "https://wa.me/+919731131772"}
-            ]
+  "profileHolder": "dhanushhv",
+  "profiles": {
+    "dhanushhv": {
+      "name": "DHANUSH H V",
+      "fname": "DHANUSH",
+      "lname": "H V",
+      "phoneNumber": "+91 9731131772",
+      "jobRole": "Software Developer",
+      "experience": "1.3 year",
+      "company": "TATA Consultancy Services Ltd.",
+      "companyURL": "https://www.tcs.com/",
+      "certificates": [
+        {
+          "title": "Python Core",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+          "provider": "Udemy: Green Chamelion",
+          "url": "https://drive.google.com/file/d/1Fu1_zAreb1ffOi81EBed5WiZNQZNKTsj/preview"
+        },
+        {
+          "title": "Python Quick Start",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+          "provider": "NASBA: LinkedIn Learning",
+          "url": "https://drive.google.com/file/d/1PDC3-ZF27sN9IEtROScY7YiVJkpu17gn/preview"
+        },
+        {
+          "title": "Python",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/1jyvpzjoyVMtYjqZoZoQJJijpPNPc0X7z/preview"
+        },
+        {
+          "title": "Python Quick Start",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+          "provider": "LinkedIn Learning",
+          "url": "https://drive.google.com/file/d/10l3d1V8ACCug_Hqw9H5Vbhi1kkXozeZw/preview"
+        },
+        {
+          "title": "C Language",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/1Nm7r0ZzSCu0HGVbkpGHtD0qY47xjbLQ4/preview"
+        },
+        {
+          "title": "C++",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/1TQByaofAeqMPgiwxPyAhGc1XbsE9dFI3/preview"
+        },
+        {
+          "title": "C#",
+          "logo": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/19u5SPjkLUtwSCLYgihtxbW3i8foeGTQv/preview"
+        },
+        {
+          "title": "Java",
+          "logo": "https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/17rbG-z2gGD4kTsySPYegu3fWkNFO3yiy/preview"
+        },
+        {
+          "title": "JavaScript",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/1Wd3nX6rO84W_XlIWMEgPvoZ7TjjOmTKb/preview"
+        },
+        {
+          "title": "HTML",
+          "logo": "https://img.icons8.com/color/512/html-5--v1.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/1R6XhPBy8j7rTDAv5O6jGrCa6FsZmRunU/preview"
+        },
+        {
+          "title": "CSS",
+          "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/1k_EgFssf7Bxm815TRKbpuR2voEAmFhjX/preview"
+        },
+        {
+          "title": "Web Development",
+          "logo": "https://www.edsys.in/wp-content/uploads/mimo-1.png",
+          "provider": "Mimo",
+          "url": "https://drive.google.com/file/d/1v4wgd1-lfVbpmk8zBV6MZ1stY79WHWya/preview"
+        },
+        {
+          "title": "Python: A Concise Introduction",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+          "provider": "Coursera",
+          "url": "https://drive.google.com/file/d/1poX5DH2LLGuDh94HkHjdKjJ9hoWFZrgq/preview"
+        },
+        {
+          "title": "Python for Data Science",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+          "provider": "SoloLearn",
+          "url": "https://drive.google.com/file/d/1hCaxjKn6S9hSwbGZjK3AfGogiOplq6m-/preview"
+        },
+        {
+          "title": "Virtusa Neural Hack",
+          "logo": "https://yt3.ggpht.com/a/AGF-l79hOfb6tMLLZw0tOSMb67KNzzy81AEpC4iZuw=s900-mo-c-c0xffffffff-rj-k-no",
+          "provider": "Virtusa Pvt Ltd",
+          "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/preview"
         }
+      ],
+      "resume": "https://drive.google.com/file/d/1UJu1sxcHMRaPOFur5kjb_Tvj8ZvLsrVj/view?usp=sharing",
+      "githubProfile": "https://www.github.com/DHANUSH-web/",
+      "profilePhoto1": "https://bit.ly/kent-c-dodds",
+      "profilePhoto": "https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg",
+      "profiles": {
+        "linkedin": {
+          "url": "https://www.linkedin.com/in/dhanush-h-v-1b85b41b2/",
+          "icon": ""
+        },
+        "github": {
+          "url": "https://www.github.com/DHANUSH-web/",
+          "icon": ""
+        },
+        "hackerrank": {
+          "url": "https://www.hackerrank.com/dhanushhv75",
+          "icon": ""
+        },
+        "bitbucket": {
+          "url": "https://www.bitbucket.org/dhanushhv",
+          "icon": ""
+        }
+      },
+      "achievements": [
+        {
+          "title": "Virtusa Neural Hack 2021 - Season 5",
+          "desc": "Participated in Virtusa Coding competetion and get certified by Virtusa Graduate Talent Program",
+          "icon": "https://yt3.ggpht.com/a/AGF-l79hOfb6tMLLZw0tOSMb67KNzzy81AEpC4iZuw=s900-mo-c-c0xffffffff-rj-k-no",
+          "url": "https://drive.google.com/file/d/1iVQwhWHzP1U9yYEczSh-VlC6XSRKXFZB/view?usp=sharing"
+        },
+        {
+          "title": "Hackerrank - Python",
+          "desc": "Completed coding challenges in Hackerrank and got 4 star in Python",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+          "url": "https://www.hackerrank.com/dhanushhv75"
+        },
+        {
+          "title": "Hackerrank - C++",
+          "desc": "Completed coding challenges in Hackerrank and got 5 star in C++",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+          "url": "https://www.hackerrank.com/dhanushhv75"
+        },
+        {
+          "title": "Sololearn",
+          "desc": "Successfully completed the courses on top trending programming languages and built apps and web sites as projects",
+          "icon": "https://avatars0.githubusercontent.com/u/47358700?s=400&u=c5e03d643c68e09f24712810a58669cfb4ec6c7f&v=4",
+          "url": "https://drive.google.com/drive/folders/1-2ODSYBNUobZYKqOuJbkZoNmF5be5VrC?usp=sharing"
+        },
+        {
+          "title": "ReactJS - My Portfolio Website",
+          "desc": "Completed the development of this portfolio using React as proof of React skills I have",
+          "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
+          "url": "https://dhanushhv.vercel.app"
+        }
+      ],
+      "skills": [
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png",
+          "text": "Python3",
+          "level": 3
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png",
+          "text": "C Language",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+          "text": "C++ 19",
+          "level": 2
+        },
+        {
+          "icon": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-456x512-9sej0lrz.png",
+          "text": "C# (.NET)",
+          "level": 2
+        },
+        {
+          "icon": "https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg",
+          "text": "Java Core",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+          "text": "JavaScript",
+          "level": 3
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+          "text": "TypeScript",
+          "level": 2
+        },
+        {
+          "icon": "https://img.icons8.com/color/512/html-5--v1.png",
+          "text": "HTML 5",
+          "level": 3
+        },
+        {
+          "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
+          "text": "CSS 3",
+          "level": 3
+        },
+        {
+          "icon": "https://media.licdn.com/dms/image/D560BAQFjFIUcTilH4w/company-logo_200_200/0/1708112694181/notionhq_logo?e=1718841600&v=beta&t=TXxBsUpF1Botor5LemaMw6Ts7iktK6wbU-CKWpuZwNA",
+          "text": "Notion",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+          "text": "NodeJS",
+          "level": 2
+        },
+        {
+          "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
+          "text": "ReactJS",
+          "level": 2
+        },
+        {
+          "icon": "https://testrigor.com/wp-content/uploads/2023/04/nextjs-logo-square.png",
+          "text": "NextJS",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
+          "text": "Git CLI",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg",
+          "text": "GitHub",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Bitbucket-blue-logomark-only.svg",
+          "text": "BitBucket",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
+          "text": "Google FireBase",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg",
+          "text": "Atlassian Jira",
+          "level": 2
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Design_thinking_methodiek.png",
+          "text": "Design Thinking",
+          "level": 3
+        },
+        {
+          "icon": "https://vectorlogoseek.com/wp-content/uploads/2020/06/figma-vector-logo.png",
+          "text": "UI/UX",
+          "level": 1
+        },
+        {
+          "icon": "https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png",
+          "text": "MySQL",
+          "level": 0
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
+          "text": "Microsoft Azure",
+          "level": 0
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
+          "text": "AWS",
+          "level": 0
+        },
+        {
+          "icon": "https://s3.amazonaws.com/media-p.slid.es/uploads/40730/images/2781438/react.png",
+          "text": "React Native",
+          "level": 0
+        },
+        {
+          "icon": "https://cdn-media-1.freecodecamp.org/images/kE3b4TOXtlEYpwhRvtSMi87mkWPaTfzbWOC9",
+          "text": "Full Stack Web Development",
+          "level": 1
+        },
+        {
+          "icon": "https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1686047227/hevo-learn-1/datascience-1024x511-1.png?_i=AA",
+          "text": "Data Science",
+          "level": 1
+        },
+        {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png",
+          "text": "Front-End Web Development",
+          "level": 3
+        }
+      ],
+      "education": [
+        {
+          "title": "ATME College of Engineering",
+          "year": "2022",
+          "isCompleted": true,
+          "progress": "Graduated",
+          "description": "Completed Bachelor of Engineering in Electronics and Communication Engineering (ECE) - Undergraduate (UG)",
+          "score": "7.9",
+          "symbol": "CGPA",
+          "docURL": "",
+          "location": "Mysore"
+        },
+        {
+          "title": "Govt. PU College - K.R.Pet",
+          "year": "2018",
+          "isCompleted": true,
+          "progress": "Completed",
+          "description": "Completed Pre-University Education in Science",
+          "score": "79.86",
+          "symbol": "%",
+          "docURL": "",
+          "location": "Mandya"
+        },
+        {
+          "title": "Govt. PU College - K.R.Pet",
+          "year": "2016",
+          "isCompleted": true,
+          "progress": "Completed",
+          "description": "Completed Higher education",
+          "score": "79.68",
+          "symbol": "%",
+          "docURL": "",
+          "location": "Mandya"
+        }
+      ],
+      "projects": [
+        {
+          "title": "ZDiagnose App Development",
+          "year": "2023",
+          "isCompleted": false,
+          "progress": "In Progress",
+          "desc": "Developed a resilient Python and PyQt5-based desktop app for Windows and Linux capable of efficiently managing 250+ GB of Android source code, swiftly identifying issues within minutes.",
+          "score": "3",
+          "symbol": "months",
+          "location": "Bangalore",
+          "docURL": ""
+        },
+        {
+          "title": "Android Development - LG",
+          "year": "2023",
+          "isCompleted": true,
+          "progress": "Completed",
+          "desc": "Android Developer in Life Guard build team to identify the bugs and fixing efficiently based on AOSP",
+          "score": "3",
+          "symbol": "months",
+          "location": "Bangalore",
+          "docURL": ""
+        },
+        {
+          "title": "ETG Automation Framework Development",
+          "year": "2022",
+          "isCompleted": true,
+          "progress": "Completed",
+          "desc": "Developed a robust ETG Android Automation framework as a Solo Python Automation Developer for Android OS upgrade scenarios",
+          "score": "6",
+          "symbol": "months",
+          "location": "Bangalore",
+          "docURL": ""
+        },
+        {
+          "title": "Portfolio Website Development",
+          "year": "2022",
+          "isCompleted": false,
+          "progress": "In Progress",
+          "desc": "Developing my personal portfolio website with ReactJS to showcase projects and experience for better career opportunities in future to satisfy both dreams and passion",
+          "score": "3",
+          "symbol": "months",
+          "location": "Bangalore",
+          "docURL": ""
+        },
+        {
+          "title": "PyCOL React App Development",
+          "year": "2021",
+          "isCompleted": true,
+          "progress": "Completed",
+          "desc": "A React web app developed to help web developers for choosing colors for their website easily with a simple and modern UI",
+          "score": "1",
+          "symbol": "week",
+          "location": "Mysore",
+          "docURL": "https://www.github.com/DHANUSH-web/PyCOL-Web-App"
+        }
+      ],
+      "proexp": [
+        {
+          "title": "Software Developer",
+          "year": "2023",
+          "isCompleted": false,
+          "progress": "Present",
+          "desc": "Presently Working as Software Developer at TATA Consultancy Services (TCS) and working on a production software development project as a Solo Python Software Developer",
+          "score": "6",
+          "symbol": "months",
+          "location": "Bangalore"
+        },
+        {
+          "title": "Automation Developer",
+          "year": "2023",
+          "isCompleted": true,
+          "progress": "Completed",
+          "desc": "Developed robust and powerful Android UI automation framework for Android OS Upgrades with Python and Unittest in Android BSP Team",
+          "score": "6",
+          "symbol": "months",
+          "location": "Bangalore"
+        },
+        {
+          "title": "Assistant System Engineer - Trainee",
+          "year": "2022",
+          "isCompleted": true,
+          "progress": "Completed",
+          "desc": "Joined as Assistant System Engieer - Trainee to TATA Consultancy Services (TCS) on Aug 2022",
+          "score": "1",
+          "symbol": "month",
+          "location": "Trivandrum, Kerala"
+        }
+      ],
+      "contacts": {
+        "mail": "mailto:dhanushhv75@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/dhanush-h-v-1b85b41b2/",
+        "twitter": "https://twitter.com/dhanushh48",
+        "instagram": "https://instagram.com/dhanushh48",
+        "mobile": "tel:+919731131772",
+        "whatsapp": "https://wa.me/+919731131772"
+      }
     }
+  }
 }
