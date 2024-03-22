@@ -1,7 +1,5 @@
 import { Badge, IconButton, Image, Stack, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
 import { IconBrandGithub, IconHospital as IconBrandHackerrank, IconBrandLinkedin, IconBrandBitbucket } from "@tabler/icons-react";
-import SkillDesktopView from "../resources/images/skills_desktop_view.svg"
-import SkillMobileView from "../resources/images/skills_mobile_view.png"
 import ProfileAvatar from "../resources/images/profile_avatar.png"
 import AboutMeDesktop from "../resources/images/about_me_desktop.png"
 import AboutMeMobile from '../resources/images/about_me_mobile.png'
@@ -91,8 +89,6 @@ export const SkillsTab = () => {
 
     return (
         <Stack id="skills" className="skills_design" direction="column" align="center">
-            <Image src={SkillMobileView} className="skill_mobile_view" borderRadius={20} alt="Mobile View Load Failed" display={{ base: 'block', md: 'none', lg: 'none' }} onDoubleClick={openLink} title="Double click to open" />
-            <Image src={SkillDesktopView} className="skill_desktop_view" borderRadius={20} alt="Desktop View Load Failed" display={{ base: 'none', md: 'block', lg: 'block' }} onDoubleClick={openLink} title="Double click to open" />
             <Stack className="skills" w='fit-content' maxW='container.lg' align='center' justify='center'>
                 <Stack className="classifier" mt={5} padding={5} borderRadius={20} w='full'>
                     <Badge w='fit-content' alignSelf='center' textTransform='capitalize' fontSize={16} pl={5} pr={5} pt={1} pb={1} borderRadius='full' colorScheme='green' variant='subtle'>Advanced++</Badge>
