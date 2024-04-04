@@ -1,9 +1,6 @@
-import { Badge, IconButton, Image, Stack, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
+import { Badge, IconButton, Image, Stack, Flex, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
 import { IconBrandGithub, IconHospital as IconBrandHackerrank, IconBrandLinkedin, IconBrandBitbucket } from "@tabler/icons-react";
-import ProfileAvatar from "../resources/images/profile_avatar.png"
-import AboutMeDesktop from "../resources/images/about_me_desktop.png"
-import AboutMeMobile from '../resources/images/about_me_mobile.png'
-import ProfileCard from "../components/ProfileCard"
+import Avatar from "../resources/images/avatar.png";
 import data from "../database.json"
 import React from "react"
 import './About.css'
@@ -16,42 +13,25 @@ const AboutTab = () => {
     const isDark = colorMode === 'dark'
 
     return (
-        <Stack>
-            <ProfileCard profileName={profile.name} textMode={true} profilePhoto={ProfileAvatar} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} profileURL={profile.githubProfile} hideResume={true} hideSeeMore={true} />
-            <Stack align='center'>
-                <Stack className='about-myself' align="center" spacing='auto' direction={{ md: 'row', base: 'column', lg: 'row' }} borderColor='blackAlpha.200' bg={isDark ? "blue.200" : "white" } w='fit-content'>
-                    <Image className="myself-img-right" src={AboutMeDesktop} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'none', md: 'block', lg: 'block' }} />
-                    <Image className="myself-img-right" src={AboutMeMobile} alt='Myself Image' backgroundColor={isDark ? 'blue.200' : 'white'} w='full' display={{ base: 'block', md: 'none', lg: 'none' }}/>
-                    <Stack id="aboutme" className="right-content" p={5} bg={ isDark ? "gray.900" : "teal.50" } w='full'>
-                        <Text className="about-title" fontSize={30} textAlign="left" color={ isDark ? "teal.200" : "blue.500" }>About Me</Text>
-                        <br />
-                        <Text className="insider" textAlign='start' fontFamily='interMedium' fontSize={{ base: 13, sm: 13, md: 15, lg: 15 }}>
-                            Hello.. I'm <span className="name">Dhanush!!</span>
-                            <p>I'm 22 years old and graduated in 2022</p>
-                            <p className="jobrole">Professionally <span className="highlight">{profile.jobRole}</span> and <span className="highlight">Ex-Automation Engineer, Tech Lead</span></p>
-                            <p>Presently working in <span className="highlight">{profile.company}</span> since <span className="highlight">{profile.experience}</span></p>
-                            <br />
-                            <p>Apart from Job, more passionate in <span className="highlight">Full Stack Web Development</span></p>
-                        </Text>
-                        <br />
-                        <Stack direction='row' spacing={5} justify={{ base: 'center', md: 'left', lg: 'left' }}>
-                            <Tooltip label='GitHub' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandGithub />} onClick={() => window.open(profile.profiles.github.url)} />
-                            </Tooltip>
-                            <Tooltip label='Hackerrank' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandHackerrank />} onClick={() => window.open(profile.profiles.hackerrank.url)} />
-                            </Tooltip>
-                            <Tooltip label='LinkedIn' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandLinkedin />} onClick={() => window.open(profile.profiles.linkedin.url)} />
-                            </Tooltip>
-                            <Tooltip label='BitBucket' borderRadius={7} fontFamily='interSemiBold' fontSize={12}>
-                                <IconButton colorScheme={ isDark ? 'gray' : 'teal' } borderRadius={10} icon={<IconBrandBitbucket />} onClick={() => window.open(profile.profiles.bitbucket.url)} />
-                            </Tooltip>
-                        </Stack>
-                    </Stack>
-                </Stack>
-            </Stack>
-        </Stack>
+        <Flex mx={5} my={10} p={5} alignItems="center" gap={20} flexDir="column">
+            <Image src={Avatar} alt="Avatar" width="xs" borderRadius="full" />
+            <Flex flexDir="column" fontFamily="interRegular">
+                <Text p={2}>
+                    👋 Hey there! I'm <span className="highligher">{profile.name}</span>, a {profile.jobRole} with {profile.experience} of coding adventures. Currently, I&apos;m learning and exploring new technologies at Tata Consultancy Services (TCS) 🚀.
+                </Text>
+                <Text>
+                💻 I&apos;m not just another developer — I&apos;m your go-to developer for Python Full Stack Development and Full Stack web development in Next.js. Hands-on with Python, JavaScript, TypeScript, HTML, CSS, Node.js, React.js, and Next.js with amazing projects online which are used by other developers.<br />
+                </Text>
+                🔥 Back-End technology ? Look no further! I'm well-versed in using the power of Google Firebase to fuel dynamic applications with real-time data updates and seamless user experiences, and experienced with RESTful API development in FastAPI and Node.js.<br />
+                ✨ What sets me apart? I don't just build websites and applications; I craft experiences. I use the amazing power of TailwindCSS, DaisyUI, Radix-UI, ShadCN-UI and Chakra UI to transform projects into interactive websites for better user experience, for example my own Portfolio website which has been online at https://dhanushhv.vercel.app<br />
+                🔍 I'm currently looking for exciting opportunities to use my personal and professional skills to build Software solutions and products for the client and for the company with well crafted design and user experience. I'm still not done enough, updating myself with the latest new frameworks and technologies to make the websites more powerful and interactive.<br />
+                🌟 Let's connect for any opportunities ahead for me. Whether it's revolutionizing user experiences or tackling tech's toughest challenges, I'm all in! Reach out to me at dhanushhv75@gmail.com<br />
+                <br />
+                🌐 Portfolio - https://dhanushhv.vercel.app
+                <br />
+                📧 Email Id - dhanushhv75@gmail.com
+            </Flex>
+        </Flex>
     )
 }
 
@@ -62,7 +42,7 @@ export const SkillsTab = () => {
     const intermediate = [];
     const advanced = [];
     const expert = [];
-    
+
     profile.skills.map(skill => {
         switch (skill.level) {
             case 0:
@@ -82,7 +62,7 @@ export const SkillsTab = () => {
 
     const openLink = () => {
         const open = confirm("Would you like to visit the GitHub page ?");
-        
+
         if (open)
             window.open(profile.githubProfile)
     }
@@ -95,7 +75,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             expert.map((skill, idx) => (
-                                <Stack key={"skillcard__"+idx} className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack key={"skillcard__" + idx} className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={isDark ? "gray.700" : "white"}>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>
@@ -108,7 +88,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             advanced.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={isDark ? "gray.700" : "white"}>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>
@@ -121,7 +101,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             intermediate.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={isDark ? "gray.700" : "white"}>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>
@@ -134,7 +114,7 @@ export const SkillsTab = () => {
                     <Wrap direction="row" justify='center' overflow='visible'>
                         {
                             beginner.map((skill) => (
-                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={ isDark ? "gray.700" : "white" }>
+                                <Stack className='skill_card' maxW={140} alignItems='center' justifyContent='space-around' borderColor={isDark ? 'gray.700' : 'gray.200'} bg={isDark ? "gray.700" : "white"}>
                                     <Image className="skill_logo" src={skill.icon} alt='😢' bg='transparent' />
                                     <p className="skill-text">{skill.text}</p>
                                 </Stack>

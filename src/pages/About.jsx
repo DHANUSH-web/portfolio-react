@@ -1,4 +1,4 @@
-import { Box, Tab, TabIndicator, TabList, TabPanel, TabPanels, Tabs, useColorMode } from "@chakra-ui/react"
+import { Box, Tab, TabList, TabPanel, TabPanels, Tabs, useColorMode } from "@chakra-ui/react"
 import AboutTab, { SkillsTab } from "../components/About"
 import Certificates from "../components/Certificates"
 import NavBar from "../components/NavBar"
