@@ -329,6 +329,17 @@
         }
       ],
       "projects": [
+       {
+          "title": "NFT dApp full stack web application - Next.js and OpenSea API",
+          "year": "2024",
+          "isCompleted": true,
+          "progress": "Completed",
+          "desc": "A dApp block chain based full stack web application developed with Next.js and OpenSea Developer API. The website is live at https://savagenft.vercel.app and free for everyone to download any NFT image",
+          "score": "3",
+          "symbol": "months",
+          "location": "Bangalore",
+          "docURL": ""
+        },
         {
           "title": "ZDiagnose App Development",
           "year": "2023",
