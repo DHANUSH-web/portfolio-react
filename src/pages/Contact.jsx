@@ -18,7 +18,7 @@ const Contact = () => {
 
   return (
     <div className="contact_container">
-      <NavBar isContact={true} />
+      <NavBar isContact />
       <Box minH="95vh" display="flex" alignItems="center" justifyContent="center">
         <Stack align="center" gap={15}>
           <Text fontFamily="interBold" fontSize={50}>Get in touch</Text>

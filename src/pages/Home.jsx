@@ -15,7 +15,7 @@ const Home = () => {
 
 	return (
 		<Flex flexDir="column" minH="100vh" flexWrap="wrap" py={5}>
-			<NavBar isHome={true} />
+			<NavBar isHome />
 			<Flex flexDir="column" alignItems="center">
 				<div className="profile-container">
 					<ProfileCard profileName={profile.name} profilePhoto={ProfileAvatar} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} width={200} height={300} textMode />

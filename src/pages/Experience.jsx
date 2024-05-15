@@ -11,7 +11,7 @@ const Experience = () => {
 
 	return (
 		<Flex flexDir="column" minH="100vh">
-			<NavBar isExp={true} />
+			<NavBar isExp />
 			<Flex justify="center" align="center" gap={2}>
 				<IconUserUp className="iconExperience" size={30} />
 				<Text fontFamily='interBold' fontSize={30}>Experience</Text>

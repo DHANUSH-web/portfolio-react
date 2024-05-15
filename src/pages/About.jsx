@@ -13,7 +13,7 @@ const About = () => {
 
 	return (
 		<Box minH="100vh">
-			<NavBar isAbout={true} />
+			<NavBar isAbout />
 			<Box className="about-container">
 				<Tabs onChange={(index) => setActiveTab(index)} variant="soft-rounded" position="relative" fontFamily='interSemiBold' colorScheme={ isDark ? 'teal' : 'blue' }>
 					<TabList className="tabList" placeContent='center'>

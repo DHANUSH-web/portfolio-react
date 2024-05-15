@@ -11,7 +11,7 @@ const Projects = () => {
 
 	return (
 		<Flex flexDir="column" minH="100vh">
-			<NavBar isProjects={true} />
+			<NavBar isProjects />
 			<Flex justify="center" align="center" gap={2}>
 				<IconGitMerge size={30} className="iconProjects" />
 				<Text fontFamily="interBold" fontSize={30}>My Projects</Text>
