@@ -12,7 +12,7 @@ const Achievements = () => {
 	const isDark = colorMode === 'dark'
 
 	return (
-		<Stack direction='column' mt={{ base: 100, lg: 70 }} spacing={15} align='center'>
+		<Stack direction='column' mt={{ base: 100, lg: 70 }} gap={12} p={5} align='center'>
 			{ isDark ? <AchievementsDark /> : <AchievementsLight /> }
 			<Flex flexWrap='wrap' justifyContent='center' gap={5} w="full" display={{ base: 'none', sm: 'none', md: 'flex', lg: 'flex' }}>
 				{
