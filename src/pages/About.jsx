@@ -12,7 +12,7 @@ const About = () => {
 	const isDark = colorMode === 'dark'
 
 	return (
-		<Box minH="100vh" display="flex" justifyContent="center">
+		<Box minH="100vh">
 			<NavBar isAbout={true} />
 			<Box className="about-container">
 				<Tabs onChange={(index) => setActiveTab(index)} variant="soft-rounded" position="relative" fontFamily='interSemiBold' colorScheme={ isDark ? 'teal' : 'blue' }>

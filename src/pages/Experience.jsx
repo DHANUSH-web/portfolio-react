@@ -10,7 +10,7 @@ const Experience = () => {
 	const profile = database.profiles[database.profileHolder]
 
 	return (
-		<Flex flexDir="column" minH="100vh" flexWrap="wrap">
+		<Flex flexDir="column" minH="100vh">
 			<NavBar isExp={true} />
 			<Flex justify="center" align="center" gap={2}>
 				<IconUserUp className="iconExperience" size={30} />
