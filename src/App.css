@@ -33,6 +33,11 @@
 	src: url("./resources/fonts/Inter/static/Inter-Bold.ttf");
 }
 
+:root {
+	font-family: interRegular;
+	font-size: 13px;
+}
+
 .hyper-link {
 	text-decoration: none;
 	padding: 2px 5px;
