@@ -1,5 +1,4 @@
-import { Badge, IconButton, Image, Stack, Flex, Text, Tooltip, Wrap, useColorMode } from "@chakra-ui/react"
-import { IconBrandGithub, IconHospital as IconBrandHackerrank, IconBrandLinkedin, IconBrandBitbucket } from "@tabler/icons-react";
+import { Badge, Image, Stack, Flex, Text, Wrap, useColorMode } from "@chakra-ui/react"
 import Avatar from "../resources/images/avatar.png";
 import data from "../database.json"
 import React from "react"
@@ -9,9 +8,6 @@ import './About.css'
 const profile = data.profiles[data.profileHolder]
 
 const AboutTab = () => {
-    const { colorMode } = useColorMode()
-    const isDark = colorMode === 'dark'
-
     return (
         <Flex mx={5} my={10} p={5} alignItems="center" gap={20} flexDir="column">
             <Image src={Avatar} alt="Avatar" width="xs" borderRadius="full" />
@@ -59,13 +55,6 @@ export const SkillsTab = () => {
                 break;
         }
     })
-
-    const openLink = () => {
-        const open = confirm("Would you like to visit the GitHub page ?");
-
-        if (open)
-            window.open(profile.githubProfile)
-    }
 
     return (
         <Stack id="skills" className="skills_design" direction="column" align="center">
