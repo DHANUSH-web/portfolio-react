@@ -44,7 +44,7 @@ const Achievements = () => {
 			<Flex flexWrap='wrap' gap={5} justifyContent='center' w="full" display={{ base: 'flex', sm: 'flex', md: 'none', lg: 'none'}}>
 				{
 					cards.map((card) => (
-						<Flex direction='row' width={250} gap={2} border="solid" borderColor="blackAlpha.200" borderRadius={12} shadow="lg" p={1}>
+						<Flex key={"card__"+card.url} direction='row' width={250} gap={2} border="solid" borderColor="blackAlpha.200" borderRadius={12} shadow="lg" p={1}>
 							<Image src={card.icon} h={20} borderRadius={7} />
 							<Flex direction='column' justify="space-between" wrap="wrap" width="inherit">
 								<Text textAlign="initial" fontSize={15} fontFamily="interSemiBold">{card.title}</Text>
