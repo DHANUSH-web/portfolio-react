@@ -60,10 +60,10 @@ export const EducationCard = ({ title, year, progress, isCompleted, description,
 
 const EducationTab = () => {
     return (
-        <Flex flexWrap="wrap" gap={10} placeContent='center' w="full">
+        <Flex flexWrap="wrap" gap={10} minH="100vh" justifyContent="center">
             {
                 profile.education.map((edu) => (
-                    <EducationCard title={edu.title} year={edu.year} progress={edu.progress} isCompleted={edu.isCompleted} description={edu.description} score={edu.score} symbol={edu.symbol} docURL={edu.docURL} location={edu.location} />
+                    <EducationCard key={edu.title} title={edu.title} year={edu.year} progress={edu.progress} isCompleted={edu.isCompleted} description={edu.description} score={edu.score} symbol={edu.symbol} docURL={edu.docURL} location={edu.location} />
                 ))
             }
         </Flex>

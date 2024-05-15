@@ -7,7 +7,7 @@ import React from "react"
 
 const PageNotFound = () => {
 	return (
-		<Flex flexDirection="column" placeContent="center" h="60vh" gap={5}>
+		<Flex flexDir="column" placeContent="center" h="80vh" gap={5}>
 			<NavBar />
 			<Flex flexDir="column" align="center" gap={5}>
 				<Image src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f636_200d_1f32b_fe0f/512.gif" alt="😶" width={150} height={150} />

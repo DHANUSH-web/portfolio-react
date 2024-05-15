@@ -10,7 +10,7 @@ const Experience = () => {
 	const profile = database.profiles[database.profileHolder]
 
 	return (
-		<div>
+		<Flex flexDir="column" minH="100vh" flexWrap="wrap">
 			<NavBar isExp={true} />
 			<Flex justify="center" align="center" gap={2}>
 				<IconUserUp className="iconExperience" size={30} />
@@ -37,7 +37,7 @@ const Experience = () => {
 				))
 			}
 			</Flex>
-		</div>
+		</Flex>
 	)
 }
 

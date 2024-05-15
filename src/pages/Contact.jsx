@@ -1,4 +1,4 @@
-import { Text, Stack, Button, Flex, useColorMode, Image } from "@chakra-ui/react";
+import { Text, Stack, Button, Flex, Image, Box } from "@chakra-ui/react";
 import {
   IconMail,
   IconBrandLinkedin,
@@ -13,14 +13,13 @@ import React from "react";
 import "./Contact.css";
 
 const Contact = () => {
-  const { colorMode } = useColorMode();
   const profile = database.profiles[database.profileHolder];
   const contacts = profile.contacts;
 
   return (
     <div className="contact_container">
       <NavBar isContact={true} />
-      <div>
+      <Box minH="95vh" display="flex" alignItems="center" justifyContent="center">
         <Stack align="center" gap={15}>
           <Text fontFamily="interBold" fontSize={50}>Get in touch</Text>
           <Image
@@ -83,7 +82,7 @@ const Contact = () => {
             </Button>
           </Flex>
         </Stack>
-      </div>
+      </Box>
     </div>
   );
 };

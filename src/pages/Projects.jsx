@@ -10,7 +10,7 @@ const Projects = () => {
 	const profile = database.profiles[database.profileHolder]
 
 	return (
-		<div>
+		<Flex flexDir="column" minH="100vh">
 			<NavBar isProjects={true} />
 			<Flex justify="center" align="center" gap={2}>
 				<IconGitMerge size={30} className="iconProjects" />
@@ -23,7 +23,7 @@ const Projects = () => {
 					))
 				}
 			</Flex>
-		</div>
+		</Flex>
 	)
 }
 
