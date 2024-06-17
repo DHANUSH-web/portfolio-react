@@ -1,4 +1,5 @@
 import { Box, Tab, TabList, TabPanel, TabPanels, Tabs, useColorMode } from "@chakra-ui/react"
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom"
 import AboutTab, { SkillsTab } from "../components/About"
 import Certificates from "../components/Certificates"
 import NavBar from "../components/NavBar"
@@ -6,21 +7,42 @@ import EducationTab from "./Education"
 import React from "react"
 import "./About.css"
 
+const TabMaps = [
+	"about",
+	"education",
+	"skills",
+	"certificates",
+];
+
 const About = () => {
-	const [activeTab, setActiveTab] = React.useState(0)
+	const [searchParams] = useSearchParams();
 	const { colorMode } = useColorMode()
 	const isDark = colorMode === 'dark'
+	const pathname = useLocation();
+	const navigate = useNavigate();
+
+	const handleTabParams = (index) => {
+		const params = new URLSearchParams();
+
+		if (index > 0 && index < TabMaps.length) {
+			params.set('tab', TabMaps[index]);
+		} else {
+			params.delete('tab');
+		}
+
+		navigate(`${pathname.pathname}?${params.toString()}`, { replace: true });
+	}
 
 	return (
 		<Box minH="100vh">
 			<NavBar isAbout />
 			<Box className="about-container">
-				<Tabs onChange={(index) => setActiveTab(index)} variant="soft-rounded" position="relative" fontFamily='interSemiBold' colorScheme={ isDark ? 'teal' : 'blue' }>
+				<Tabs index={searchParams.get('tab') ? TabMaps.indexOf(searchParams.get('tab')) : 0} onChange={(index) => handleTabParams(index)} variant="unstyled" fontFamily="interSemiBold">
 					<TabList className="tabList" placeContent='center'>
-						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} color={ activeTab === 0 ? isDark ? 'aqua' : '#0050ff' : 'default' }>About</Tab>
-						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} color={ activeTab === 1 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Education</Tab>
-						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} color={ activeTab === 2 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Skills</Tab>
-						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} color={ activeTab === 3 ? isDark ? 'aqua' : '#0050ff' : 'default' }>Certificates</Tab>
+						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} p={3} borderRadius={7} bg={!searchParams.get('tab') ? isDark ? "whiteAlpha.200" : "blackAlpha.200" : "transparent"} w={{base: 80, sm: 80, md: 120, lg: 120}}>About</Tab>
+						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} p={3} borderRadius={7} bg={searchParams.get('tab') === "education" ? isDark ? "whiteAlpha.200" : "blackAlpha.200" : "transparent"} w={{base: 80, sm: 80, md: 120, lg: 120}}>Education</Tab>
+						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} p={3} borderRadius={7} bg={searchParams.get('tab') === "skills" ? isDark ? "whiteAlpha.200" : "blackAlpha.200" : "transparent"} w={{base: 80, sm: 80, md: 120, lg: 120}}>Skills</Tab>
+						<Tab fontSize={{ base: 12, sm: 12, md: 15, lg: 15 }} p={3} borderRadius={7} bg={searchParams.get('tab') === "certificates" ? isDark ? "whiteAlpha.200" : "blackAlpha.200" : "transparent"} w={{base: 80, sm: 80, md: 120, lg: 120}}>Certificates</Tab>
 					</TabList>
 					{/* <TabIndicator h='2px' bg={ isDark ? 'aqua' : 'blue.500'} borderRadius={1}/> */}
 					<TabPanels>
