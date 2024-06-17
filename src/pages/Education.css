@@ -3,6 +3,7 @@
     min-height: 480px;
     max-height: 550px;
     padding: 20px;
+    transition: .2s ease-in-out;
 }
 
 .title {

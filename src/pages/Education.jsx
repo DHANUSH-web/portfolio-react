@@ -7,7 +7,7 @@ const profile = database.profiles[database.profileHolder];
 
 export const EducationCard = ({ title, year, progress, isCompleted, description, score, symbol, docURL, location }) => {
     return (
-        <Card className='eduCard' borderRadius={20} shadow="xl" border="solid" borderColor="blackAlpha.200">
+        <Card className='eduCard' borderRadius={20} shadow="none" border="solid" borderColor="blackAlpha.100" _hover={{shadow: "lg"}}>
             <CardHeader className='title'>
                 <Text fontFamily="interBold" fontSize={{ base: 20, sm: 20, md: 30, lg: 35 }}>{title}</Text>
             </CardHeader>
