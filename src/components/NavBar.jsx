@@ -29,7 +29,7 @@ const NavBar = ({ isHome, isAbout, isProjects, isExp, isContact }) => {
 					<Link id="navLink" to="/projects"><Text color={projectsFg}>Projects</Text></Link>
 					<Link id="navLink" to="/experience"><Text color={expFg}>Experience</Text></Link>
 					<Link id="navLink" to="/contact"><Text color={contactFg}>Contact</Text></Link>
-					<IconButton as={motion.button} whileTap={{ scale: 0.9 }} icon={ isDark ? <IconSunFilled size={15} /> : <IconMoonFilled size={15} /> } onClick={toggleColorMode} />
+					<IconButton as={motion.button} whileTap={{ scale: 0.9 }} icon={ isDark ? <IconMoonFilled size={15} /> : <IconSunFilled size={15} /> } onClick={toggleColorMode} />
 				</HStack>
 				<Menu>
 					<MenuButton as={IconButton} variant="ghost" icon={<IconMenu size={15}/>} display={{ base: "flex", md: "none", lg: "none" }} _expanded={{ color: isDark ? 'aqua' : 'blue.400' }} />
