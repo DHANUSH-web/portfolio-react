@@ -49,12 +49,12 @@
 	padding: 2px 5px;
 	border-radius: 7px;
 	background-color: transparent;
-	color: #0050ff;
+	color: #0080ff;
 	transition: 0.2s;
 }
 
 .hyper-link:hover {
-	background-color: #0050ff22;
+	background-color: #0080ff22;
 }
 
 .cover-navbar {
