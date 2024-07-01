@@ -1,9 +1,9 @@
-import { Flex, Button, Text, Heading } from "@chakra-ui/react"
+import { Flex, Button, Text, Heading, Badge, useColorMode } from "@chakra-ui/react"
 import Achievements from "../components/Achievements"
 import ProfileCard from "../components/ProfileCard"
 import NavBar from "../components/NavBar"
 import ProfileAvatar from "../resources/images/profile_avatar.png"
-import { IconCircleArrowRight } from "@tabler/icons-react";
+import { IconCircleArrowRight, IconExternalLink } from "@tabler/icons-react";
 import { Link } from "react-router-dom"
 import data from "../database.json"
 import React from "react"
@@ -12,11 +12,41 @@ import "./Home.css"
 const Home = () => {
 	const profileHolder = data.profileHolder
 	const profile = data.profiles[profileHolder]
+	const { colorMode } = useColorMode();
 
 	return (
 		<Flex flexDir="column" minH="100vh" flexWrap="wrap" py={5}>
 			<NavBar isHome />
 			<Flex flexDir="column" alignItems="center">
+				<Flex alignItems="center" gap={2} bg={ colorMode === "dark" ? "whiteAlpha.100" : "blackAlpha.50" } p={2} borderRadius="full">
+					<Badge
+						colorScheme="messenger"
+						variant="solid"
+						rounded="full"
+						fontFamily="interBold"
+						textTransform="none"
+						px={2}
+					>
+						New
+					</Badge>
+					<Text fontFamily="interRegular" fontSize="small">
+						New Portfolio website is now online{" "}
+						<Button
+							as={Link}
+							colorScheme="messenger"
+							rightIcon={<IconExternalLink size={12} />}
+							size="xs"
+							ml={2}
+							rounded="full"
+							fontFamily="interRegular"
+							to="https://dhanushhv.vercel.app"
+							target="_blank"
+							className="hyper-link"
+						>
+							Open
+						</Button>
+					</Text>
+				</Flex>
 				<div className="profile-container">
 					<ProfileCard profileName={profile.name} profilePhoto={ProfileAvatar} profileURL={profile.githubProfile} jobRole={profile.jobRole} companyName={profile.company} companyURL={profile.companyURL} resume={profile.resume} width={200} height={300} textMode />
 				</div>
